@@ -1,0 +1,561 @@
+.menu
+  font-family: 'Lato', sans-serif
+  position: absolute
+  left: 0px
+  top: 12px
+  width: 100%
+  height: auto
+  z-index: 4
+
+.menu__items
+  display: flex
+  flex-wrap: wrap
+  list-style-type: none
+  align-items: center
+  justify-content: flex-end
+
+.menu__item
+  margin-right: 40px
+
+.menu__item-arrow
+  margin-right: 0px
+  background: url(../img/arrow-down.png) right 22px top 10px no-repeat
+
+.menu__item-arrow  a
+  padding-right: 40px
+
+.menu__logo img
+  width: 162px
+  height: 30px
+
+.menu__logo
+  margin-right: 60px
+
+.next-btn:hover,
+.prev-btn:hover
+  border-color:
+
+
+.menu__items-top
+  width: 100%
+  display: flex
+  justify-content: flex-end
+  margin-bottom: 13px
+
+.menu__item:last-child a
+  margin-right: 0px
+
+.menu__items-top .menu__item:last-child
+  margin-right: 0px
+
+
+.main-header
+  position: relative
+  min-width: 1280px
+  box-sizing: border-box
+
+
+.menu__item a
+  font-weight: 600
+  font-size: 20px
+  line-height: 22px
+  color: #fff
+  text-decoration: none
+  font-family: 'Lato', sans-serif
+
+.menu__item .menu__registration
+  background: url(../img/user.png) no-repeat left
+
+.menu__item .menu__basket
+  background: url(../img/basket.png) no-repeat left
+
+
+.menu__item .menu__registration,
+.menu__item .menu__basket
+  font-size: 14px
+  color: #a09d9a
+  padding-left: 25px
+  font-weight: 400
+
+.menu__basket-items
+  display: inline-block
+  background: #fecb2e
+  border-radius: 50%
+  box-sizing: border-box
+  width: 20px
+  height: 20px
+  font-size: 12px
+  text-align: center
+  padding-top: 2px
+  padding-right: 2px
+  margin-left: 5px
+
+.menu__search-wrapper
+  margin-right: 74px
+  margin-left: 44px
+  input
+    width: 240px
+    height: 45px
+    outline: none
+    background: transparent
+    border: 1px solid #999999
+    padding: 0px 10px
+    padding-right: 20px
+    color: #fff
+    background: url(../img/search-icon.png) right 15px top 15px no-repeat
+
+.menu__item--underline
+  a
+    font-size: 16px
+    border-bottom: 4px solid #fecb2e
+    padding-bottom: 5px
+
+.menu__item--underline:last-child
+  margin-left: 30px
+
+.header-slider__slide
+  padding-top: 92px
+  background: url(../img/header-back.png) no-repeat
+  background-size: cover
+  height: 100%
+
+.header-slider__slide-2
+.header-slider__title
+  font-family: 'Gilroy'
+  font-size: 50px
+  font-weight: 700
+  color: #ffffff
+  margin-top: 31vh
+  line-height: 50px
+  margin-bottom: 40px
+
+.header-slider-wrapper
+  position: relative
+
+.header-slider__pagination-wrapper
+  box-sizing: border-box
+.header-slider__pagitation
+  display: inline-block
+  min-width: 100px
+  text-align: center
+  color: #fff
+  padding-bottom: 30px
+  cursor: pointer
+  font-weight: 700
+
+.header-slider__pagitation.active
+  border-bottom: 3px solid #fecb2e
+
+.header-slider
+  height: 100vh
+
+.customDots__wrapper
+  position: absolute
+  bottom: 3vh
+  z-index: 10
+  width: 100%
+
+.btn
+  display: inline-block
+  text-decoration: none
+  border-radius: 7px
+  outline: none
+
+.btn:hover
+  background-color: #fff
+
+.header-slider__btn
+  font-size: 12px
+  font-family: 'Gilroy'
+  color: #000
+  font-weight: 700
+  line-height: 22px
+  padding: 15px 20px 11px 26px
+  background: #fdc500
+  letter-spacing: 1px
+  text-transform: uppercase
+
+.registration-popup
+  position: absolute
+  top: 15px
+  left: -58px
+  border-radius: 5px
+  display: none
+  padding-top: 25px
+
+.menu__item-registration
+  position: relative
+
+.menu__item-registration:hover .registration-popup
+  display: block
+
+.menu__item-registration:hover
+  background: url(../img/user-active.png) no-repeat left
+
+.menu__basket:hover
+  background: url(../img/empty-shopping-basket.svg) no-repeat left
+
+.registration-popup form
+  width: 330px
+  box-sizing: border-box
+  background: #fff
+  padding: 32px 45px
+  border-top-right-radius: 5px
+  border-top-left-radius: 5px
+  border-radius-bottomleft: none
+
+  padding-bottom: 45px
+
+.registration-popup__social-login svg
+  height: 20px
+
+.email_registration
+  margin-bottom: 8px
+
+.registration-popup label
+  font-family: 'Gilroy'
+  font-size: 12px
+  line-height: 22px
+  color: #999999
+  text-transform: uppercase
+  display: inline-block
+
+.registration-popup input[type="email"],
+.registration-popup input[type="password"]
+  width: 100%
+  outline: none
+  border-radius: 5px
+  background: #f9f9f9
+  height: 40px
+  border: 1px solid #dddddd
+  padding-left: 10px
+  padding-right: 25px
+  box-sizing: border-box
+
+.registration-popup input[type="password"]
+  margin-bottom: 15px
+
+.btn-submit
+  font-family: 'Gilroy'
+  font-weight: bold
+  font-size: 12px
+  text-transform: uppercase
+  width: 100%
+  line-height: 22px
+  min-height: 46px
+  background: #fecb2e
+  border: none
+  margin-bottom: 15px
+
+.registration-popup__remember
+  position: relative
+  padding-left: 25px
+  display: flex
+  justify-content: space-between
+
+.registration-popup__remember input[type="checkbox"]
+  display: none
+
+.registration-popup__remember .checkbox:not(checked) + label:before
+  content: ''
+  top: 0px
+  left: 0px
+  position: absolute
+  width: 15px
+  height: 15px
+  background: #fecb2e
+
+
+.registration-popup__remember .checkbox:checked + label:after
+  content: ''
+  top: 0px
+  left: 0px
+  position: absolute
+  width: 15px
+  height: 15px
+  background: #fecb2e url(../img/check.png) center no-repeat
+  background-size: 70%
+
+.registration-popup__remember a
+  text-decoration: none
+  font-size: 14px
+  line-height: 20px
+  font-family: 'Lato', sans-serif
+  color: #333333
+
+.registration-popup__decoration
+  font-size: 14px
+  color: #cccccc
+  line-height: 20px
+  display: flex
+  justify-content: space-between
+  margin-bottom: 25px
+
+.registration-popup__decoration div:nth-child(2)
+  margin: 0px 10px
+
+.registration-popup__decoration div:last-child,
+.registration-popup__decoration div:first-child
+  border-bottom: 1px solid #dddddd
+  flex-grow: 2
+  height: 12px
+
+.registration-popup__social-login
+  display: flex
+  justify-content: space-around
+
+.registration-popup__social-login a
+  border: 1px solid #e5e5e5
+  border-radius: 5px
+  width: 71px
+  height: 46px
+  box-sizing: border-box
+  display: flex
+  justify-content: center
+  padding-top: 10px
+
+.registration-popup__footer
+  font-size: 14px
+  line-height: 20px
+  padding-left: 10px
+  background: #f3f3f3
+  padding: 20px 53px
+
+.registration-popup__footer p
+  margin: 0px
+
+.registration-popup__footer a
+  text-decoration: none
+  color: #000
+  font-size: 14px
+
+.registration-popup__footer span
+  color: #999
+  margin-right: 5px
+
+
+
+.menu__shops-list
+  position: absolute
+  list-style-type: none
+  width: 100%
+  top: 70px
+  padding-left: 0px
+  box-sizing: border-box
+  left: 0px
+  display: none
+  padding-top: 25px
+
+.menu__shops-list__wrapper
+  background: #fff
+
+.menu__shops-list .container
+  display: flex
+
+.menu__shops-list a
+  font-weight: 600
+  line-height: 22px
+  text-decoration: none
+  color: #000
+  font-family: 'Lato', sans-serif
+  font-size: 16px
+  padding: 35px 20px
+  display: block
+  text-align: center
+
+
+.menu__shops-list a:hover
+  background: #fdc500
+
+.menu__shops-list__wrapper li
+  margin-right: 70px
+
+.menu__item-shops:hover .menu__shops-list
+  display: block
+
+.menu__item-arrow:hover
+  background: url(../img/arrow-down-active.png) right 22px top 10px no-repeat
+
+.menu__search-wrapper input
+  font-size: 0px
+
+.menu__search-wrapper input:focus
+  background: #fff url(../img/search-active.png) left 15px top 15px no-repeat
+  color: #000
+  padding-left: 40px
+  font-size: 14px
+
+.registration-type-popup
+  width: 826px
+  height: 520px
+  box-sizing: border-box
+  background: #fff
+  font-family: 'Gilroy'
+
+.registration-type-popup form
+  padding: 40px 50px 55px 50px
+
+.registration-type-popup h3
+  font-size: 26px
+  font-family: 'Gilroy'
+  font-weight: 400
+  margin: 0px
+
+.registration-type-popup__header
+  border-bottom: 1px solid #eeeeee
+  padding: 35px 50px 35px 50px
+
+.registration-popup__type
+  display: flex
+  margin-bottom: 35px
+  justify-content: space-between
+  input
+    display: none
+
+.registration-popup__type label
+  display: block
+  box-sizing: border-box
+  width: 208px
+  height: 170px
+  padding-top: 124px
+  padding-left: 0px
+  margin-bottom: 20px
+  background: url("../img/popup-user-grey.svg") center no-repeat, url("../img/popup-type.png") center no-repeat
+  background-size: 70px, auto
+  font-weight: 600
+  text-transform: uppercase
+  font-size: 12px
+  text-align: center
+
+.registration-popup__type label span
+  font-weight: 400
+
+.registration-popup__type label span:hover
+  font-weight: 600
+
+.registration-popup__type .registration-type__master
+  background: url("../img/popup-master.png") center no-repeat, url("../img/popup-type.png") center no-repeat
+  background-size: 54px, auto
+
+.registration-popup__type .registration-type__shop
+  background: url("../img/popup-shop.png") center no-repeat, url("../img/popup-type.png") center no-repeat
+  background-size: 54px, auto
+
+.registration-popup__type input:checked + label
+  background: url("../img/popup-user.svg") center no-repeat, url("../img/popup-type-active.png") center no-repeat
+  background-size: 70px, auto
+
+.registration-popup__type input:checked + .registration-type__master
+  background: url("../img/popup-master-grey.svg") center top 55px no-repeat, url("../img/popup-type-active.png") center no-repeat
+  background-size: 60px, auto
+
+.registration-popup__type input:checked + .registration-type__shop
+  background: url("../img/popup-shop-grey.svg") center  top 40px no-repeat, url("../img/popup-type-active.png") center no-repeat
+  background-size: 90px, auto
+
+.registration-popup__information
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+  margin-bottom: 20px
+
+.registration-popup__information input[type="email"],
+.registration-popup__information input[type="password"]
+  width: 240px
+  height: 40px
+  box-sizing: border-box
+  border-radius: 5px
+  border: 1px solid #dddddd
+  background: #f9f9f9
+  padding: 0px 15px
+
+.registration-popup__information span
+  font-size: 12px
+  color: #999999
+  text-transform: uppercase
+  display: block
+  margin-bottom: 5px
+
+.btn-submit--short
+  width: 206px
+  box-sizing: border-box
+  margin-bottom: 0px
+  height: 44px
+
+.registration-popup__agreement
+  font-size: 14px
+  font-weight: 400
+  color: #999999
+  display: inline-block
+  position: relative
+  padding-left: 25px
+
+.registration-popup__agreement a
+  color: #000
+  text-decoration: none
+
+#registration-type-popup-agreement
+  display: none
+
+.registration-type-popup__footer .checkbox:not(checked)+label:before
+  content: ''
+  top: 0
+  left: 0
+  position: absolute
+  width: 15px
+  height: 15px
+  background: #fecb2e
+
+.registration-type-popup__footer .checkbox:checked+label:before
+  content: ''
+  top: 0
+  left: 0
+  position: absolute
+  width: 15px
+  height: 15px
+  background: #fecb2e url(../img/check.png) center no-repeat
+  background-size: 70%
+
+.menu-static
+  position: static
+  padding-bottom: 30px
+.menu-static a
+  color: #000
+
+.menu-static .menu__logo
+  margin-right: 50px
+
+.menu-static .menu__items-top
+  background: #333333
+  list-style-type: none
+  padding: 7px 0px
+  padding-top: 0px
+  margin-bottom: 25px
+
+.menu-static .menu__items-top .container
+  display: flex
+  justify-content: flex-end
+
+.menu__search-wrapper .menu__search--grey
+  background: #f3f3f3 url(../img/search-active.png) right 15px top 15px no-repeat;
+  border: none
+
+.menu__search-wrapper .menu__search--grey:focus
+  background: #f3f3f3 url(../img/search-active.png) left 15px top 15px no-repeat
+
+.menu__item--underline
+  margin-right: 0px
+
+
+.header-slider .owl-stage-outer
+  height: 100%
+
+.header-slider .owl-stage
+  height: 100%
+
+.header-slider  .owl-item
+  height: 100%
+
+
+
+
