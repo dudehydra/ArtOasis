@@ -7,6 +7,7 @@ $(document).ready(function(){
         touchDrag: false,
         dotsContainer: '#customDots',
         nav: false
+
     });
     $('.album-look__slider').owlCarousel({
         items: 1,
@@ -78,6 +79,13 @@ $(document).ready(function(){
         starOn  : 'star-on.png',
         starHalf : 'star-half.png',
     });
+     $('.reviews__rating').raty({
+        score    : 5,
+        path:  'img',
+        starOff : 'star-off.png',
+        starOn  : 'star-on.png',
+        starHalf : 'star-half.png',
+    });
      $('.personal__profile-rating').raty({
         score    : 5,
         path:  'img',
@@ -90,6 +98,10 @@ $(document).ready(function(){
         type: 'inline'
     });
     $('.goods-item__img-look').magnificPopup({
+        type: 'inline',
+
+    });
+    $('.reviews__answer').magnificPopup({
         type: 'inline',
 
     });

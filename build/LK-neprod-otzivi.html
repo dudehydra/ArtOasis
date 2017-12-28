@@ -21,204 +21,47 @@
 
 </head>
 <body>
-<div class="album-popup album-look-popup white-popup mfp-hide" id="album-look-popups__open">
+<div class="album-popup reviews-popup white-popup mfp-hide" id="reviews-popup__open">
     <div class="registration-type-popup__header">
-        <h3>Шедевры Государственной Третьяковской галереи</h3>
-        <span>14.08.17</span>
+        <h3>Ответ на отзыв</h3>
     </div>
-    <div class="owl-carousel album-look__slider">
-        <div class="album-look__slide">
-            <div class="album-look__img-wrapper"> 
-            </div>
-            <div class="album-look-popup__main">
-            <div class="album-look-popup__description"> 
-                <p>Таким образом консультация с широким активом обеспечивает.</p>
-                <span class="album-look__edit ">Редактировать</span>
-            </div>
-            <span class="album-look__comment">Комментарии</span>
-            <textarea name="    " id="" cols="30" rows="5" placeholder="Оставьте комментарий к альбому"></textarea>
-            <div class="album-look__add-comment"> 
-            <button class="btn btn--white">Добавить комментарий</button>  
-            </div>
-            
-            <ul class="message-menu__list">
-                <li class="message-menu__message-item essage-menu__message-item--full">
-                    <div class="message-menu_author-wrapper">
-                        <img src="img/LK-avat.png" alt="author">
-                    </div>
-                    <div class="message-menu_information-wrapper">
-                        <div class="message-menu_information">
-                        <span class="message-menu_author-name message-menu_author-name--black">Ольга Кузнецова</span>
-                        <span class="message-menu_time">21.22, 03 июня 2017</span>
-                        <span class="btn-close"></span>
-                    </div>
-                    <div class="message-menu_message">
-                        <span>Повседневная практика показывает, что новая модель организационной деятельности в вашей Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ad fugit alias expedita. Pariatur repellat odit esse quaerat dolor repudiandae earum, nisi maiores ab iure, qui rem quis eveniet provident.</span>
+    <div class="reviews-popup__main">
+        <span class="default-label">Комментарий</span>
+        <div class="portfolio__item-reviews-item reviews reviews--flex">
 
-                    </div>
-                    </div>
-                    
-                    
-                </li>
-            </ul>
-            </div>
-            
-        </div>  
-        <div class="album-look__slide">
-            <div class="album-look__img-wrapper"> 
-            </div>
-            <div class="album-look-popup__main">
-            <div class="album-look-popup__description"> 
-                <p>Таким образом консультация с широким активом обеспечивает.</p>
-                <span class="album-look__edit ">Редактировать</span>
-            </div>
-            <span class="album-look__comment">Комментарии</span>
-            <textarea name="    " id="" cols="30" rows="5" placeholder="Оставьте комментарий к альбому"></textarea>
-            <div class="album-look__add-comment"> 
-            <button class="btn btn--white">Добавить комментарий</button>  
-            </div>
-            
-            <ul class="message-menu__list">
-                <li class="message-menu__message-item essage-menu__message-item--full">
-                    <div class="message-menu_author-wrapper">
-                        <img src="img/LK-avat.png" alt="author">
-                    </div>
-                    <div class="message-menu_information-wrapper">
-                        <div class="message-menu_information">
-                        <span class="message-menu_author-name message-menu_author-name--black">Ольга Кузнецова</span>
-                        <span class="message-menu_time">21.22, 03 июня 2017</span>
-                        <span class="btn-close"></span>
-                    </div>
-                    <div class="message-menu_message">
-                        <span>Повседневная практика показывает, что новая модель организационной деятельности в вашей Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ad fugit alias expedita. Pariatur repellat odit esse quaerat dolor repudiandae earum, nisi maiores ab iure, qui rem quis eveniet provident.</span>
-
-                    </div>
-                    </div>
-                    
-                    
-                </li>
-            </ul>
-            </div>
-            
-        </div>    
+                            <div class="reviews__header">
+                                <div class="reviews__img-wrapper">
+                                    <img src="img/user-anon.png" alt="">
+                                </div>
+                                <div class="reviews__author-info">
+                                    <span class="reviews__author-name">Константин Иванов</span>
+                                    <span class="reviews__date">12.07.17</span>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="reviews__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisмcing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum rerum perferendis nostrum veniam sapiente illum eaque porro tempore saepe, nemo vitae quaerat recusandae, a eveniet, quisquam doloribus. Qui, harum at.
+                            </div>
+                           
+                        </div>
     </div>
+    <div class="reviews-popup__answer-wrapper">
+        <form action="" id="reviews-popup__form">
+            <div class="reviews-popup__answer">
+            <label for="" class="default-label">Ваше сообщение <span class="required">*</span></label>
+            <textarea name="" id="" cols="30" rows="10" form="reviews-popup__form"></textarea>
+            <div class="btn-album__wrapper">
+                <input type="submit" class="btn btn-orange" value="Ответить">
+            </div>
+        </form>
+        
+    </div>
+    </div>
+    
     
 </div>
 
-<div class="album-popup album-edit-popup white-popup mfp-hide" id="album-add-popups__open">
-    <div class="registration-type-popup__header">
-        <h3>Добавить выставку</h3>
-    </div>
-
-    <form action="" id="album-add__forms">
-        <label for="album-name-popup" class="default-label">Название выставки <span class="required">*</span></label>
-        <input type="text" required="" id="new-album-name-popup" class="registration-field album__name-field">
-        <div class="box has-advanced-upload drop-zone__wrapper">
-                            <div class="box__input">
-                                <input type="file" name="files[]" id="file" class="box__file" data-multiple-caption="{count} files selected" multiple="">
-                                <label for="file" class="btn btn-drop">Выбрать обложку</label> <span class="box__dragndrop"> <span class="grey">или</span> Перетащите её сюда</span>.
-                                <button type="submit" class="box__button">Upload</button>
-                                <p>Требования к загружаемым изображениям:<br>
-                                Формат JPG, максимальный размер файлы - 3 Мб.<br>
-                                Для эффективного уменьшения размера файла без визуальных потерь рекомендуем использовать следующие<br> бесплатные онлайн-инструменты:
-                               <ul>
-                                   <li>TinyJPG.com - (максимальный размер файла 5Мб)</li>
-                                   <li>Convertimage - (Без ограничений, ручная настройка уровня сжатия, рекомендуется 70)  </li>
-                                   <li>JPEG-Optimizer.com - (Без ограничений, ручная настройка уровня сжатия, рекомендуется 70) </li>
-                                   <li>Compressor.io - (максимальный размер файла 10Мб)</li>
-                                   <li>Kraken.io - (ограничение бесплатной версии: размер файла до 1мб)</li>
-                               </ul></p>
-                            </div>
-                            <input type="hidden" name="ajax" value="1">
-                        <input type="hidden" name="ajax" value="1">
-        </div>
-        <div class="album-popups__img-item">
-
-            <div class="album-popups__img-wrapper ">
-                <div class="loader"></div>
-            </div>
-            <div class="album-popups__img-info">
-                <span class="album-popups__img-name">mansnothot.jpg</span>
-                <span class="album-popups__img-weight">1.4 мб</span>
-            </div>
-            
-            <input type="text" class="registration-field" placeholder="Комментарий к работе" id="new-album-popups__comment-1">
-        </div>
-        <div class="album-popups__img-item">
-            <div class="album-popups__img-wrapper">
-                
-            </div>
-            <div class="album-popups__img-info">
-                <span class="album-popups__img-name">mansnothot.jpg</span>
-                <span class="album-popups__img-weight">1.4 мб</span>
-            </div>
-            
-            <input type="text" class="registration-field" placeholder="Комментарий к работе" id="new-album-popups__comment-2">
-        </div>
-        
-        <div class="btn-album__wrapper">
-            <input type="submit" class="btn btn-orange btn-album" value="Опубликовать выставку">
-
-        </div>
-    </form>
-</div>
-<div class="album-popup album-edit-popup white-popup mfp-hide" id="album-edit-popups__open">
-    <div class="registration-type-popup__header">
-        <h3>Редактирование выставки</h3>
-    </div>
-
-    <form action="" id="album-edit__forms">
-        <label for="album-name-popup" class="default-label">Название выставки <span class="required">*</span></label>
-        <input type="text" required="" id="album-name-popup" class="registration-field album__name-field">
-        <div class="box has-advanced-upload drop-zone__wrapper">
-                            <div class="box__input">
-                                <input type="file" name="files[]" id="file" class="box__file" data-multiple-caption="{count} files selected" multiple="">
-                                <label for="file" class="btn btn-drop">Выбрать фотографии</label> <span class="box__dragndrop"> <span class="grey">или</span> Перетащите её сюда</span>.
-                                <button type="submit" class="box__button">Upload</button>
-                                <p>Требования к загружаемым изображениям:<br>
-                                Формат JPG, максимальный размер файлы - 3 Мб.<br>
-                                Для эффективного уменьшения размера файла без визуальных потерь рекомендуем использовать следующие<br> бесплатные онлайн-инструменты:
-                               <ul>
-                                   <li>TinyJPG.com - (максимальный размер файла 5Мб)</li>
-                                   <li>Convertimage - (Без ограничений, ручная настройка уровня сжатия, рекомендуется 70)  </li>
-                                   <li>JPEG-Optimizer.com - (Без ограничений, ручная настройка уровня сжатия, рекомендуется 70) </li>
-                                   <li>Compressor.io - (максимальный размер файла 10Мб)</li>
-                                   <li>Kraken.io - (ограничение бесплатной версии: размер файла до 1мб)</li>
-                               </ul></p>
-                            </div>
-                            <input type="hidden" name="ajax" value="1">
-                        <input type="hidden" name="ajax" value="1">
-        </div>
-        <div class="album-popups__img-item">
-
-            <div class="album-popups__img-wrapper ">
-                <div class="loader"></div>
-            </div>
-            <div class="album-popups__img-info">
-                <span class="album-popups__img-name">mansnothot.jpg</span>
-                <span class="album-popups__img-weight">1.4 мб</span>
-            </div>
-            
-            <input type="text" class="registration-field" placeholder="Комментарий к работе" id="album-popups__comment-1">
-        </div>
-        <div class="album-popups__img-item">
-            <div class="album-popups__img-wrapper">
-                
-            </div>
-            <div class="album-popups__img-info">
-                <span class="album-popups__img-name">mansnothot.jpg</span>
-                <span class="album-popups__img-weight">1.4 мб</span>
-            </div>
-            
-            <input type="text" class="registration-field" placeholder="Комментарий к работе" id="album-popups__comment-2">
-        </div>
-        <button class="btn btn--delete"> <span>Удалить отчет о выставке</span></button>
-        <div class="btn-album__wrapper">
-            <input type="submit" class="btn btn-orange btn-album" value="Сохранить изменения">
-
-        </div>
-    </form>
-</div>
 <div class="registration-type-popup white-popup mfp-hide" id="registration-type-popup__open">
     <div class="registration-type-popup__header">
         <h3>Хочу зарегистрироваться как</h3>
@@ -430,104 +273,104 @@
                 <nav class="portfolio__nav">
                     <ul class="portfolio__nav-list">
                         <li ><a href="LK-neprod-albom.html" class="portfolio__nav-item ">Альбомы</a></li>
-                        <li ><a href="" class="portfolio__nav-item portfolio__nav-item--active">Выставки</a></li>
+                        <li ><a href="" class="portfolio__nav-item ">Выставки</a></li>
                         <li ><a href="" class="portfolio__nav-item">Блог</a></li>
                         <li ><a href="" class="portfolio__nav-item">Моя страница</a></li>
-                        <li ><a href="" class="portfolio__nav-item">Отзывы</a></li>
+                        <li ><a href="" class="portfolio__nav-item portfolio__nav-item--active">Отзывы</a></li>
                     </ul>
                 </nav>
-                <div class="portfolio__item portfolio__show">
+                <div class="portfolio__item portfolio__reviews">
                     <div class="portfolio__item-header">
-                        <h3>Выставки</h3>
-                        <button type="button" class="btn btn-portfolio" id="add_album-btn" href="#album-add-popups__open">Добавить запись</button>
+                        <h3>Отзывы</h3>
+                        
                     </div>
-                    <div class="portfolio__item-list">
-                        <div class="goods-item goods-item--preview">
-                            <div class="goods-item__img-wrapper">
-                                <img src="img/flowers.png" alt="" class="goods-item__img">
-                                <a href="#album-look-popups__open" class="goods-item__img-look">Посмотреть</a>
-                                <a href="#album-edit-popups__open" class="goods-item__img-edit">Редактировать</a>
-                                <span class="goods-item__img-data">05 июня 2017</span>
-                            </div>
-                            <div class="goods-item__description">
-                                <h3>Цветные карандаши, сливы, марки и еще один коллаж</h3>
-                                <p></p>
-                            </div>
-                            <div class="goods-item__price-wrapper">
-                                <div class="goods-item__basket goods-item__basket--flex">
-                                    
-                                    <svg class="goods-item__eye" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Слой_1" x="0px" y="0px" viewBox="0 0 144 127" style="enable-background:new 0 0 144 127;" xml:space="preserve">
-                                        <g>
-                                            <path d="M77.926,80.277c7.062-2.976,12.636-7.027,16.719-12.156c4.085-5.125,6.125-10.711,6.125-16.75s-2.04-11.625-6.125-16.75   c-4.086-5.129-9.657-9.18-16.719-12.156C70.867,19.488,63.188,18,54.887,18c-8.301,0-15.981,1.488-23.043,4.465   c-7.059,2.976-12.633,7.027-16.715,12.156C11.043,39.75,9,45.332,9,51.371c0,5.172,1.543,10.039,4.629,14.602   c3.086,4.562,7.324,8.41,12.711,11.535c-0.434,1.047-0.879,2-1.336,2.871c-0.457,0.867-1,1.703-1.629,2.508   c-0.633,0.804-1.121,1.433-1.469,1.89c-0.347,0.457-0.91,1.098-1.695,1.922c-0.781,0.824-1.281,1.367-1.5,1.629   c0-0.043-0.086,0.055-0.258,0.293c-0.176,0.238-0.273,0.348-0.293,0.328c-0.023-0.023-0.109,0.086-0.262,0.324   c-0.152,0.239-0.23,0.36-0.23,0.36l-0.16,0.324c-0.067,0.129-0.11,0.258-0.133,0.391c-0.02,0.129-0.031,0.273-0.031,0.422   c0,0.152,0.019,0.292,0.066,0.425c0.086,0.563,0.336,1.02,0.75,1.367c0.41,0.348,0.856,0.52,1.336,0.52h0.195   c2.172-0.305,4.039-0.652,5.606-1.043c6.691-1.738,12.73-4.519,18.117-8.344c3.91,0.696,7.734,1.043,11.473,1.043   C63.188,84.742,70.867,83.254,77.926,80.277L77.926,80.277z M77.926,80.277"/>
-                                            <path d="M121.172,82.691c3.086-4.543,4.629-9.418,4.629-14.632c0-5.348-1.633-10.348-4.891-14.997   c-3.258-4.648-7.691-8.515-13.297-11.601c1,3.262,1.5,6.562,1.5,9.91c0,5.82-1.453,11.34-4.367,16.555   c-2.91,5.211-7.082,9.816-12.516,13.816c-5.039,3.649-10.777,6.453-17.207,8.41c-6.429,1.953-13.144,2.93-20.14,2.93   c-1.301,0-3.215-0.086-5.735-0.258c8.735,5.735,18.989,8.602,30.766,8.602c3.738,0,7.559-0.348,11.473-1.043   c5.386,3.824,11.425,6.605,18.117,8.344c1.562,0.39,3.434,0.738,5.605,1.043c0.52,0.042,1-0.11,1.434-0.458   c0.434-0.347,0.719-0.824,0.848-1.433c-0.02-0.258,0-0.402,0.066-0.422c0.063-0.02,0.051-0.164-0.031-0.422   c-0.09-0.262-0.133-0.394-0.133-0.394l-0.16-0.325c-0.047-0.086-0.121-0.207-0.231-0.355c-0.109-0.152-0.195-0.262-0.261-0.328   c-0.063-0.063-0.161-0.172-0.293-0.324c-0.129-0.153-0.215-0.25-0.258-0.293c-0.219-0.262-0.719-0.805-1.5-1.629   c-0.781-0.825-1.348-1.465-1.695-1.922c-0.348-0.457-0.836-1.086-1.465-1.891c-0.629-0.804-1.172-1.64-1.629-2.512   c-0.457-0.867-0.903-1.824-1.336-2.867C113.852,91.066,118.086,87.23,121.172,82.691L121.172,82.691z M121.172,82.691"/>
-                                        </g>
-                                        </svg>
-                                        <span class="views-number">1458</span>
-                                    <a href=""><svg class="goods-item__comment" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="-19 262 452 270" style="enable-background:new -19 262 452 270;" xml:space="preserve">
-                                        <path d="M429.177,386.995C424.606,381.897,344.681,262,207,262S-10.606,381.897-15.177,386.995c-5.098,5.698-5.098,14.312,0,20.01  C-10.606,412.103,69.319,532,207,532s217.606-119.897,222.177-124.995C434.274,401.307,434.274,392.693,429.177,386.995z M312,397  c0,57.891-47.109,105-105,105s-105-47.109-105-105s47.109-105,105-105S312,339.109,312,397z"/>
-                                        <path d="M222,367c0-15.09,7.491-28.365,18.887-36.53C230.661,325.235,219.255,322,207,322c-41.353,0-75,33.647-75,75  s33.647,75,75,75c37.024,0,67.668-27.034,73.722-62.358C250.516,419.367,222,396.522,222,367z"/>
-                                        </svg>
-                                        </a> <span class="comments-number">1002</span>
+                    <div class="portfolio__item-reviews-list">
+                        <div class="portfolio__item-reviews-item reviews">
+                            <div class="reviews__header">
+                                <div class="reviews__img-wrapper">
+                                    <img src="img/user-anon.png" alt="">
+                                </div>
+                                <div class="reviews__author-info">
+                                    <span class="reviews__author-name">Константин Иванов</span>
+                                    <span class="reviews__date">12.07.17</span>
                                 </div>
                             </div>
+                            <div class="reviews__rating-wrapper">
+                                <div class="reviews__rating">
+                                
+                                </div>
+                            </div>
+                            
+                            <div class="reviews__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisмcing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum rerum perferendis nostrum veniam sapiente illum eaque porro tempore saepe, nemo vitae quaerat recusandae, a eveniet, quisquam doloribus. Qui, harum at.
+                            </div>
+                            <button class="btn reviews__answer" href="#reviews-popup__open">Ответить на отзыв</button>
                         </div>
-                        <div class="goods-item goods-item--preview">
-                            <div class="goods-item__img-wrapper">
-                                <img src="img/flowr.png" alt="" class="goods-item__img">
-                                <a href="#album-look-popups__open" class="goods-item__img-look">Посмотреть</a>
-                                <a href="#album-edit-popups__open" class="goods-item__img-edit">Редактировать</a>
-                            </div>
-                            <div class="goods-item__description">
-                                <h3>Рисуем тюльпаны пастелью</h3>
-                                <p></p>
-                            </div>
-                            <div class="goods-item__price-wrapper">
-                                <div class="goods-item__basket goods-item__basket--flex">
-                                    
-                                    <svg class="goods-item__eye" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Слой_1" x="0px" y="0px" viewBox="0 0 144 127" style="enable-background:new 0 0 144 127;" xml:space="preserve">
-                                        <g>
-                                            <path d="M77.926,80.277c7.062-2.976,12.636-7.027,16.719-12.156c4.085-5.125,6.125-10.711,6.125-16.75s-2.04-11.625-6.125-16.75   c-4.086-5.129-9.657-9.18-16.719-12.156C70.867,19.488,63.188,18,54.887,18c-8.301,0-15.981,1.488-23.043,4.465   c-7.059,2.976-12.633,7.027-16.715,12.156C11.043,39.75,9,45.332,9,51.371c0,5.172,1.543,10.039,4.629,14.602   c3.086,4.562,7.324,8.41,12.711,11.535c-0.434,1.047-0.879,2-1.336,2.871c-0.457,0.867-1,1.703-1.629,2.508   c-0.633,0.804-1.121,1.433-1.469,1.89c-0.347,0.457-0.91,1.098-1.695,1.922c-0.781,0.824-1.281,1.367-1.5,1.629   c0-0.043-0.086,0.055-0.258,0.293c-0.176,0.238-0.273,0.348-0.293,0.328c-0.023-0.023-0.109,0.086-0.262,0.324   c-0.152,0.239-0.23,0.36-0.23,0.36l-0.16,0.324c-0.067,0.129-0.11,0.258-0.133,0.391c-0.02,0.129-0.031,0.273-0.031,0.422   c0,0.152,0.019,0.292,0.066,0.425c0.086,0.563,0.336,1.02,0.75,1.367c0.41,0.348,0.856,0.52,1.336,0.52h0.195   c2.172-0.305,4.039-0.652,5.606-1.043c6.691-1.738,12.73-4.519,18.117-8.344c3.91,0.696,7.734,1.043,11.473,1.043   C63.188,84.742,70.867,83.254,77.926,80.277L77.926,80.277z M77.926,80.277"/>
-                                            <path d="M121.172,82.691c3.086-4.543,4.629-9.418,4.629-14.632c0-5.348-1.633-10.348-4.891-14.997   c-3.258-4.648-7.691-8.515-13.297-11.601c1,3.262,1.5,6.562,1.5,9.91c0,5.82-1.453,11.34-4.367,16.555   c-2.91,5.211-7.082,9.816-12.516,13.816c-5.039,3.649-10.777,6.453-17.207,8.41c-6.429,1.953-13.144,2.93-20.14,2.93   c-1.301,0-3.215-0.086-5.735-0.258c8.735,5.735,18.989,8.602,30.766,8.602c3.738,0,7.559-0.348,11.473-1.043   c5.386,3.824,11.425,6.605,18.117,8.344c1.562,0.39,3.434,0.738,5.605,1.043c0.52,0.042,1-0.11,1.434-0.458   c0.434-0.347,0.719-0.824,0.848-1.433c-0.02-0.258,0-0.402,0.066-0.422c0.063-0.02,0.051-0.164-0.031-0.422   c-0.09-0.262-0.133-0.394-0.133-0.394l-0.16-0.325c-0.047-0.086-0.121-0.207-0.231-0.355c-0.109-0.152-0.195-0.262-0.261-0.328   c-0.063-0.063-0.161-0.172-0.293-0.324c-0.129-0.153-0.215-0.25-0.258-0.293c-0.219-0.262-0.719-0.805-1.5-1.629   c-0.781-0.825-1.348-1.465-1.695-1.922c-0.348-0.457-0.836-1.086-1.465-1.891c-0.629-0.804-1.172-1.64-1.629-2.512   c-0.457-0.867-0.903-1.824-1.336-2.867C113.852,91.066,118.086,87.23,121.172,82.691L121.172,82.691z M121.172,82.691"/>
-                                        </g>
-                                        </svg>
-                                        <span class="views-number">1458</span>
-                                    <a href=""><svg class="goods-item__comment" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="-19 262 452 270" style="enable-background:new -19 262 452 270;" xml:space="preserve">
-                                        <path d="M429.177,386.995C424.606,381.897,344.681,262,207,262S-10.606,381.897-15.177,386.995c-5.098,5.698-5.098,14.312,0,20.01  C-10.606,412.103,69.319,532,207,532s217.606-119.897,222.177-124.995C434.274,401.307,434.274,392.693,429.177,386.995z M312,397  c0,57.891-47.109,105-105,105s-105-47.109-105-105s47.109-105,105-105S312,339.109,312,397z"/>
-                                        <path d="M222,367c0-15.09,7.491-28.365,18.887-36.53C230.661,325.235,219.255,322,207,322c-41.353,0-75,33.647-75,75  s33.647,75,75,75c37.024,0,67.668-27.034,73.722-62.358C250.516,419.367,222,396.522,222,367z"/>
-                                        </svg>
-                                        </a> <span class="comments-number">1002</span>
+                         <div class="portfolio__item-reviews-item reviews">
+                            <div class="reviews__header">
+                                <div class="reviews__img-wrapper">
+                                    <img src="img/user-anon.png" alt="">
+                                </div>
+                                <div class="reviews__author-info">
+                                    <span class="reviews__author-name">Константин Иванов</span>
+                                    <span class="reviews__date">12.07.17</span>
                                 </div>
                             </div>
+                            <div class="reviews__rating-wrapper">
+                                <div class="reviews__rating">
+                                
+                                </div>
+                            </div>
+                            
+                            <div class="reviews__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisмcing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            </div>
+                            <button class="btn reviews__answer" href="#reviews-popup__open">Ответить на отзыв</button>
                         </div>
-                        <div class="goods-item goods-item--preview">
-                            <div class="goods-item__img-wrapper">
-                                <img src="img/flowers.png" alt="" class="goods-item__img">
-                                <a href="#album-look-popups__open" class="goods-item__img-look">Посмотреть</a>
-                                <a href="#album-edit-popups__open" class="goods-item__img-edit">Редактировать</a>
-                            </div>
-                            <div class="goods-item__description">
-                                <h3>Рисунок цветными карандашами, коллаж и этапы работы</h3>
-                                <p></p>
-                            </div>
-                            <div class="goods-item__price-wrapper">
-                                <div class="goods-item__basket goods-item__basket--flex">
-                                   
-                                    <svg class="goods-item__eye" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Слой_1" x="0px" y="0px" viewBox="0 0 144 127" style="enable-background:new 0 0 144 127;" xml:space="preserve">
-                                        <g>
-                                            <path d="M77.926,80.277c7.062-2.976,12.636-7.027,16.719-12.156c4.085-5.125,6.125-10.711,6.125-16.75s-2.04-11.625-6.125-16.75   c-4.086-5.129-9.657-9.18-16.719-12.156C70.867,19.488,63.188,18,54.887,18c-8.301,0-15.981,1.488-23.043,4.465   c-7.059,2.976-12.633,7.027-16.715,12.156C11.043,39.75,9,45.332,9,51.371c0,5.172,1.543,10.039,4.629,14.602   c3.086,4.562,7.324,8.41,12.711,11.535c-0.434,1.047-0.879,2-1.336,2.871c-0.457,0.867-1,1.703-1.629,2.508   c-0.633,0.804-1.121,1.433-1.469,1.89c-0.347,0.457-0.91,1.098-1.695,1.922c-0.781,0.824-1.281,1.367-1.5,1.629   c0-0.043-0.086,0.055-0.258,0.293c-0.176,0.238-0.273,0.348-0.293,0.328c-0.023-0.023-0.109,0.086-0.262,0.324   c-0.152,0.239-0.23,0.36-0.23,0.36l-0.16,0.324c-0.067,0.129-0.11,0.258-0.133,0.391c-0.02,0.129-0.031,0.273-0.031,0.422   c0,0.152,0.019,0.292,0.066,0.425c0.086,0.563,0.336,1.02,0.75,1.367c0.41,0.348,0.856,0.52,1.336,0.52h0.195   c2.172-0.305,4.039-0.652,5.606-1.043c6.691-1.738,12.73-4.519,18.117-8.344c3.91,0.696,7.734,1.043,11.473,1.043   C63.188,84.742,70.867,83.254,77.926,80.277L77.926,80.277z M77.926,80.277"/>
-                                            <path d="M121.172,82.691c3.086-4.543,4.629-9.418,4.629-14.632c0-5.348-1.633-10.348-4.891-14.997   c-3.258-4.648-7.691-8.515-13.297-11.601c1,3.262,1.5,6.562,1.5,9.91c0,5.82-1.453,11.34-4.367,16.555   c-2.91,5.211-7.082,9.816-12.516,13.816c-5.039,3.649-10.777,6.453-17.207,8.41c-6.429,1.953-13.144,2.93-20.14,2.93   c-1.301,0-3.215-0.086-5.735-0.258c8.735,5.735,18.989,8.602,30.766,8.602c3.738,0,7.559-0.348,11.473-1.043   c5.386,3.824,11.425,6.605,18.117,8.344c1.562,0.39,3.434,0.738,5.605,1.043c0.52,0.042,1-0.11,1.434-0.458   c0.434-0.347,0.719-0.824,0.848-1.433c-0.02-0.258,0-0.402,0.066-0.422c0.063-0.02,0.051-0.164-0.031-0.422   c-0.09-0.262-0.133-0.394-0.133-0.394l-0.16-0.325c-0.047-0.086-0.121-0.207-0.231-0.355c-0.109-0.152-0.195-0.262-0.261-0.328   c-0.063-0.063-0.161-0.172-0.293-0.324c-0.129-0.153-0.215-0.25-0.258-0.293c-0.219-0.262-0.719-0.805-1.5-1.629   c-0.781-0.825-1.348-1.465-1.695-1.922c-0.348-0.457-0.836-1.086-1.465-1.891c-0.629-0.804-1.172-1.64-1.629-2.512   c-0.457-0.867-0.903-1.824-1.336-2.867C113.852,91.066,118.086,87.23,121.172,82.691L121.172,82.691z M121.172,82.691"/>
-                                        </g>
-                                        </svg>
-                                         <span class="views-number">1458</span>
-                                    <a href=""><svg class="goods-item__comment" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="-19 262 452 270" style="enable-background:new -19 262 452 270;" xml:space="preserve">
-                                        <path d="M429.177,386.995C424.606,381.897,344.681,262,207,262S-10.606,381.897-15.177,386.995c-5.098,5.698-5.098,14.312,0,20.01  C-10.606,412.103,69.319,532,207,532s217.606-119.897,222.177-124.995C434.274,401.307,434.274,392.693,429.177,386.995z M312,397  c0,57.891-47.109,105-105,105s-105-47.109-105-105s47.109-105,105-105S312,339.109,312,397z"/>
-                                        <path d="M222,367c0-15.09,7.491-28.365,18.887-36.53C230.661,325.235,219.255,322,207,322c-41.353,0-75,33.647-75,75  s33.647,75,75,75c37.024,0,67.668-27.034,73.722-62.358C250.516,419.367,222,396.522,222,367z"/>
-                                        </svg>
-                                        </a> <span class="comments-number">1002</span>
+                         <div class="portfolio__item-reviews-item reviews">
+                            <div class="reviews__header">
+                                <div class="reviews__img-wrapper">
+                                    <img src="img/user-anon.png" alt="">
+                                </div>
+                                <div class="reviews__author-info">
+                                    <span class="reviews__author-name">Константин Иванов</span>
+                                    <span class="reviews__date">12.07.17</span>
                                 </div>
                             </div>
+                            <div class="reviews__rating-wrapper">
+                                <div class="reviews__rating">
+                                
+                                </div>
+                            </div>
+                            
+                            <div class="reviews__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisмcing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            </div>
+                            <button class="btn reviews__answer" href="#reviews-popup__open">Ответить на отзыв</button>
+                        </div>
+                        <div class="portfolio__item-reviews-item reviews">
+                            <div class="reviews__header">
+                                <div class="reviews__img-wrapper">
+                                    <img src="img/user-anon.png" alt="">
+                                </div>
+                                <div class="reviews__author-info">
+                                    <span class="reviews__author-name">Константин Иванов</span>
+                                    <span class="reviews__date">12.07.17</span>
+                                </div>
+                            </div>
+                            <div class="reviews__rating-wrapper">
+                                <div class="reviews__rating">
+                                
+                                </div>
+                            </div>
+                            
+                            <div class="reviews__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisмcing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            </div>
+                            <button class="btn reviews__answer" href="#reviews-popup__open">Ответить на отзыв</button>
                         </div>
                     </div>
+
                 </div>
                 <div class="portfolio__album-advertising">
                     

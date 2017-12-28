@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <!-- End owl Carousel -->
-
+    
     <!-- Raty -->
     <link rel="stylesheet" href="css/jquery.raty.css">
     <!-- End Raty -->
@@ -19,16 +19,27 @@
 
     <link rel="stylesheet" href="css/jquery-ui.min.css">
 
+    <!-- Include external CSS. -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+ 
+    <!-- Include Editor style. -->
+    <link rel="stylesheet" href="css/trumbowyg.min.css">
+
 </head>
 <body>
-<div class="blog-look white-popup mfp-hide" id="blog-look-popups__open">
+<div class="blog-look white-popup mfp-hide album-popup " id="blog-look-popups__open">
     <div class="registration-type-popup__header">
         <h3>Скидки до 70% на скульптуры 2016 года</h3>
         <span>14.08.17</span>
     </div>
+    <div class="blog-look__img-wrapper">
+                <img src="img/blog-img.png" alt="">
+            </div>
    <div class="blog-look__main">
+            
             <div class="blog-look__description"> 
-                <p>Таким образом консультация с широким активом обеспечивает.</p>
+                <p>Таким образом консультация с широким активом обеспечивает. Задача организации, в особенности же начало повседневной работы по формированию позиции в значительной степени обуславливает создание направлений прогрессивного развития. Не следует, однако забывать, что рамки и место обучения кадров требуют определения и уточнения направлений прогрессивного развития.</p>
                 <span class="blog-look__edit ">Редактировать</span>
             </div>
             <span class="blog-look__comment">Комментарии</span>
@@ -63,111 +74,50 @@
 
 <div class="album-popup blog-edit-popup white-popup mfp-hide" id="album-add-popups__open">
     <div class="registration-type-popup__header">
-        <h3>Добавить выставку</h3>
+        <h3>Добавление записи в блог</h3>
     </div>
 
     <form action="" id="album-add__forms">
-        <label for="album-name-popup" class="default-label">Название выставки <span class="required">*</span></label>
-        <input type="text" required="" id="new-album-name-popup" class="registration-field album__name-field">
         <div class="box has-advanced-upload drop-zone__wrapper">
                             <div class="box__input">
                                 <input type="file" name="files[]" id="file" class="box__file" data-multiple-caption="{count} files selected" multiple="">
                                 <label for="file" class="btn btn-drop">Выбрать обложку</label> <span class="box__dragndrop"> <span class="grey">или</span> Перетащите её сюда</span>.
                                 <button type="submit" class="box__button">Upload</button>
-                                <p>Требования к загружаемым изображениям:<br>
-                                Формат JPG, максимальный размер файлы - 3 Мб.<br>
-                                Для эффективного уменьшения размера файла без визуальных потерь рекомендуем использовать следующие<br> бесплатные онлайн-инструменты:
-                               <ul>
-                                   <li>TinyJPG.com - (максимальный размер файла 5Мб)</li>
-                                   <li>Convertimage - (Без ограничений, ручная настройка уровня сжатия, рекомендуется 70)  </li>
-                                   <li>JPEG-Optimizer.com - (Без ограничений, ручная настройка уровня сжатия, рекомендуется 70) </li>
-                                   <li>Compressor.io - (максимальный размер файла 10Мб)</li>
-                                   <li>Kraken.io - (ограничение бесплатной версии: размер файла до 1мб)</li>
-                               </ul></p>
+                                
                             </div>
                             <input type="hidden" name="ajax" value="1">
                         <input type="hidden" name="ajax" value="1">
         </div>
-        <div class="album-popups__img-item">
-
-            <div class="album-popups__img-wrapper ">
-                <div class="loader"></div>
-            </div>
-            <div class="album-popups__img-info">
-                <span class="album-popups__img-name">mansnothot.jpg</span>
-                <span class="album-popups__img-weight">1.4 мб</span>
-            </div>
-            
-            <input type="text" class="registration-field" placeholder="Комментарий к работе" id="new-album-popups__comment-1">
-        </div>
-        <div class="album-popups__img-item">
-            <div class="album-popups__img-wrapper">
-                
-            </div>
-            <div class="album-popups__img-info">
-                <span class="album-popups__img-name">mansnothot.jpg</span>
-                <span class="album-popups__img-weight">1.4 мб</span>
-            </div>
-            
-            <input type="text" class="registration-field" placeholder="Комментарий к работе" id="new-album-popups__comment-2">
-        </div>
+        <label for="blog-caption" class="default-label">Заголовок <span class="required">*</span></label>
+        <input type="text" required="" id="blog-caption" class="registration-field">
+        <textarea  name="    " id="" class="trumbowyg" cols="30" rows="8" form="blog-edit-popups__open"></textarea>
         
         <div class="btn-album__wrapper">
-            <input type="submit" class="btn btn-orange btn-album" value="Опубликовать выставку">
+            <input type="submit" class="btn btn-orange btn-album" value="Опубликовать запись">
 
         </div>
     </form>
 </div>
-<div class="album-popup album-edit-popup white-popup mfp-hide" id="album-edit-popups__open">
+<div class="album-popup blog-edit white-popup mfp-hide" id="blog-edit-popups__open">
     <div class="registration-type-popup__header">
-        <h3>Редактирование выставки</h3>
+        <h3>Редактирование записи блога</h3>
     </div>
 
     <form action="" id="album-edit__forms">
-        <label for="album-name-popup" class="default-label">Название выставки <span class="required">*</span></label>
-        <input type="text" required="" id="album-name-popup" class="registration-field album__name-field">
-        <div class="box has-advanced-upload drop-zone__wrapper">
-                            <div class="box__input">
-                                <input type="file" name="files[]" id="file" class="box__file" data-multiple-caption="{count} files selected" multiple="">
-                                <label for="file" class="btn btn-drop">Выбрать фотографии</label> <span class="box__dragndrop"> <span class="grey">или</span> Перетащите её сюда</span>.
-                                <button type="submit" class="box__button">Upload</button>
-                                <p>Требования к загружаемым изображениям:<br>
-                                Формат JPG, максимальный размер файлы - 3 Мб.<br>
-                                Для эффективного уменьшения размера файла без визуальных потерь рекомендуем использовать следующие<br> бесплатные онлайн-инструменты:
-                               <ul>
-                                   <li>TinyJPG.com - (максимальный размер файла 5Мб)</li>
-                                   <li>Convertimage - (Без ограничений, ручная настройка уровня сжатия, рекомендуется 70)  </li>
-                                   <li>JPEG-Optimizer.com - (Без ограничений, ручная настройка уровня сжатия, рекомендуется 70) </li>
-                                   <li>Compressor.io - (максимальный размер файла 10Мб)</li>
-                                   <li>Kraken.io - (ограничение бесплатной версии: размер файла до 1мб)</li>
-                               </ul></p>
-                            </div>
-                            <input type="hidden" name="ajax" value="1">
-                        <input type="hidden" name="ajax" value="1">
-        </div>
+        <label  class="default-label">Превью <span class="required">*</span></label>
         <div class="album-popups__img-item">
-
             <div class="album-popups__img-wrapper ">
                 <div class="loader"></div>
             </div>
             <div class="album-popups__img-info">
-                <span class="album-popups__img-name">mansnothot.jpg</span>
+                <span class="album-popups__img-name">mansnothot.jpg <span class="album-popups__img-delete">x</span></span>
+
                 <span class="album-popups__img-weight">1.4 мб</span>
             </div>
-            
-            <input type="text" class="registration-field" placeholder="Комментарий к работе" id="album-popups__comment-1">
         </div>
-        <div class="album-popups__img-item">
-            <div class="album-popups__img-wrapper">
-                
-            </div>
-            <div class="album-popups__img-info">
-                <span class="album-popups__img-name">mansnothot.jpg</span>
-                <span class="album-popups__img-weight">1.4 мб</span>
-            </div>
-            
-            <input type="text" class="registration-field" placeholder="Комментарий к работе" id="album-popups__comment-2">
-        </div>
+        <label for="blog-name" class="default-label">Название записи <span class="required">*</span></label>
+        <input type="text" required="" id="blog-name" class="registration-field ">
+        <textarea  name="    " id=trumbowyg" class="trumbowyg" cols="30" rows="8" form="blog-edit-popups__open"></textarea>
         <button class="btn btn--delete"> <span>Удалить отчет о выставке</span></button>
         <div class="btn-album__wrapper">
             <input type="submit" class="btn btn-orange btn-album" value="Сохранить изменения">
@@ -402,7 +352,7 @@
                             <div class="goods-item__img-wrapper">
                                 <img src="img/flowers.png" alt="" class="goods-item__img">
                                 <a href="#blog-look-popups__open" class="goods-item__img-look">Посмотреть</a>
-                                <a href="#album-edit-popups__open" class="goods-item__img-edit">Редактировать</a>
+                                <a href="#blog-edit-popups__open" class="goods-item__img-edit">Редактировать</a>
                                 <span class="goods-item__img-data">05 июня 2017</span>
                             </div>
                             <div class="goods-item__description">
@@ -431,7 +381,8 @@
                             <div class="goods-item__img-wrapper">
                                 <img src="img/flowr.png" alt="" class="goods-item__img">
                                 <a href="#blog-look-popups__open" class="goods-item__img-look">Посмотреть</a>
-                                <a href="#album-edit-popups__open" class="goods-item__img-edit">Редактировать</a>
+                                <a href="#blog-edit-popups__open" class="goods-item__img-edit">Редактировать</a>
+                                <span class="goods-item__img-data">05 июня 2017</span>
                             </div>
                             <div class="goods-item__description">
                                 <h3>Рисуем тюльпаны пастелью</h3>
@@ -459,7 +410,8 @@
                             <div class="goods-item__img-wrapper">
                                 <img src="img/flowers.png" alt="" class="goods-item__img">
                                 <a href="#blog-look-popups__open" class="goods-item__img-look">Посмотреть</a>
-                                <a href="#album-edit-popups__open" class="goods-item__img-edit">Редактировать</a>
+                                <a href="#blog-edit-popups__open" class="goods-item__img-edit">Редактировать</a>
+                                <span class="goods-item__img-data">05 июня 2017</span>
                             </div>
                             <div class="goods-item__description">
                                 <h3>Рисунок цветными карандашами, коллаж и этапы работы</h3>
@@ -590,6 +542,9 @@
 <script src="js/jquery.raty.js"></script>
 <script src="js/magnificPopup.js"></script>
 <script src="js/jquery-ui.min.js"></script>
+<script src="js/trumbowyg.min.js"></script>
+<script src="js/ru.min.js"></script>
+<script src="js/textarea.js"></script>
 
 </body>
 </html>
