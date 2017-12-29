@@ -38,6 +38,7 @@
   display: flex
   flex-wrap: nowrap
   padding: 19px 0 17px 22px
+  border-bottom: 1px solid #eeeeee
 
 .personal__menu 
   list-style-type: none
@@ -51,7 +52,8 @@
   height: 60px
   display: block
   padding-left: 77px
-  padding-top: 32px
+  padding-top: 20px
+  padding-bottom: 16px
   box-sizing: border-box
   position: relative
   margin-bottom: 10px
@@ -197,47 +199,47 @@
   margin-left: 33px
 
 .personal__portfolio a 
-  background: url(../img/case.svg) no-repeat left 35px top 27px
+  background: url(../img/case.svg) no-repeat left 35px top 16px
   background-size: 29px
 
 .personal__message
-  background: url(../img/message.svg) no-repeat left 35px top 27px
+  background: url(../img/message.svg) no-repeat left 35px top 16px
   background-size: 29px
 .personal__notifications
-  background: url(../img/bell.svg) no-repeat left 38px top 27px
+  background: url(../img/bell.svg) no-repeat left 38px top 16px
   background-size: 22px
 
 .personal__settings
-  background: url(../img/settings.svg) no-repeat left 35px top 27px
+  background: url(../img/settings.svg) no-repeat left 35px top 12px
   background-size: 29px
 .personal__orders
-  background: url(../img/check-list.svg) no-repeat left 35px top 27px
+  background: url(../img/check-list.svg) no-repeat left 35px top 16px
   background-size: 29px
 
 .personal__portfolio .personal__menu-item--active
-  background: url(../img/case-active.svg) no-repeat left 35px top 27px
+  background: url(../img/case-active.svg) no-repeat left 35px top 16px
   background-size: 29px
 
 .personal__menu-item--active.personal__message
-  background: url(../img/message-active.svg) no-repeat left 35px top 27px
+  background: url(../img/message-active.svg) no-repeat left 35px top 16px
   background-size: 29px
 
 .personal__menu-item--active.personal__notifications
-  background: url(../img/bell-avtive.svg) no-repeat left 38px top 27px
+  background: url(../img/bell-avtive.svg) no-repeat left 38px top 16px
   background-size: 22px
 
 .personal__menu-item--active.personal__settings
-  background: url(../img/settings-active.svg) no-repeat left 35px top 27px
+  background: url(../img/settings-active.svg) no-repeat left 35px top 16px
   background-size: 20px
 .personal__menu-item--active.personal__orders
-  background: url(../img/check-list-active.svg) no-repeat left 35px top 27px
+  background: url(../img/check-list-active.svg) no-repeat left 35px top 16px
   background-size: 29px
 
 
 .personal__message--active:before
   content: ' '
   top: 27px
-  right: 65px
+  right: 75px
   height: 8px
   width: 8px
   border-radius: 50%
@@ -494,6 +496,7 @@
   padding: 13px 20px
   color: #fff
   display: flex
+  font-family: 'Gilroy'
 
 .label-checkbox--black
   margin-bottom: 0px
@@ -694,9 +697,14 @@
   display: flex
   flex-wrap: wrap
   justify-content: space-between
+  border-left: 1px solid transparent
+  border-right: 1px solid transparent
   p 
     overflow: hidden
     max-height: 70px
+  &:hover 
+    border-left: 1px solid #fecb2e
+    border-right: 1px solid #fecb2e
 
 .reviews-item:nth-child(2n)
   background: #fafafa
@@ -706,7 +714,9 @@
   font-size: 14px
   line-height: 20px
   color: #999
-
+.btn-default--just
+  width: 100%
+  padding-left: 15px
 .help-yandex-wrapper
   list-style-type: none
   flex-grow: 1
@@ -1403,8 +1413,93 @@ span.main-registration__logo-info
   flex-grow: 0
   margin-right: 20px
 .order-item__products
-  min-width: 200px
+  max-width: 200px
+  cursor: pointer
+
   div 
     margin-bottom: 10px
+    &:hover 
+      color: #fecb2e
+  span
+    font-weight: 700
+    font-size: 15px
 .notification--transparent
   background: transparent
+.order-item__info .notification__data:before
+  display: none
+.status-btn
+  background: #fff
+  border-radius: 4px
+  border: 1px solid #fecb2e
+  padding: 5px
+  padding-right: 40px
+  position: relative
+  cursor: pointer
+  span
+   height: 100%
+   width: 30px
+   display: block
+   position: absolute
+   right: -1px
+   top: 0px
+   background: transparent url(../img/pencil-edit-grey.svg) no-repeat center
+   border-left: 1px solid #fecb2e
+   background-size: 14px
+.status-btn:hover span
+   background: #fecb2e url(../img/pencil-edit-black.svg) no-repeat center
+   background-size: 14px
+.order-item__products-item
+  position: relative
+.full-info--img
+  box-sizing: border-box
+  width: 245px
+  min-height: 200px
+  background: #fff
+  padding: 0px
+  top: -210px
+  left: 30px
+.order-item__products-item:hover .full-info--img
+   display: block
+.full-info__img
+  box-sizing: border-box
+  width: 245px
+  height: 150px
+  margin-bottom: 0px !important
+.full-info__text
+  color: #000
+  font-weight: 700
+  padding: 14px 20px
+
+.order-item__payment input,
+.order-item__delivery input
+  display: none
+
+.order-item__paymant-label,
+.order-item__delivery-label
+  width: 21px
+  height: 21px
+  display: block
+  background: url(../img/payment.png) no-repeat center
+  cursor: pointer
+  box-sizing: border-box
+  &:hover
+    border: 1px solid #fecb2e
+    border-radius: 50%
+
+.order-item__delivery-label
+  background: url(../img/delivery.png) no-repeat center
+.order-item .notification__options-items-wrapper
+  top: -175px
+
+.notification-number
+  color: #999
+  font-size: 12px
+.notification-number--active
+  background-color: #fecb2e
+  padding: 5px 10px
+  font-size: 12px
+  border-radius: 13px
+  color: #000
+
+
+  

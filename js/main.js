@@ -427,14 +427,13 @@ $(document).ready(function(){
                     $.magnificPopup.close();
                 }
             }
-            else if ((specializationNumber => 3) ) {
+            else if ((specializationNumber >= 3) ) {
                 // alert('выберите не больше 3х');
             }
             else {
                 $(removeLabel).remove();
-
             };
-        })
+        });
     });
 
 

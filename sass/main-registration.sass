@@ -24,7 +24,7 @@
   background: #f9f9f9
   padding: 10px
   font-family: 'Lato',sans-serif
-  color: #ccc
+  color: #000
   outline: none
   resize: none
 
@@ -181,11 +181,16 @@
   
 .main-registration__logo-field span
   font-size: 13px
-  font-weight: 700
+  font-weight: 400
   color: #999999
   margin: 0px 5px
-
-
+span.main-registration__text-semibold
+  font-weight: 600
+  margin-top: 20px
+  display: block
+.registration-logo-label span
+  font-weight: 700
+  color: #000
 .info
   color: #000 !important
   display: inline-block
@@ -272,7 +277,7 @@
   background: #f9f9f9
   padding: 10px
   font-family: 'Lato', sans-serif
-  color: #cccccc
+  color: #000
   outline: none
   resize: none
   border-radius: 4px;
@@ -368,6 +373,7 @@
   display: flex
   flex-wrap: wrap
   padding: 18px 45px 20px
+  padding-bottom: 35px
   p
     margin-bottom: 53px
 
@@ -375,7 +381,8 @@
   display: flex
   flex-wrap: wrap
   width: 45%
-
+.personal__menu-item--active
+  background-color: rgba(254, 203, 46, 0.1)
 .registration_stage-4__left .label-checkbox--orange
   width: 100%
   margin-bottom: 45px
@@ -387,7 +394,7 @@
   width: 100px
   height: 40px
   border-radius: 5px
-  color: #cccccc
+  color: #000
   padding: 0px 10px
   margin-right: 10px
 
@@ -407,7 +414,8 @@
   padding-left: 40px
   .info
     margin-top: 0px
-
+.registration_stage-4__right .label-checkbox--orange
+  margin-right: 0px
 .valuta
   display: inline-block
 
@@ -538,6 +546,8 @@
   border-radius: 0px
   padding-bottom: 5px
   border-bottom: 4px solid #fecb2e
+  padding-top: 20px
+  height: 45px
   &:hover
     background: none
 
@@ -777,3 +787,4 @@
 
 .portfolio .main-registration__name-field--master p 
   padding-right: 0px
+  

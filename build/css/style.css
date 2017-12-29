@@ -150,7 +150,8 @@
   display: inline-block;
   text-decoration: none;
   border-radius: 7px;
-  outline: none; }
+  outline: none;
+  cursor: pointer; }
 
 .btn:hover {
   background-color: #fff; }
@@ -184,7 +185,8 @@
   background: url(../img/user-active.png) no-repeat left; }
 
 .menu__basket:hover {
-  background: url(../img/empty-shopping-basket.svg) no-repeat left; }
+  background: url(../img/empty-shopping-basket.png) no-repeat left;
+  background-size: 20px; }
 
 .registration-popup form {
   width: 330px;
@@ -1137,7 +1139,7 @@ textarea {
   background: #f9f9f9;
   padding: 10px;
   font-family: 'Lato',sans-serif;
-  color: #ccc;
+  color: #000;
   outline: none;
   resize: none; }
 
@@ -1287,9 +1289,18 @@ textarea {
 
 .main-registration__logo-field span {
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 400;
   color: #999999;
   margin: 0px 5px; }
+
+span.main-registration__text-semibold {
+  font-weight: 600;
+  margin-top: 20px;
+  display: block; }
+
+.registration-logo-label span {
+  font-weight: 700;
+  color: #000; }
 
 .info {
   color: #000 !important;
@@ -1375,7 +1386,7 @@ textarea {
   background: #f9f9f9;
   padding: 10px;
   font-family: 'Lato', sans-serif;
-  color: #cccccc;
+  color: #000;
   outline: none;
   resize: none;
   border-radius: 4px;
@@ -1468,7 +1479,8 @@ textarea {
   margin-left: 70px;
   display: flex;
   flex-wrap: wrap;
-  padding: 18px 45px 20px; }
+  padding: 18px 45px 20px;
+  padding-bottom: 35px; }
   .registration_stage-4__pay-wrapper p {
     margin-bottom: 53px; }
 
@@ -1476,6 +1488,9 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   width: 45%; }
+
+.personal__menu-item--active {
+  background-color: rgba(254, 203, 46, 0.1); }
 
 .registration_stage-4__left .label-checkbox--orange {
   width: 100%;
@@ -1488,7 +1503,7 @@ textarea {
   width: 100px;
   height: 40px;
   border-radius: 5px;
-  color: #cccccc;
+  color: #000;
   padding: 0px 10px;
   margin-right: 10px; }
 
@@ -1508,6 +1523,9 @@ textarea {
   padding-left: 40px; }
   .registration_stage-4__right .info {
     margin-top: 0px; }
+
+.registration_stage-4__right .label-checkbox--orange {
+  margin-right: 0px; }
 
 .valuta {
   display: inline-block; }
@@ -1635,7 +1653,9 @@ textarea {
   background: none;
   border-radius: 0px;
   padding-bottom: 5px;
-  border-bottom: 4px solid #fecb2e; }
+  border-bottom: 4px solid #fecb2e;
+  padding-top: 20px;
+  height: 45px; }
   .btn-underlining:hover {
     background: none; }
 
@@ -1888,7 +1908,7 @@ textarea {
   border: 1px solid #999999; }
 
 .registration-field--short {
-  width: auto; }
+  width: 178px; }
 
 .personal {
   box-sizing: border-box;
@@ -1930,7 +1950,8 @@ textarea {
 .personal__profile-header {
   display: flex;
   flex-wrap: nowrap;
-  padding: 19px 0 17px 22px; }
+  padding: 19px 0 17px 22px;
+  border-bottom: 1px solid #eeeeee; }
 
 .personal__menu {
   list-style-type: none; }
@@ -1944,7 +1965,8 @@ textarea {
   height: 60px;
   display: block;
   padding-left: 77px;
-  padding-top: 32px;
+  padding-top: 20px;
+  padding-bottom: 16px;
   box-sizing: border-box;
   position: relative;
   margin-bottom: 10px; }
@@ -2091,49 +2113,49 @@ textarea {
   margin-left: 33px; }
 
 .personal__portfolio a {
-  background: url(../img/case.svg) no-repeat left 35px top 27px;
+  background: url(../img/case.svg) no-repeat left 35px top 16px;
   background-size: 29px; }
 
 .personal__message {
-  background: url(../img/message.svg) no-repeat left 35px top 27px;
+  background: url(../img/message.svg) no-repeat left 35px top 16px;
   background-size: 29px; }
 
 .personal__notifications {
-  background: url(../img/bell.svg) no-repeat left 38px top 27px;
+  background: url(../img/bell.svg) no-repeat left 38px top 16px;
   background-size: 22px; }
 
 .personal__settings {
-  background: url(../img/settings.svg) no-repeat left 35px top 27px;
+  background: url(../img/settings.svg) no-repeat left 35px top 12px;
   background-size: 29px; }
 
 .personal__orders {
-  background: url(../img/check-list.svg) no-repeat left 35px top 27px;
+  background: url(../img/check-list.svg) no-repeat left 35px top 16px;
   background-size: 29px; }
 
 .personal__portfolio .personal__menu-item--active {
-  background: url(../img/case-active.svg) no-repeat left 35px top 27px;
+  background: url(../img/case-active.svg) no-repeat left 35px top 16px;
   background-size: 29px; }
 
 .personal__menu-item--active.personal__message {
-  background: url(../img/message-active.svg) no-repeat left 35px top 27px;
+  background: url(../img/message-active.svg) no-repeat left 35px top 16px;
   background-size: 29px; }
 
 .personal__menu-item--active.personal__notifications {
-  background: url(../img/bell-avtive.svg) no-repeat left 38px top 27px;
+  background: url(../img/bell-avtive.svg) no-repeat left 38px top 16px;
   background-size: 22px; }
 
 .personal__menu-item--active.personal__settings {
-  background: url(../img/settings-active.svg) no-repeat left 35px top 27px;
+  background: url(../img/settings-active.svg) no-repeat left 35px top 16px;
   background-size: 20px; }
 
 .personal__menu-item--active.personal__orders {
-  background: url(../img/check-list-active.svg) no-repeat left 35px top 27px;
+  background: url(../img/check-list-active.svg) no-repeat left 35px top 16px;
   background-size: 29px; }
 
 .personal__message--active:before {
   content: ' ';
   top: 27px;
-  right: 65px;
+  right: 75px;
   height: 8px;
   width: 8px;
   border-radius: 50%;
@@ -2395,7 +2417,8 @@ textarea {
   background-color: #333333;
   padding: 13px 20px;
   color: #fff;
-  display: flex; }
+  display: flex;
+  font-family: 'Gilroy'; }
 
 .label-checkbox--black {
   margin-bottom: 0px;
@@ -2608,10 +2631,15 @@ textarea {
   padding: 10px 35px 15px 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent; }
   .reviews-item p {
     overflow: hidden;
     max-height: 70px; }
+  .reviews-item:hover {
+    border-left: 1px solid #fecb2e;
+    border-right: 1px solid #fecb2e; }
 
 .reviews-item:nth-child(2n) {
   background: #fafafa; }
@@ -2621,6 +2649,10 @@ textarea {
   font-size: 14px;
   line-height: 20px;
   color: #999; }
+
+.btn-default--just {
+  width: 100%;
+  padding-left: 15px; }
 
 .help-yandex-wrapper {
   list-style-type: none;
@@ -3369,12 +3401,110 @@ span.main-registration__logo-info {
   margin-right: 20px; }
 
 .order-item__products {
-  min-width: 200px; }
+  max-width: 200px;
+  cursor: pointer; }
   .order-item__products div {
     margin-bottom: 10px; }
+    .order-item__products div:hover {
+      color: #fecb2e; }
+  .order-item__products span {
+    font-weight: 700;
+    font-size: 15px; }
 
 .notification--transparent {
   background: transparent; }
+
+.order-item__info .notification__data:before {
+  display: none; }
+
+.status-btn {
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #fecb2e;
+  padding: 5px;
+  padding-right: 40px;
+  position: relative;
+  cursor: pointer; }
+  .status-btn span {
+    height: 100%;
+    width: 30px;
+    display: block;
+    position: absolute;
+    right: -1px;
+    top: 0px;
+    background: transparent url(../img/pencil-edit-grey.svg) no-repeat center;
+    border-left: 1px solid #fecb2e;
+    background-size: 14px; }
+
+.status-btn:hover span {
+  background: #fecb2e url(../img/pencil-edit-black.svg) no-repeat center;
+  background-size: 14px; }
+
+.order-item__products-item {
+  position: relative; }
+
+.full-info--img {
+  box-sizing: border-box;
+  width: 245px;
+  min-height: 200px;
+  background: #fff;
+  padding: 0px;
+  top: -210px;
+  left: 30px; }
+
+.order-item__products-item:hover .full-info--img {
+  display: block; }
+
+.full-info__img {
+  box-sizing: border-box;
+  width: 245px;
+  height: 150px;
+  margin-bottom: 0px !important; }
+
+.full-info__text {
+  color: #000;
+  font-weight: 700;
+  padding: 14px 20px; }
+
+.order-item__payment input,
+.order-item__delivery input {
+  display: none; }
+
+.order-item__paymant-label,
+.order-item__delivery-label {
+  width: 21px;
+  height: 21px;
+  display: block;
+  background: url(../img/payment.png) no-repeat center;
+  cursor: pointer;
+  box-sizing: border-box; }
+  .order-item__paymant-label:hover,
+  .order-item__delivery-label:hover {
+    border: 1px solid #fecb2e;
+    border-radius: 50%; }
+
+.order-item__delivery-label {
+  background: url(../img/delivery.png) no-repeat center; }
+
+.order-item .notification__options-items-wrapper {
+  top: -175px; }
+
+.notification-number {
+  color: #999;
+  font-size: 12px; }
+
+.notification-number--active {
+  background-color: #fecb2e;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 13px;
+  color: #000; }
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-Bold.woff);
+  font-weight: 700;
+  font-style: normal; }
 
 @font-face {
   font-family: 'Gilroy';
@@ -3384,8 +3514,20 @@ span.main-registration__logo-info {
 
 @font-face {
   font-family: 'Gilroy';
-  src: url(../fonts/Gilroy-Light.otf);
+  src: url(../fonts/Gilroy-Light.woff);
   font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-Regular.woff);
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-SemiBold.woff);
+  font-weight: 600;
   font-style: normal; }
 
 @font-face {

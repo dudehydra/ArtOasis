@@ -231,11 +231,11 @@
         <div class="notification-wrapper">
             <nav class="portfolio__nav">
                     <ul class="portfolio__nav-list">
-                        <li><a href="LK-neprod-albom.html" class="portfolio__nav-item portfolio__nav-item--active">Необработанные</a></li>
-                        <li><a href="" class="portfolio__nav-item ">В обработке</a></li>
-                        <li><a href="" class="portfolio__nav-item ">Отправленные</a></li>
-                        <li><a href="" class="portfolio__nav-item">Доставленные</a></li>
-                        <li><a href="" class="portfolio__nav-item">Отмененные</a></li>
+                        <li><a href="LK-neprod-albom.html" class="portfolio__nav-item portfolio__nav-item--active">Необработанные <span class="notification-number notification-number--active">12</span></a> </li>
+                        <li><a href="" class="portfolio__nav-item ">В обработке  <span class="notification-number">12</span></a></li>
+                        <li><a href="" class="portfolio__nav-item ">Отправленные <span class="notification-number">12</span></a></li>
+                        <li><a href="" class="portfolio__nav-item">Доставленные <span class="notification-number">12</span></a></li>
+                        <li><a href="" class="portfolio__nav-item">Отмененные <span class="notification-number">12</span></a></li>
                     </ul>
                 </nav>
             <div class="notification notification--transparent">
@@ -244,7 +244,7 @@
                <input type="checkbox" id="bell__all-check" class="checkbox--orange">
                <label for="bell__all-check" class="label-checkbox--orange label-checkbox--black"></label>
                <span class="notification__options">№</span>
-               <span class="notification__options">Дата заказа</span>
+               <span class="notification__options notification__options--data">Дата заказа</span>
                <span class="notification__options notification__options--big">Позиция</span>
                <span class="notification__options">Сумма (&#8381;)</span>
                <span class="notification__options notification__options--big">Статус</span>
@@ -265,25 +265,35 @@
                        <span class="notification__data">12.10.17</span>
                    </div>
                    <div class="order-item__products order-item__info">
-                       <div>
-                           [14903] Дерево в пустыне M P 120x60 (1 шт)
+                       <div class="order-item__products-item">
+                           [14903] <span>Дерево в пустыне M P 120x60</span> (1 шт)
+                           <div class="full-info full-info--img">
+                               <div class="full-info__img" style="background: url(img/order-pic.png) no-repeat center; background-size: cover"></div>
+                               <div class="full-info__text">Дерево в пустыне М Р 120х60</div>
+                           </div>
                        </div>
-                       <div>
-                           [14903] Дерево в пустыне M P 120x60 (1 шт)
+                       <div class="order-item__products-item">
+                           [14903] <span>Дерево в пустыне M P 120x60</span> (1 шт)
+                           <div class="full-info full-info--img">
+                               <div class="full-info__img" style="background: url(img/order-pic.png) no-repeat center; background-size: cover"></div>
+                               <div class="full-info__text">Дерево в пустыне М Р 120х60</div>
+                           </div>
                        </div>
                    </div>
                     <div class="order-item_amount order-item__info">
                         1500
                     </div>
                     <div class="order-item__status order-item__info">
-                        <button>Необработанные</button>
+                        <button class="status-btn">Необработанные <span></span></button>
                     </div>
                     <div class="order-item__payment order-item__info">
-                        <input type="checkbox">
+                        <label for="order-item__payment-checkbox" class="order-item__paymant-label"></label>
+                        <input type="checkbox" id="order-item__payment-checkbox">
                     </div>
                     
                     <div class="order-item__delivery order-item__info">
-                        <input type="checkbox">
+                        <label for="order-item__delivery-checkbox" class="order-item__delivery-label"></label>
+                        <input type="checkbox" class="order-item__delivery-checkbox">
                     </div>
 
                    <div class="notification__item-options order-item__info">
