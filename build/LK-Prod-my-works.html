@@ -21,6 +21,301 @@
 
 </head>
 <body>
+    <div class="album-popup album-edit-popup product-add white-popup mfp-hide" id="product-popups__open">
+    <div class="product-add__header">
+        <h3>Новый товар</h3>
+    </div>
+
+    <form action="" id="product-add__forms">
+        <div class="product-add__control-wrapper">
+            <span class="product-add__new-photo product-add__new-photo--active">
+                Загрузить новое фото
+            </span>
+            <span class="product-add__album-photo">
+                Выбрать фото из альбомов
+            </span>
+        </div>
+        <div class="grey-wrapper">
+            <div class="box has-advanced-upload drop-zone__wrapper">
+                                <div class="box__input">
+                                    <input type="file" name="files[]" id="file" class="box__file" data-multiple-caption="{count} files selected" multiple="">
+                                    <label for="file" class="btn btn-drop">Выбрать обложку</label> <span class="box__dragndrop"> <span class="grey">или</span> Перетащите её сюда</span>.
+                                    <button type="submit" class="box__button">Upload</button>
+                                    <p>Требования к загружаемым изображениям:<br>
+                                    Формат JPG, максимальный размер файлы - 3 Мб.<br>
+                                    Для эффективного уменьшения размера файла без визуальных потерь рекомендуем использовать следующие<br> бесплатные онлайн-инструменты:
+                                   <ul>
+                                       <li>TinyJPG.com - (максимальный размер файла 5Мб)</li>
+                                       <li>Convertimage - (Без ограничений, ручная настройка уровня сжатия, рекомендуется 70)  </li>
+                                       <li>JPEG-Optimizer.com - (Без ограничений, ручная настройка уровня сжатия, рекомендуется 70) </li>
+                                       <li>Compressor.io - (максимальный размер файла 10Мб)</li>
+                                       <li>Kraken.io - (ограничение бесплатной версии: размер файла до 1мб)</li>
+                                   </ul></p>
+                                </div>
+                                <input type="hidden" name="ajax" value="1">
+                            <input type="hidden" name="ajax" value="1">
+            </div>
+            <div class="album-popups__img-item">
+                <div class="album-popups__img-wrapper ">
+                    <div class="loader"></div>
+                </div>
+                <div class="album-popups__img-info">
+                    <span class="album-popups__img-name">mansnothot.jpg</span>
+                    <span class="album-popups__img-weight">1.4 мб</span>
+                </div>
+            </div>
+            <div class="album-popups__img-item">
+                <div class="album-popups__img-wrapper">
+                    
+                </div>
+                <div class="album-popups__img-info">
+                    <span class="album-popups__img-name">mansnothot.jpg</span>
+                    <span class="album-popups__img-weight">1.4 мб</span>
+                </div>
+            </div>
+        </div>
+        <div class="grey-wrapper">
+            <div class="album-photo ">
+                <div class="album-photo__header album-photo__header--active">
+                    <span class="album-photo__album-name">Шедевры Государственной Третьяковской галереи</span>
+                    <span class="album-photo__album-date">12 фотографий. 12.07.17</span>
+                </div>
+                <div class="album-photo__container">
+                    <input type="checkbox" id="album-photo__item-1" class="checkbox--orange">
+                    <label for="album-photo__item-1" class="album-photo__label">
+                        <div class="album-popups__img-item">
+                            <div class="album-popups__img-wrapper">
+                                
+                            </div>
+                            <div class="album-popups__img-info">
+                                <span class="album-popups__img-name">mansnothot.jpg</span>
+                                <span class="album-popups__img-weight">1.4 мб</span>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="checkbox" id="album-photo__item-2" class="checkbox--orange">
+                    <label for="album-photo__item-2" class="album-photo__label">
+                        <div class="album-popups__img-item">
+                            <div class="album-popups__img-wrapper">
+                                
+                            </div>
+                            <div class="album-popups__img-info">
+                                <span class="album-popups__img-name">mansnothot.jpg</span>
+                                <span class="album-popups__img-weight">1.4 мб</span>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="checkbox" id="album-photo__item-3" class="checkbox--orange">
+                    <label for="album-photo__item-3" class="album-photo__label">
+                        <div class="album-popups__img-item">
+                            <div class="album-popups__img-wrapper">
+                                
+                            </div>
+                            <div class="album-popups__img-info">
+                                <span class="album-popups__img-name">mansnothot.jpg</span>
+                                <span class="album-popups__img-weight">1.4 мб</span>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="checkbox" id="album-photo__item-4" class="checkbox--orange">
+                    <label for="album-photo__item-4" class="album-photo__label">
+                        <div class="album-popups__img-item">
+                            <div class="album-popups__img-wrapper">
+                                
+                            </div>
+                            <div class="album-popups__img-info">
+                                <span class="album-popups__img-name">mansnothot.jpg</span>
+                                <span class="album-popups__img-weight">1.4 мб</span>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="checkbox" id="album-photo__item-5" class="checkbox--orange">
+                    <label for="album-photo__item-5" class="album-photo__label">
+                        <div class="album-popups__img-item">
+                            <div class="album-popups__img-wrapper">
+                                
+                            </div>
+                            <div class="album-popups__img-info">
+                                <span class="album-popups__img-name">mansnothot.jpg</span>
+                                <span class="album-popups__img-weight">1.4 мб</span>
+                            </div>
+                        </div>
+                    </label>
+                    
+                </div>
+            </div>
+
+            <div class="album-photo">
+                <div class="album-photo__header album-photo__header--active">
+                    <span class="album-photo__album-name">Шедевры Государственной Третьяковской галереи</span>
+                    <span class="album-photo__album-date">12 фотографий. 12.07.17</span>
+                </div>
+                <div class="album-photo__container">
+                    <input type="checkbox" id="album-photo__item-1" class="checkbox--orange">
+                    <label for="album-photo__item-1" class="album-photo__label">
+                        <div class="album-popups__img-item">
+                            <div class="album-popups__img-wrapper">
+                                
+                            </div>
+                            <div class="album-popups__img-info">
+                                <span class="album-popups__img-name">mansnothot.jpg</span>
+                                <span class="album-popups__img-weight">1.4 мб</span>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="checkbox" id="album-photo__item-2" class="checkbox--orange">
+                    <label for="album-photo__item-2" class="album-photo__label">
+                        <div class="album-popups__img-item">
+                            <div class="album-popups__img-wrapper">
+                                
+                            </div>
+                            <div class="album-popups__img-info">
+                                <span class="album-popups__img-name">mansnothot.jpg</span>
+                                <span class="album-popups__img-weight">1.4 мб</span>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="checkbox" id="album-photo__item-3" class="checkbox--orange">
+                    <label for="album-photo__item-3" class="album-photo__label">
+                        <div class="album-popups__img-item">
+                            <div class="album-popups__img-wrapper">
+                                
+                            </div>
+                            <div class="album-popups__img-info">
+                                <span class="album-popups__img-name">mansnothot.jpg</span>
+                                <span class="album-popups__img-weight">1.4 мб</span>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="checkbox" id="album-photo__item-4" class="checkbox--orange">
+                    <label for="album-photo__item-4" class="album-photo__label">
+                        <div class="album-popups__img-item">
+                            <div class="album-popups__img-wrapper">
+                                
+                            </div>
+                            <div class="album-popups__img-info">
+                                <span class="album-popups__img-name">mansnothot.jpg</span>
+                                <span class="album-popups__img-weight">1.4 мб</span>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="checkbox" id="album-photo__item-5" class="checkbox--orange">
+                    <label for="album-photo__item-5" class="album-photo__label">
+                        <div class="album-popups__img-item">
+                            <div class="album-popups__img-wrapper">
+                                
+                            </div>
+                            <div class="album-popups__img-info">
+                                <span class="album-popups__img-name">mansnothot.jpg</span>
+                                <span class="album-popups__img-weight">1.4 мб</span>
+                            </div>
+                        </div>
+                    </label>
+                    
+                </div>
+            </div>
+
+            <div class="album-photo ">
+                <div class="album-photo__header album-photo__header--active">
+                    <span class="album-photo__album-name">Шедевры Государственной Третьяковской галереи</span>
+                    <span class="album-photo__album-date">12 фотографий. 12.07.17</span>
+                </div>
+                <div class="album-photo__container">
+                    <input type="checkbox" id="album-photo__item-1" class="checkbox--orange">
+                    <label for="album-photo__item-1" class="album-photo__label">
+                        <div class="album-popups__img-item">
+                            <div class="album-popups__img-wrapper">
+                                
+                            </div>
+                            <div class="album-popups__img-info">
+                                <span class="album-popups__img-name">mansnothot.jpg</span>
+                                <span class="album-popups__img-weight">1.4 мб</span>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="checkbox" id="album-photo__item-2" class="checkbox--orange">
+                    <label for="album-photo__item-2" class="album-photo__label">
+                        <div class="album-popups__img-item">
+                            <div class="album-popups__img-wrapper">
+                                
+                            </div>
+                            <div class="album-popups__img-info">
+                                <span class="album-popups__img-name">mansnothot.jpg</span>
+                                <span class="album-popups__img-weight">1.4 мб</span>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="checkbox" id="album-photo__item-3" class="checkbox--orange">
+                    <label for="album-photo__item-3" class="album-photo__label">
+                        <div class="album-popups__img-item">
+                            <div class="album-popups__img-wrapper">
+                                
+                            </div>
+                            <div class="album-popups__img-info">
+                                <span class="album-popups__img-name">mansnothot.jpg</span>
+                                <span class="album-popups__img-weight">1.4 мб</span>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="checkbox" id="album-photo__item-4" class="checkbox--orange">
+                    <label for="album-photo__item-4" class="album-photo__label">
+                        <div class="album-popups__img-item">
+                            <div class="album-popups__img-wrapper">
+                                
+                            </div>
+                            <div class="album-popups__img-info">
+                                <span class="album-popups__img-name">mansnothot.jpg</span>
+                                <span class="album-popups__img-weight">1.4 мб</span>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="checkbox" id="album-photo__item-5" class="checkbox--orange">
+                    <label for="album-photo__item-5" class="album-photo__label">
+                        <div class="album-popups__img-item">
+                            <div class="album-popups__img-wrapper">
+                                
+                            </div>
+                            <div class="album-popups__img-info">
+                                <span class="album-popups__img-name">mansnothot.jpg</span>
+                                <span class="album-popups__img-weight">1.4 мб</span>
+                            </div>
+                        </div>
+                    </label>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="product-add__description-wrapper">
+            <label for="new-album-name-popup" class="default-label">Название альбома <span class="required">*</span></label>
+            <input type="text" required="" id="new-album-name-popup" class="registration-field">
+            <span class="product-add__description">Покупатели ждут от вас уникальное и привлекательное название.</span> 
+            <label for="" class="default-label">Описание<span class="required">*</span></label>
+            <textarea name="" id="" cols="30" rows="4" form="product-add__forms" placeholder="Оставьте комментарий к альбому"></textarea>
+            <span class="product-add__description">Подробно опишите все детали товара, его особенности и отличия.</span>
+            <label for="product-name-popup" class="default-label">Категории <span class="required" >*</span></label>
+            <input type="text" required="" id="product-name-popup" class="registration-field">
+            <span class="product-add__description">Выберите категорию, к которой относится ваш товар.</span>
+            <label for="product-amount-popup" class="default-label">Цена <span class="required" >*</span></label>
+            <div class="product-add__amount-wrapper">
+                <input type="number" required="" id="product-amount-popup" class="registration-field registration-field--short">(&#8381;)
+                <div class="input-number">
+                    <button class="input-number__remove" data-for="id-1" data-event="sub">
+                    </button>
+                    <input id="id-1" type="number" min="0" name="count" value="1" step="1">
+                    <button class="input-number__add" data-for="id-1" data-event="add">
+                    </button>
+                </div>
+                <input type="checkbox" id="amount" class="checkbox--orange">
+                <label for="amount" class="label-checkbox--orange">Неограничено</label>
+            </div>
+            <div class="btn-album__wrapper">
+                <input type="submit" class="btn btn-orange btn-album" value="Добавить товар">
+            </div>
+        </div> 
+    </form>
+</div>
+
 <div class="registration-type-popup white-popup mfp-hide" id="registration-type-popup__open">
     <div class="registration-type-popup__header">
         <h3>Хочу зарегистрироваться как</h3>
@@ -203,7 +498,7 @@
 </header>
 
 <main class="main-grey">
-    <div class="personal personal--nowrap">
+    <div class="personal personal--nowrap personal--justify">
     	<div class="personal__profile">
     		<div class="personal__profile-header">
                 <div class="personal__profile-logo">
@@ -219,240 +514,131 @@
                  </div>
             </div>
             <ul class="personal__menu">
-                <li class="personal__portfolio">
+            	<li class="personal__portfolio">
                     <a href="LK-neprod-albom.html" class="personal__menu-item">Портфолио</a>
-                </li>
-                <li><a href="LK-neprod-message.html" class="personal__menu-item personal__message ">Сообщение</a></li>
-                <li><a href="" class="personal__menu-item personal__notifications personal__menu-item--active">Оповещения</a></li>
-                <li><a href="LK-neprod-settings.html" class="personal__menu-item personal__settings">Настройки</a></li>
-                <li><a href="LK-neprod-settings.html" class="personal__menu-item personal__orders">Заказы</a></li>
-                <li><a href="LK-neprod-settings.html" class=" personal__menu-item personal__my-works
+            	</li>
+            	<li><a href="LK-neprod-message.html" class="personal__menu-item personal__message ">Сообщение</a></li>
+            	<li><a href="" class="personal__menu-item personal__notifications ">Оповещения</a></li>
+            	<li><a href="LK-neprod-settings.html" class="personal__menu-item personal__settings">Настройки</a></li>
+                <li><a href="LK-neprod-settings.html" class="personal__menu-item personal__orders ">Заказы</a></li>
+                <li><a href="LK-neprod-settings.html" class="personal__menu-item--active personal__menu-item personal__my-works
                 ">Мои товары</a></li>
             </ul>
     	</div>
-        <div class="notification-wrapper">
-            <div class="notification notification--transparent notification--flex">
-            <div class="notificatio__list-wrapper">
-                <h3 class="notification__title">Необработанные</h3>
-                <div class="notification__header notification__header--small">
-                  <span class="notification__options notification__options--number">№</span>
-                  <span class="notification__options notification__options--amount">Сумма (₽)</span>
-                  <span class="notification__options notification__options--status">Статус</span>
-                  <span class="notification__options">Доставлен</span>
-               </div>
-                          <ul class="notification__main notification__main--small">
-               <li class="notification__item order-item notification__item--justify">
-                   <div class="order-item__order-number order-item__info">
-                       <div class="order-item__number-wrapper">
-                           <span class="order-item__number"><a href="">1201</a></span>
-                       </div>
-                   </div>
-                    <div class="order-item_amount order-item__info">
-                        1500
-                    </div>
-                    <div class="order-item__status order-item__info">
-                        <button class="status-btn">Необработанные <span></span></button>
-                        
-                    </div>
-                    <div class="order-item__data-wrapper order-item__info">
-                       <span class="notification__data">12.10.17</span>
-                   </div>
-               </li>
-               <li class="notification__item order-item notification__item--justify">
-                   <div class="order-item__order-number order-item__info">
-                       <div class="order-item__number-wrapper">
-                           <span class="order-item__number"><a href="">1201</a></span>
-                       </div>
-                   </div>
-                    <div class="order-item_amount order-item__info">
-                        1500
-                    </div>
-                    <div class="order-item__status order-item__info">
-                        <button class="status-btn">В обработке<span></span></button>
-                        
-                    </div>
-                    <div class="order-item__data-wrapper order-item__info">
-                       <span class="notification__data">12.10.17</span>
-                   </div>
-               </li>
-               <li class="notification__item order-item notification__item--justify">
-                   <div class="order-item__order-number order-item__info">
-                       <div class="order-item__number-wrapper">
-                           <span class="order-item__number"><a href="">1201</a></span>
-                       </div>
-                   </div>
-                    <div class="order-item_amount order-item__info">
-                        1500
-                    </div>
-                    <div class="order-item__status order-item__info">
-                        <button class="status-btn">Отправлен<span></span></button>
-                        
-                    </div>
-                    <div class="order-item__data-wrapper order-item__info">
-                       <span class="notification__data">12.10.17</span>
-                   </div>
-               </li>
-               <li class="notification__item order-item notification__item--justify">
-                   <div class="order-item__order-number order-item__info">
-                       <div class="order-item__number-wrapper">
-                           <span class="order-item__number"><a href="">1201</a></span>
-                       </div>
-                   </div>
-                    <div class="order-item_amount order-item__info">
-                        1500
-                    </div>
-                    <div class="order-item__status order-item__info">
-                        <button class="status-btn status-btn--disabled">Доставлен</button>
-                        
-                    </div>
-                    <div class="order-item__data-wrapper order-item__info">
-                       <span class="notification__data">12.10.17</span>
-                   </div>
-               </li>
-                   <button class="notification__item-show-btn">
-                       Показать все
-                   </button>
-             </ul>
+        <div class="notification-wrapper my-works">
+           <div class="notification notification--transparent">
+            <div class="my-works__header">
+                <h3 class="notification__title">Мои товары</h3>
+                <button type="button" class="btn btn-portfolio" id="add_album-btn" href="#product-popups__open">Добавить товар</button>
             </div>
-                  <div class="help-yandex-wrapper">
-                <form action="">
-                    <h3>Помощь</h3>
-                    <div class="help-yandex">
-                        <img src="img/yandex-help.png" alt="">
-                        <div class="help-yandex__account-wrapper">
-                            <label for=help-yandex"">Яндекс кошелек</label>
-                            <input type="number" required="" id="help-yandex" class="registration-field">
-                            <input type="submit" class="btn-default btn-default--just" value="Начать получать помощь">
-                        </div>
+           
+           <div class="notification__header">
+               <input type="checkbox" id="bell__all-check" class="checkbox--orange">
+               <label for="bell__all-check" class="label-checkbox--orange label-checkbox--black"></label>
+               <span class="notification__options notification__options--photo">фото</span>
+               <span class="notification__options notification__options--name">Название</span>
+               <span class="notification__options notification__options--category">категория</span>
+               <span class="notification__options notification__options--amount">цена (&#8381;)</span>
+               <span class="notification__options notification__options--number">количество</span>
+           </div>
+           <ul class="notification__main">
+               <li class="notification__item order-item">
+                   <input type="checkbox" id="notification_item" class="checkbox--orange">
+                   <label for="notification_item" class="label-checkbox--orange"></label>
+                   <div class="order-item__order-number order-item__info">
+                       <div class="order-item__photo">
+                           
+                       </div>
+                       
+                   </div>
+                   <div class="order-item__info">
+                       <div class="order-item__name">
+                           Постер «Цветочный натюрморт»            
+                       </div>
+                   </div>
+                    <div class="order-item_category">
+                        Рекламная и полиграфическая продукция Шитьё, цветоделие, патчворк, квилтинг
+                        Книги, иллюстрации
                     </div>
-                </form>
-                
-            </div>
-            
+                    <div class="order-item_amount order-item__info">
+                        2950
+                    </div>
+                    <div class="order-item__number order-item__info">
+                        1
+                    </div>
+                    
+                   <div class="notification__item-options ">
+                    <div class="notification__options-items-wrapper">
+                        <ul>
+                           <li class="notification__options-answer">подробная информация</li>
+                           <li class="notification__options-edit">Редактировать заказ</li>
+                           <li class="notification__options-delete">Удалить заказ</li>
+                       </ul>
+                    </div>
+                       
+                   </div>
+               </li>
+           </ul>
+           <div class="pagination">
+                           <ul>
+                               <li>
+                                   <button class="pagination-btn pagination-btn--prev pagination-btn--first">
+                                       
+                                   </button> 
+                               </li>
+                               <li>
+                                   <button class="pagination-btn pagination-btn--prev">
+                                       
+                                   </button> 
+                               </li>
+                               <li>
+                                   <a class="pagination__page pagination__page--active">
+                                       1
+                                   </a>
+                               </li>
+                               <li>
+                                   <a class="pagination__page">
+                                       2
+                                   </a>
+                               </li>
+                               <li>
+                                   <a class="pagination__page">
+                                       3
+                                   </a>
+                               </li>
+                               <li>
+                                   <a class="pagination__page pagination__page--dots">
+                                       
+                                   </a>
+                               </li>
+                               <li>
+                                   <a class="pagination__page">
+                                       7
+                                   </a>
+                               </li>
+                               <li>
+                                   <a class="pagination__page">
+                                       8
+                                   </a>
+                               </li>
+                               <li>
+                                   <a class="pagination__page">
+                                      9 
+                                   </a>
+                               </li>
+                               <li>
+                                   <button class="pagination-btn pagination-btn--next">
+                                       
+                                   </button>
+                               </li>
+                               <li>
+                                   <button class="pagination-btn pagination-btn--next pagination-btn--last" >
+                                       
+                                   </button>
+                               </li>
+                           </ul>
+                       </div>
 
-            <div class="notificatio__bottom">
-             <div class="subscribers">
-            <h3>Новые подписчики</h3>
-            <ul class="subscribers__list-wrapper">
-                <li class="subscribers__item">
-                    <div class="subscribers__item-wrapper">
-                        <img src="img/nikit.png" alt="">
-                    </div>
-                    <div class="subscribers__name-wrapper">
-                           <span class="subscribers__name">Никита Парфенов</span>
-                           <span class="subscribers__data">21:22, 03.06.17</span>
-                    </div>
-                </li>
-                <li class="subscribers__item">
-                    <div class="subscribers__item-wrapper">
-                        <img src="img/nikit.png" alt="">
-                    </div>
-                    <div class="subscribers__name-wrapper">
-                           <span class="subscribers__name">Никита Парфенов</span>
-                           <span class="subscribers__data">21:22, 03.06.17</span>
-                    </div>
-                </li>
-                <li class="subscribers__item">
-                    <div class="subscribers__item-wrapper">
-                        <img src="img/nikit.png" alt="">
-                    </div>
-                    <div class="subscribers__name-wrapper">
-                           <span class="subscribers__name">Михаил
-                            Оттовордемгентшенфельд</span>
-                           <span class="subscribers__data">21:22, 03.06.17</span>
-                    </div>
-                </li>
-                <li class="subscribers__item">
-                    <div class="subscribers__item-wrapper">
-                        <img src="img/nikit.png" alt="">
-                    </div>
-                    <div class="subscribers__name-wrapper">
-                           <span class="subscribers__name">Никита Парфенов</span>
-                           <span class="subscribers__data">21:22, 03.06.17</span>
-                    </div>
-                </li>
-                <li class="subscribers__item">
-                    <div class="subscribers__item-wrapper">
-                        <img src="img/nikit.png" alt="">
-                    </div>
-                    <div class="subscribers__name-wrapper">
-                           <span class="subscribers__name">Никита Парфенов</span>
-                           <span class="subscribers__data">21:22, 03.06.17</span>
-                    </div>
-                </li>
-                <li class="subscribers__item">
-                    <div class="subscribers__item-wrapper">
-                        <img src="img/nikit.png" alt="">
-                    </div>
-                    <div class="subscribers__name-wrapper">
-                           <span class="subscribers__name">Никита Парфенов</span>
-                           <span class="subscribers__data">21:22, 03.06.17</span>
-                    </div>
-                </li>
-                <li class="subscribers__item">
-                    <div class="subscribers__item-wrapper">
-                        <img src="img/nikit.png" alt="">
-                    </div>
-                    <div class="subscribers__name-wrapper">
-                           <span class="subscribers__name">Никита Парфенов</span>
-                           <span class="subscribers__data">21:22, 03.06.17</span>
-                    </div>
-                </li>
-            </ul>
-        </div>
-            <div class="last-reviews">
-                <h3>Последние отзывы</h3>
-                <ul class="reviews-list">
-                    <li class="reviews-item">
-                        <p>Разнообразный и богатый опыт консультация с широким активом требуют определения и уточнения систем массового участия. Идейные соображения высшего порядка, а также новая модель организационной деятельности позволяет выполнять важные задания по разработке форм развития.</p>
-                        <span class="reviews-author">Никита Парфенов</span>
-                        <span class="reviews-data">21:22, 03.06.17</span>
-                    </li>
-                    <li class="reviews-item">
-                        <p>Разнообразный и богатый опыт консультация с широким активом требуют определения и уточнения систем массового участия. Идейные соображения высшего порядка, а также новая модель организационной деятельности позволяет выполнять важные задания по разработке форм развития.</p>
-                        <span class="reviews-author">Никита Парфенов</span>
-                        <span class="reviews-data">21:22, 03.06.17</span>
-                    </li>
-                    <li class="reviews-item">
-                        <p>Разнообразный и богатый опыт консультация с широким активом требуют определения и уточнения систем массового участия. Идейные соображения высшего порядка, а также новая модель организационной деятельности позволяет выполнять важные задания по разработке форм развития.</p>
-                        <span class="reviews-author">Никита Парфенов</span>
-                        <span class="reviews-data">21:22, 03.06.17</span>
-                    <li class="reviews-item">
-                        <p>Разнообразный и богатый опыт консультация с широким активом требуют определения и уточнения систем массового участия. Идейные соображения высшего порядка, а также новая модель организационной деятельности позволяет выполнять важные задания по разработке форм развития.</p>
-                        <span class="reviews-author">Никита Парфенов</span>
-                        <span class="reviews-data">21:22, 03.06.17</span>
-                    </li>
-                    </li>
-                </ul>
-                
-            </div>
-            <div class="last-reviews">
-                <h3>Последние комментарии</h3>
-                <ul class="reviews-list">
-                    <li class="reviews-item">
-                        <p>Разнообразный и богатый опыт консультация с широким активом требуют определения и уточнения систем массового участия. Идейные соображения высшего порядка, а также новая модель организационной деятельности позволяет выполнять важные задания по разработке форм развития.</p>
-                        <span class="reviews-author">Никита Парфенов,Выставка ЮвелирЭкспо Казань</span>
-                        <span class="reviews-data">21:22, 03.06.17</span>
-                    </li>
-                    <li class="reviews-item">
-                        <p>Разнообразный и богатый опыт консультация с широким активом требуют определения и уточнения систем массового участия. Идейные соображения высшего порядка, а также новая модель организационной деятельности позволяет выполнять важные задания по разработке форм развития.</p>
-                        <span class="reviews-author">Никита Парфенов,Выставка ЮвелирЭкспо Казань</span>
-                        <span class="reviews-data">21:22, 03.06.17</span>
-                    </li>
-                    <li class="reviews-item">
-                        <p>Разнообразный и богатый опыт консультация с широким активом требуют определения и уточнения систем массового участия. Идейные соображения высшего порядка, а также новая модель организационной деятельности позволяет выполнять важные задания по разработке форм развития.</p>
-                        <span class="reviews-author">Никита Парфенов,Выставка ЮвелирЭкспо Казань</span>
-                        <span class="reviews-data">21:22, 03.06.17</span>
-                    <li class="reviews-item">
-                        <p>Разнообразный и богатый опыт консультация с широким активом требуют определения и уточнения систем массового участия. Идейные соображения высшего порядка, а также новая модель организационной деятельности позволяет выполнять важные задания по разработке форм развития.</p>
-                        <span class="reviews-author">Никита Парфенов,Выставка ЮвелирЭкспо Казань</span>
-                        <span class="reviews-data">21:22, 03.06.17</span>
-                    </li>
-                    </li>
-                </ul>
-                
-            </div>
-        </div>
         </div>
         </div>
         

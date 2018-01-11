@@ -219,84 +219,118 @@
                  </div>
             </div>
             <ul class="personal__menu">
-            	<li class="personal__portfolio">
+                <li class="personal__portfolio">
                     <a href="LK-neprod-albom.html" class="personal__menu-item">Портфолио</a>
-            	</li>
-            	<li><a href="LK-neprod-message.html" class="personal__menu-item personal__message ">Сообщение</a></li>
-            	<li><a href="" class="personal__menu-item personal__notifications ">Оповещения</a></li>
-            	<li><a href="LK-neprod-settings.html" class="personal__menu-item personal__settings">Настройки</a></li>
-                <li><a href="LK-neprod-settings.html" class="personal__menu-item personal__orders personal__menu-item--active">Заказы</a></li>
+                </li>
+                <li><a href="LK-neprod-message.html" class="personal__menu-item personal__message ">Сообщение</a></li>
+                <li><a href="" class="personal__menu-item personal__notifications personal__menu-item--active">Оповещения</a></li>
+                <li><a href="LK-neprod-settings.html" class="personal__menu-item personal__settings">Настройки</a></li>
+                <li><a href="LK-neprod-settings.html" class="personal__menu-item personal__orders">Заказы</a></li>
+                <li><a href="LK-neprod-settings.html" class=" personal__menu-item personal__my-works
+                ">Мои товары</a></li>
             </ul>
     	</div>
         <div class="notification-wrapper">
-            <nav class="portfolio__nav">
-                    <ul class="portfolio__nav-list">
-                        <li><a href="LK-neprod-albom.html" class="portfolio__nav-item portfolio__nav-item--active">Необработанные</a></li>
-                        <li><a href="" class="portfolio__nav-item ">В обработке</a></li>
-                        <li><a href="" class="portfolio__nav-item ">Отправленные</a></li>
-                        <li><a href="" class="portfolio__nav-item">Доставленные</a></li>
-                        <li><a href="" class="portfolio__nav-item">Отмененные</a></li>
-                    </ul>
-                </nav>
-            <div class="notification">
-           <h3>Необработанные</h3>
-           <div class="notification__header">
-               <input type="checkbox" id="bell__all-check" class="checkbox--orange">
-               <label for="bell__all-check" class="label-checkbox--orange label-checkbox--black"></label>
-               <span class="notification__options">№</span>
-               <span class="notification__options">Дата заказа</span>
-               <span class="notification__options notification__options--big">Позиция</span>
-               <span class="notification__options">Сумма (&#8381;)</span>
-               <span class="notification__options notification__options--big">Статус</span>
-               <span class="notification__options">Опалата</span>
-               <span class="notification__options">Доставка</span>
-           </div>
-           <ul class="notification__main">
-               <li class="notification__item">
-                   <input type="checkbox" id="notification_item" class="checkbox--orange">
-                   <label for="notification_item" class="label-checkbox--orange"></label>
-                   <div class="notification__author-info">
-                       <div class="notification__number-wrapper">
-                           <span class="notification__number">1201</span>
-                       </div>
-                       
-                   </div>
-                   <div class="notification__data-wrapper">
-                       <span class="notification__data">12.10.17</span>
-                   </div>
-                   <div class="notification__product-item">
-                       <div>
-                           [14903] Дерево в пустыне M P 120x60 (1 шт)
-                       </div>
-                       <div>
-                           [14903] Дерево в пустыне M P 120x60 (1 шт)
+            <div class="notification notification--transparent notification--flex">
+            <div class="notificatio__list-wrapper">
+                <h3 class="notification__title">Необработанные</h3>
+                <div class="notification__header notification__header--small">
+                  <span class="notification__options notification__options--number">№</span>
+                  <span class="notification__options notification__options--amount">Сумма (₽)</span>
+                  <span class="notification__options notification__options--status">Статус</span>
+                  <span class="notification__options">Доставлен</span>
+               </div>
+                          <ul class="notification__main notification__main--small">
+               <li class="notification__item order-item notification__item--justify">
+                   <div class="order-item__order-number order-item__info">
+                       <div class="order-item__number-wrapper">
+                           <span class="order-item__number"><a href="">1201</a></span>
                        </div>
                    </div>
-                    <div class="notification__amount">
+                    <div class="order-item_amount order-item__info">
                         1500
                     </div>
-                    <div class="notification__status">
-                        <button>Необработанные</button>
-                    </div><div class="notification__payment">
-                        <input type="checkbox">
+                    <div class="order-item__status order-item__info">
+                        <button class="status-btn">Необработанные <span></span></button>
+                        
                     </div>
-                    </div><div class="notification__delivery">
-                        <input type="checkbox">
-                    </div>
-
-                   <div class="notification__item-options">
-                    <div class="notification__options-items-wrapper">
-                        <ul>
-                           <li class="notification__options-answer">подробная информация</li>
-                           <li class="notification__options-edit">Редактировать заказ</li>
-                           <li class="notification__options-delete">Удалить заказ</li>
-                       </ul>
-                    </div>
-                       
+                    <div class="order-item__data-wrapper order-item__info">
+                       <span class="notification__data">12.10.17</span>
                    </div>
                </li>
-           </ul>
-           <div class="notificatio__bottom">
+               <li class="notification__item order-item notification__item--justify">
+                   <div class="order-item__order-number order-item__info">
+                       <div class="order-item__number-wrapper">
+                           <span class="order-item__number"><a href="">1201</a></span>
+                       </div>
+                   </div>
+                    <div class="order-item_amount order-item__info">
+                        1500
+                    </div>
+                    <div class="order-item__status order-item__info">
+                        <button class="status-btn">В обработке<span></span></button>
+                        
+                    </div>
+                    <div class="order-item__data-wrapper order-item__info">
+                       <span class="notification__data">12.10.17</span>
+                   </div>
+               </li>
+               <li class="notification__item order-item notification__item--justify">
+                   <div class="order-item__order-number order-item__info">
+                       <div class="order-item__number-wrapper">
+                           <span class="order-item__number"><a href="">1201</a></span>
+                       </div>
+                   </div>
+                    <div class="order-item_amount order-item__info">
+                        1500
+                    </div>
+                    <div class="order-item__status order-item__info">
+                        <button class="status-btn">Отправлен<span></span></button>
+                        
+                    </div>
+                    <div class="order-item__data-wrapper order-item__info">
+                       <span class="notification__data">12.10.17</span>
+                   </div>
+               </li>
+               <li class="notification__item order-item notification__item--justify">
+                   <div class="order-item__order-number order-item__info">
+                       <div class="order-item__number-wrapper">
+                           <span class="order-item__number"><a href="">1201</a></span>
+                       </div>
+                   </div>
+                    <div class="order-item_amount order-item__info">
+                        1500
+                    </div>
+                    <div class="order-item__status order-item__info">
+                        <button class="status-btn status-btn--disabled">Доставлен</button>
+                        
+                    </div>
+                    <div class="order-item__data-wrapper order-item__info">
+                       <span class="notification__data">12.10.17</span>
+                   </div>
+               </li>
+                   <button class="notification__item-show-btn">
+                       Показать все
+                   </button>
+             </ul>
+            </div>
+                  <div class="help-yandex-wrapper">
+                <form action="">
+                    <h3>Помощь</h3>
+                    <div class="help-yandex">
+                        <img src="img/yandex-help.png" alt="">
+                        <div class="help-yandex__account-wrapper">
+                            <label for=help-yandex"">Яндекс кошелек</label>
+                            <input type="number" required="" id="help-yandex" class="registration-field">
+                            <input type="submit" class="btn-default btn-default--just" value="Начать получать помощь">
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
+            
+
+            <div class="notificatio__bottom">
              <div class="subscribers">
             <h3>Новые подписчики</h3>
             <ul class="subscribers__list-wrapper">
@@ -392,18 +426,30 @@
                 </ul>
                 
             </div>
-            <div class="help-yandex-wrapper">
-                <form action="">
-                    <h3>Помощь</h3>
-                    <div class="help-yandex">
-                        <img src="img/yandex-help.png" alt="">
-                        <div class="help-yandex__account-wrapper">
-                            <label for=help-yandex"">Яндекс кошелек</label>
-                            <input type="number" required="" id="help-yandex" class="registration-field">
-                            <input type="submit" class="btn-default btn-default--just" value="Начать получать помощь">
-                        </div>
-                    </div>
-                </form>
+            <div class="last-reviews">
+                <h3>Последние комментарии</h3>
+                <ul class="reviews-list">
+                    <li class="reviews-item">
+                        <p>Разнообразный и богатый опыт консультация с широким активом требуют определения и уточнения систем массового участия. Идейные соображения высшего порядка, а также новая модель организационной деятельности позволяет выполнять важные задания по разработке форм развития.</p>
+                        <span class="reviews-author">Никита Парфенов,Выставка ЮвелирЭкспо Казань</span>
+                        <span class="reviews-data">21:22, 03.06.17</span>
+                    </li>
+                    <li class="reviews-item">
+                        <p>Разнообразный и богатый опыт консультация с широким активом требуют определения и уточнения систем массового участия. Идейные соображения высшего порядка, а также новая модель организационной деятельности позволяет выполнять важные задания по разработке форм развития.</p>
+                        <span class="reviews-author">Никита Парфенов,Выставка ЮвелирЭкспо Казань</span>
+                        <span class="reviews-data">21:22, 03.06.17</span>
+                    </li>
+                    <li class="reviews-item">
+                        <p>Разнообразный и богатый опыт консультация с широким активом требуют определения и уточнения систем массового участия. Идейные соображения высшего порядка, а также новая модель организационной деятельности позволяет выполнять важные задания по разработке форм развития.</p>
+                        <span class="reviews-author">Никита Парфенов,Выставка ЮвелирЭкспо Казань</span>
+                        <span class="reviews-data">21:22, 03.06.17</span>
+                    <li class="reviews-item">
+                        <p>Разнообразный и богатый опыт консультация с широким активом требуют определения и уточнения систем массового участия. Идейные соображения высшего порядка, а также новая модель организационной деятельности позволяет выполнять важные задания по разработке форм развития.</p>
+                        <span class="reviews-author">Никита Парфенов,Выставка ЮвелирЭкспо Казань</span>
+                        <span class="reviews-data">21:22, 03.06.17</span>
+                    </li>
+                    </li>
+                </ul>
                 
             </div>
         </div>

@@ -1,0 +1,48 @@
+.pagination
+	width: 100%
+	display: flex
+	justify-content: center
+	ul 
+		list-style-type: none
+		display: flex
+		width: 580px
+		justify-content: space-around
+.pagination__page
+	box-sizing: border-box
+	width: 40px
+	height: 40px
+	display: block
+	border-radius: 5px
+	padding-top: 10px
+	font-family: 'Lato', sans-serif
+	font-size: 16px
+	text-align: center
+	cursor: pointer
+	&--active
+		background: #fdc500
+	&:hover
+		background: #fdc500
+.pagination-btn
+	box-sizing: border-box
+	width: 40px
+	height: 40px
+	border: 1px solid #ddd
+	border-radius: 5px
+	outline: none
+	background: transparent url('../img/pag-prev2.png') no-repeat center
+	cursor: pointer 
+	&:hover
+		border: 1px solid #fdc500 
+	&--next
+		transform: rotate(180deg)
+	&--last,
+	&--first
+		background: transparent url('../img/pag-prev.png') no-repeat center
+.pagination__page--dots
+	width: 45px
+	background: url(../img/---.png) no-repeat center
+	&:hover
+		background:  url(../img/---.png) no-repeat center
+
+
+
