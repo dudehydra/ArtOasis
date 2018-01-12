@@ -1,3 +1,12 @@
+::-webkit-input-placeholder 
+  color:#cccccc
+::-moz-placeholder          
+  color:#cccccc
+:-moz-placeholder           
+  color:#cccccc
+:-ms-input-placeholder      
+  color:#cccccc
+
 .personal
   box-sizing: border-box
   width: 100%
@@ -202,47 +211,47 @@
   margin-left: 33px
 
 .personal__portfolio a 
-  background: url(../img/case.svg) no-repeat left 35px top 16px
+  background: url(../img/case.svg) no-repeat left 32px top 21px
   background-size: 29px 29px
 
 .personal__message
-  background: url(../img/message.svg) no-repeat left 35px top 16px
+  background: url(../img/message.svg) no-repeat left 33px top 21px
   background-size: 29px 29px
 .personal__notifications
-  background: url(../img/bell.svg) no-repeat left 38px top 16px
+  background: url(../img/bell.svg) no-repeat left 36px top 24px
   background-size: 22px 22px
 
 .personal__settings
-  background: url(../img/settings.svg) no-repeat left 35px top 12px
-  background-size: 29px 29px
+  background: url(../img/settings.svg) no-repeat left 33px top 22px
+  background-size: 27px 27px
 .personal__orders
-  background: url(../img/check-list.svg) no-repeat left 35px top 16px
-  background-size: 29px 29px
+  background: url(../img/check-list.svg) no-repeat left 35px top 24px
+  background-size: 23px 23px
 
 .personal__portfolio .personal__menu-item--active
-  background: url(../img/case-active.svg) no-repeat left 35px top 16px
+  background: url(../img/case-active.svg) no-repeat left 32px top 21px
   background-size: 29px 29px
 
 .personal__menu-item--active.personal__message
-  background: url(../img/message-active.svg) no-repeat left 35px top 16px
+  background: url(../img/message-active.svg) no-repeat left 33px top 21px
   background-size: 29px 29px
 
 .personal__menu-item--active.personal__notifications
-  background: url(../img/bell-avtive.svg) no-repeat left 38px top 16px
-  background-size: 22px 22px
+  background: url(../img/bell-avtive.svg) no-repeat left 34px top 21px
+  background-size: 27px 27px
 
 .personal__menu-item--active.personal__settings
-  background: url(../img/settings-active.svg) no-repeat left 35px top 16px
-  background-size: 20px 20px
+  background: url(../img/settings-active.svg) no-repeat left 33px top 21px
+  background-size: 27px 27px
 .personal__menu-item--active.personal__orders
-  background: url(../img/check-list-active.svg) no-repeat left 35px top 16px
-  background-size: 29px 29px
+  background: url(../img/check-list-active.svg) no-repeat left 34px top 23px
+  background-size: 23px 23px
 .personal__my-works
-  background: url(../img/black-box.svg) no-repeat left 35px top 16px
-  background-size: 29px 29px
+  background: url(../img/black-box.svg) no-repeat left 35px top 23px;
+  background-size: 25px 25px;
 .personal__menu-item--active.personal__my-works
-  background: url(../img/black-box-active.svg) no-repeat left 35px top 16px
-  background-size: 29px 29px
+  background: url(../img/black-box-active.svg) no-repeat left 35px top 23px
+  background-size: 25px 25px
 
 .personal__message--active:before
   content: ' '
@@ -272,7 +281,7 @@
   color: #000
   font-size: 16px
   font-family: 'Lato', sans-serif
-  background: #eeeeee url(../img/search-active.png) right 15px top 23px no-repeat
+  background: #eeeeee url(../img/search-grey.png) right 15px top 23px no-repeat
 
 .personal--nowrap 
   flex-wrap: nowrap
@@ -517,16 +526,20 @@
     width: 100%
     box-sizing: border-box
     justify-content: space-around
+    padding: 10px 20px
+    padding-top: 20px
+    padding-bottom: 15px
+
 .notification__options--data
-  width: 130px
+  width: 14%
 .notification__options--number
   width: 65px
 .notification__options--position
-  width: 200px
+  width: 24%
 .notification__options--amount
-  width: 110px
+  width: 11%
 .notification__options--status
-  width: 165px
+  width: 17%
 .notification__options--payment
   width: 90px
   margin-left: 20px
@@ -543,13 +556,13 @@
 
 .order-item__status
   margin-right: 20px
-  width: 160px
+  width: 18%
 .notification__author,
 .notification__data 
   position: relative
   cursor: pointer
 .order-item__data-wrapper
-  width: 75px
+  width: 14%
 
 .notification__data--no-arrow
   cursor: auto
@@ -661,13 +674,14 @@
   font-weight: 700
   text-transform: uppercase
   cursor: pointer
+  box-sizing: border-box
 
 .notification__item-options ul:before 
   content: ' '
   position: absolute
   width: 0
   height: 0
-  left: 17px
+  right: 17px
   bottom: -17px
   border: 10px solid
   border-color: #fff transparent transparent
@@ -676,7 +690,7 @@
   display: none
   position: absolute
   top: -145px
-  left: -10px
+  left: -100px
   padding-bottom: 10px
 
 .personal h3
@@ -763,6 +777,7 @@
 .btn-default--just
   width: 100%
   padding-left: 15px
+  border-radius: 5px
 .help-yandex-wrapper
   list-style-type: none
   flex-grow: 1
@@ -935,6 +950,7 @@
   text-transform: uppercase
   color: #999
   margin-bottom: 5px
+  font-weight: 600
 
 .album__name-field
   margin-bottom: 50px
@@ -1498,15 +1514,15 @@ span.main-registration__logo-info
 .order-item__products
   max-width: 200px
   cursor: pointer
-  width: 200px
-  margin-right: 10px
+  width: 22%
+  margin-right: 25px
   font-size: 14px
   line-height: 22px
 
   span 
     font-weight: 600
 .order-item_amount
-  width: 110px
+  width: 11%
 
   div 
     margin-bottom: 10px
@@ -1527,6 +1543,7 @@ span.main-registration__logo-info
   padding-right: 40px
   position: relative
   cursor: pointer
+  font-size: 14px
   span
    height: 100%
    width: 30px
@@ -1623,7 +1640,6 @@ span.main-registration__logo-info
   margin-bottom: 60px
   &--small
     width: 100%
-
 .notification__item--justify
   justify-content: space-around
 .notification__item--justify .order-item_amount
@@ -1741,8 +1757,10 @@ span.main-registration__logo-info
   margin-right: 50px
   padding: 0px 15px 17px 15px
   display: inline-block
+  cursor: pointer
   &--active
     border-bottom: 4px solid #fecb2e
+
 .input-number 
     display: flex
     width: 120px
@@ -1830,6 +1848,7 @@ input::-webkit-inner-spin-button
     top: calc(50% - 7px)
 .album-photo__header--active:before
     transform: rotate(45deg)
+
 .album-photo
   width: 100%
   box-sizing: border-box
@@ -1876,3 +1895,25 @@ input::-webkit-inner-spin-button
   padding-left: 27px
   display: block
   cursor: pointer
+.notification__options-number
+  margin-right: 55px
+.notification-wrapper .notification__title--small
+  font-size: 20px
+  margin-bottom: 0px
+.notification__header--small .notification__options--amount
+  width: 22%
+.alerts .order-item__number-wrapper
+  width: 100px
+.alerts 
+  width: 67%
+.notification__author
+  width: 25%
+.notification__data
+  width: 15%
+
+
+@media (max-width: 1340px) 
+  .notification__item-options
+    right: 5px
+  .notification-wrapper
+    margin-left: 30px 

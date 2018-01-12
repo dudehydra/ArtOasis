@@ -76,7 +76,7 @@
         </div>
         <div class="grey-wrapper album-photo__wrapper">
             <div class="album-photo ">
-                <div class="album-photo__header ">
+                <div class="album-photo__header album-photo__header--active">
                     <span class="album-photo__album-name">Шедевры Государственной Третьяковской галереи</span>
                     <span class="album-photo__album-date">12 фотографий. 12.07.17</span>
                 </div>
@@ -146,7 +146,7 @@
             </div>
 
             <div class="album-photo">
-                <div class="album-photo__header ">
+                <div class="album-photo__header album-photo__header--active">
                     <span class="album-photo__album-name">Шедевры Государственной Третьяковской галереи</span>
                     <span class="album-photo__album-date">12 фотографий. 12.07.17</span>
                 </div>
@@ -216,7 +216,7 @@
             </div>
 
             <div class="album-photo ">
-                <div class="album-photo__header ">
+                <div class="album-photo__header album-photo__header--active">
                     <span class="album-photo__album-name">Шедевры Государственной Третьяковской галереи</span>
                     <span class="album-photo__album-date">12 фотографий. 12.07.17</span>
                 </div>
@@ -497,157 +497,61 @@
     </nav>
 </header>
 
-<main class="main-grey">
-    <div class="personal personal--nowrap personal--justify">
-    	<div class="personal__profile">
-    		<div class="personal__profile-header">
-                <div class="personal__profile-logo">
-                    <img src="img/shops-logo.png" alt="">
+<main class="main-grey master-list">
+    <div class="container">
+        <form action="" class="filter">
+            <h1 class="filter__title">Мастера</h1>
+            <div class="filter__advertising">
+                
+            </div>
+            <div class="filter__main-wrapper">
+                <div class="filter__main">
+                    <div class="filter__main-header">
+                        <span>Фильтр</span>
+                        <span class="filter__main-open">
+                            Раскрыть
+                        </span>
+                    </div>
+                    <div class="filter__main-options">
+                        <div class="filter__main-categories">
+                            <span>Категория</span>
+                            <ul class="filter__categories-list">
+                                <li class="filter__category">Живопись</li>
+                                <li class="filter__category">Графика</li>
+                                <li class="filter__category">Фотография</li>
+                                <li class="filter__category">Скульптура</li>
+                                <li class="filter__category">Декор</li>
+                                <li class="filter__category">Рукоделие</li>
+                                <li class="filter__category">Роспись</li>
+                            </ul>
+                        </div>
+                        <div class="filter__options-list">
+                            <div class="filter__options-item filter__rating">
+                                <span>Рейтинг мастера</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="personal__profile-info">
-                    <span class="personal__profile-name">Olga Kuznetsova</span>
-                    <div class="personal__profile-rating">
-                    	
+                <div class="filter__result">
+                    <span class="filter__result">Найдено: <span class="filter__result-number">3</span></span>
+                    <div class="filter__sorting">
+                        <div class="filter__type">
+                            Сортировать
+                        </div>
+                        <div class="filter__sorting-byname">
+                            по имени
+                        </div>
+                        <div class="filter__sorting-byrating">
+                            по рейтингу мастеров
+                        </div>
+                        <div class="filter__sorting-bynewness">
+                            по новизне
+                        </div>
                     </div>
-                    <span class="profile__rating-number">5(11)</span>
-                    
-                 </div>
+                </div>
             </div>
-            <ul class="personal__menu">
-            	<li class="personal__portfolio">
-                    <a href="LK-neprod-albom.html" class="personal__menu-item">Портфолио</a>
-            	</li>
-            	<li><a href="LK-neprod-message.html" class="personal__menu-item personal__message ">Сообщение</a></li>
-            	<li><a href="" class="personal__menu-item personal__notifications ">Оповещения</a></li>
-            	<li><a href="LK-neprod-settings.html" class="personal__menu-item personal__settings">Настройки</a></li>
-                <li><a href="LK-neprod-settings.html" class="personal__menu-item personal__orders ">Заказы</a></li>
-                <li><a href="LK-neprod-settings.html" class="personal__menu-item--active personal__menu-item personal__my-works
-                ">Мои товары</a></li>
-            </ul>
-    	</div>
-        <div class="notification-wrapper my-works">
-           <div class="notification notification--transparent">
-            <div class="my-works__header">
-                <h3 class="notification__title">Мои товары</h3>
-                <button type="button" class="btn btn-portfolio" id="add_album-btn" href="#product-popups__open">Добавить товар</button>
-            </div>
-           
-           <div class="notification__header">
-               <input type="checkbox" id="bell__all-check" class="checkbox--orange">
-               <label for="bell__all-check" class="label-checkbox--orange label-checkbox--black"></label>
-               <span class="notification__options notification__options--photo">фото</span>
-               <span class="notification__options notification__options--name">Название</span>
-               <span class="notification__options notification__options--category">категория</span>
-               <span class="notification__options notification__options--amount">цена (&#8381;)</span>
-               <span class="notification__options notification__options--number">количество</span>
-           </div>
-           <ul class="notification__main">
-               <li class="notification__item order-item">
-                   <input type="checkbox" id="notification_item" class="checkbox--orange">
-                   <label for="notification_item" class="label-checkbox--orange"></label>
-                   <div class="order-item__order-number order-item__info">
-                       <div class="order-item__photo">
-                           
-                       </div>
-                       
-                   </div>
-                   <div class="order-item__info">
-                       <div class="order-item__name">
-                           Постер «Цветочный натюрморт»            
-                       </div>
-                   </div>
-                    <div class="order-item_category">
-                        Рекламная и полиграфическая продукция Шитьё, цветоделие, патчворк, квилтинг
-                        Книги, иллюстрации
-                    </div>
-                    <div class="order-item_amount order-item__info">
-                        2950
-                    </div>
-                    <div class="order-item__number order-item__info">
-                        1
-                    </div>
-                    
-                   <div class="notification__item-options ">
-                    <div class="notification__options-items-wrapper">
-                        <ul>
-                           <li class="notification__options-answer">подробная информация</li>
-                           <li class="notification__options-edit">Редактировать заказ</li>
-                           <li class="notification__options-delete">Удалить заказ</li>
-                       </ul>
-                    </div>
-                       
-                   </div>
-               </li>
-           </ul>
-           <div class="pagination">
-                           <ul>
-                               <li>
-                                   <button class="pagination-btn pagination-btn--prev pagination-btn--first">
-                                       
-                                   </button> 
-                               </li>
-                               <li>
-                                   <button class="pagination-btn pagination-btn--prev">
-                                       
-                                   </button> 
-                               </li>
-                               <li>
-                                   <a class="pagination__page pagination__page--active">
-                                       1
-                                   </a>
-                               </li>
-                               <li>
-                                   <a class="pagination__page">
-                                       2
-                                   </a>
-                               </li>
-                               <li>
-                                   <a class="pagination__page">
-                                       3
-                                   </a>
-                               </li>
-                               <li>
-                                   <a class="pagination__page pagination__page--dots">
-                                       
-                                   </a>
-                               </li>
-                               <li>
-                                   <a class="pagination__page">
-                                       7
-                                   </a>
-                               </li>
-                               <li>
-                                   <a class="pagination__page">
-                                       8
-                                   </a>
-                               </li>
-                               <li>
-                                   <a class="pagination__page">
-                                      9 
-                                   </a>
-                               </li>
-                               <li>
-                                   <button class="pagination-btn pagination-btn--next">
-                                       
-                                   </button>
-                               </li>
-                               <li>
-                                   <button class="pagination-btn pagination-btn--next pagination-btn--last" >
-                                       
-                                   </button>
-                               </li>
-                           </ul>
-                       </div>
-
-        </div>
-        </div>
-        
-       
-
-    	
-        
+        </form> 
     </div>
-
 </main>
 <footer>
     <div class="feedback ">

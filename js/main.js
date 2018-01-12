@@ -438,11 +438,23 @@ $(document).ready(function(){
     //Выбор нового товара
     $('.album-photo__container').hide()
     $('.album-photo__header').click(function(){
-        var album = $(this)
-        $(this).siblings('.album-photo__container').toggle(300)
-        $('.album-photo').toggleClass('album-photo--active')
+        $(this).toggleClass('album-photo__header--active');
+        $(this).siblings('.album-photo__container').toggle(300);
+        $(this).parent().toggleClass('album-photo--active');
     });
-
+    $('.album-photo__wrapper').hide()
+    $('.product-add__album-photo').click(function(){
+        $('.product-add__album-photo').addClass('product-add__album-photo--active');
+        $('.product-add__new-photo').removeClass('product-add__new-photo--active');
+        $('.album-photo__wrapper').show(300);
+        $('.new-photo-add__wrapper').hide(300);
+    });
+    $('.product-add__new-photo').click(function(){
+        $('.product-add__new-photo').addClass('product-add__new-photo--active');
+        $('.product-add__album-photo').removeClass('product-add__album-photo--active');
+        $('.album-photo__wrapper').hide(300);
+        $('.new-photo-add__wrapper').show(300);
+    });
 
 });
 
