@@ -21,336 +21,7 @@
 
 </head>
 <body>
-    <div class="album-popup album-edit-popup product-add white-popup mfp-hide" id="product-popups__open">
-    <div class="product-add__header">
-        <h3>Новый товар</h3>
-    </div>
 
-    <form action="" id="product-add__forms">
-        <div class="product-add__control-wrapper">
-            <span class="product-add__new-photo product-add__new-photo--active">
-                Загрузить новое фото
-            </span>
-            <span class="product-add__album-photo">
-                Выбрать фото из альбомов
-            </span>
-        </div>
-        <div class="grey-wrapper new-photo-add__wrapper">
-            <div class="box has-advanced-upload drop-zone__wrapper">
-                                <div class="box__input">
-                                    <input type="file" name="files[]" id="file" class="box__file" data-multiple-caption="{count} files selected" multiple="">
-                                    <label for="file" class="btn btn-drop">Выбрать фотографию</label> <span class="box__dragndrop"> <span class="grey">или</span> Перетащите ваши фотографии</span>.
-                                    <button type="submit" class="box__button">Upload</button>
-                                    <p>Требования к загружаемым изображениям:<br>
-                                    Формат JPG, максимальный размер файлы - 3 Мб.<br>
-                                    Для эффективного уменьшения размера файла без визуальных потерь рекомендуем использовать следующие<br> бесплатные онлайн-инструменты:
-                                   <ul>
-                                       <li>TinyJPG.com - (максимальный размер файла 5Мб)</li>
-                                       <li>Convertimage - (Без ограничений, ручная настройка уровня сжатия, рекомендуется 70)  </li>
-                                       <li>JPEG-Optimizer.com - (Без ограничений, ручная настройка уровня сжатия, рекомендуется 70) </li>
-                                       <li>Compressor.io - (максимальный размер файла 10Мб)</li>
-                                       <li>Kraken.io - (ограничение бесплатной версии: размер файла до 1мб)</li>
-                                   </ul></p>
-                                </div>
-                                <input type="hidden" name="ajax" value="1">
-                            <input type="hidden" name="ajax" value="1">
-            </div>
-            <div class="album-popups__img-item">
-                <div class="album-popups__img-wrapper ">
-                    <div class="loader"></div>
-                </div>
-                <div class="album-popups__img-info">
-                    <span class="album-popups__img-name">mansnothot.jpg</span>
-                    <span class="album-popups__img-weight">1.4 мб</span>
-                </div>
-            </div>
-            <div class="album-popups__img-item">
-                <div class="album-popups__img-wrapper">
-                    
-                </div>
-                <div class="album-popups__img-info">
-                    <span class="album-popups__img-name">mansnothot.jpg</span>
-                    <span class="album-popups__img-weight">1.4 мб</span>
-                </div>
-            </div>
-        </div>
-        <div class="grey-wrapper album-photo__wrapper">
-            <div class="album-photo ">
-                <div class="album-photo__header album-photo__header--active">
-                    <span class="album-photo__album-name">Шедевры Государственной Третьяковской галереи</span>
-                    <span class="album-photo__album-date">12 фотографий. 12.07.17</span>
-                </div>
-                <div class="album-photo__container">
-                    <input type="checkbox" id="album-photo__item-1" class="checkbox--orange">
-                    <label for="album-photo__item-1" class="album-photo__label">
-                        <div class="album-popups__img-item">
-                            <div class="album-popups__img-wrapper">
-                                
-                            </div>
-                            <div class="album-popups__img-info">
-                                <span class="album-popups__img-name">mansnothot.jpg</span>
-                                <span class="album-popups__img-weight">1.4 мб</span>
-                            </div>
-                        </div>
-                    </label>
-                    <input type="checkbox" id="album-photo__item-2" class="checkbox--orange">
-                    <label for="album-photo__item-2" class="album-photo__label">
-                        <div class="album-popups__img-item">
-                            <div class="album-popups__img-wrapper">
-                                
-                            </div>
-                            <div class="album-popups__img-info">
-                                <span class="album-popups__img-name">mansnothot.jpg</span>
-                                <span class="album-popups__img-weight">1.4 мб</span>
-                            </div>
-                        </div>
-                    </label>
-                    <input type="checkbox" id="album-photo__item-3" class="checkbox--orange">
-                    <label for="album-photo__item-3" class="album-photo__label">
-                        <div class="album-popups__img-item">
-                            <div class="album-popups__img-wrapper">
-                                
-                            </div>
-                            <div class="album-popups__img-info">
-                                <span class="album-popups__img-name">mansnothot.jpg</span>
-                                <span class="album-popups__img-weight">1.4 мб</span>
-                            </div>
-                        </div>
-                    </label>
-                    <input type="checkbox" id="album-photo__item-4" class="checkbox--orange">
-                    <label for="album-photo__item-4" class="album-photo__label">
-                        <div class="album-popups__img-item">
-                            <div class="album-popups__img-wrapper">
-                                
-                            </div>
-                            <div class="album-popups__img-info">
-                                <span class="album-popups__img-name">mansnothot.jpg</span>
-                                <span class="album-popups__img-weight">1.4 мб</span>
-                            </div>
-                        </div>
-                    </label>
-                    <input type="checkbox" id="album-photo__item-5" class="checkbox--orange">
-                    <label for="album-photo__item-5" class="album-photo__label">
-                        <div class="album-popups__img-item">
-                            <div class="album-popups__img-wrapper">
-                                
-                            </div>
-                            <div class="album-popups__img-info">
-                                <span class="album-popups__img-name">mansnothot.jpg</span>
-                                <span class="album-popups__img-weight">1.4 мб</span>
-                            </div>
-                        </div>
-                    </label>
-                    
-                </div>
-            </div>
-
-            <div class="album-photo">
-                <div class="album-photo__header album-photo__header--active">
-                    <span class="album-photo__album-name">Шедевры Государственной Третьяковской галереи</span>
-                    <span class="album-photo__album-date">12 фотографий. 12.07.17</span>
-                </div>
-                <div class="album-photo__container">
-                    <input type="checkbox" id="album-photo__item-1" class="checkbox--orange">
-                    <label for="album-photo__item-1" class="album-photo__label">
-                        <div class="album-popups__img-item">
-                            <div class="album-popups__img-wrapper">
-                                
-                            </div>
-                            <div class="album-popups__img-info">
-                                <span class="album-popups__img-name">mansnothot.jpg</span>
-                                <span class="album-popups__img-weight">1.4 мб</span>
-                            </div>
-                        </div>
-                    </label>
-                    <input type="checkbox" id="album-photo__item-2" class="checkbox--orange">
-                    <label for="album-photo__item-2" class="album-photo__label">
-                        <div class="album-popups__img-item">
-                            <div class="album-popups__img-wrapper">
-                                
-                            </div>
-                            <div class="album-popups__img-info">
-                                <span class="album-popups__img-name">mansnothot.jpg</span>
-                                <span class="album-popups__img-weight">1.4 мб</span>
-                            </div>
-                        </div>
-                    </label>
-                    <input type="checkbox" id="album-photo__item-3" class="checkbox--orange">
-                    <label for="album-photo__item-3" class="album-photo__label">
-                        <div class="album-popups__img-item">
-                            <div class="album-popups__img-wrapper">
-                                
-                            </div>
-                            <div class="album-popups__img-info">
-                                <span class="album-popups__img-name">mansnothot.jpg</span>
-                                <span class="album-popups__img-weight">1.4 мб</span>
-                            </div>
-                        </div>
-                    </label>
-                    <input type="checkbox" id="album-photo__item-4" class="checkbox--orange">
-                    <label for="album-photo__item-4" class="album-photo__label">
-                        <div class="album-popups__img-item">
-                            <div class="album-popups__img-wrapper">
-                                
-                            </div>
-                            <div class="album-popups__img-info">
-                                <span class="album-popups__img-name">mansnothot.jpg</span>
-                                <span class="album-popups__img-weight">1.4 мб</span>
-                            </div>
-                        </div>
-                    </label>
-                    <input type="checkbox" id="album-photo__item-5" class="checkbox--orange">
-                    <label for="album-photo__item-5" class="album-photo__label">
-                        <div class="album-popups__img-item">
-                            <div class="album-popups__img-wrapper">
-                                
-                            </div>
-                            <div class="album-popups__img-info">
-                                <span class="album-popups__img-name">mansnothot.jpg</span>
-                                <span class="album-popups__img-weight">1.4 мб</span>
-                            </div>
-                        </div>
-                    </label>
-                    
-                </div>
-            </div>
-
-            <div class="album-photo ">
-                <div class="album-photo__header album-photo__header--active">
-                    <span class="album-photo__album-name">Шедевры Государственной Третьяковской галереи</span>
-                    <span class="album-photo__album-date">12 фотографий. 12.07.17</span>
-                </div>
-                <div class="album-photo__container">
-                    <input type="checkbox" id="album-photo__item-1" class="checkbox--orange">
-                    <label for="album-photo__item-1" class="album-photo__label">
-                        <div class="album-popups__img-item">
-                            <div class="album-popups__img-wrapper">
-                                
-                            </div>
-                            <div class="album-popups__img-info">
-                                <span class="album-popups__img-name">mansnothot.jpg</span>
-                                <span class="album-popups__img-weight">1.4 мб</span>
-                            </div>
-                        </div>
-                    </label>
-                    <input type="checkbox" id="album-photo__item-2" class="checkbox--orange">
-                    <label for="album-photo__item-2" class="album-photo__label">
-                        <div class="album-popups__img-item">
-                            <div class="album-popups__img-wrapper">
-                                
-                            </div>
-                            <div class="album-popups__img-info">
-                                <span class="album-popups__img-name">mansnothot.jpg</span>
-                                <span class="album-popups__img-weight">1.4 мб</span>
-                            </div>
-                        </div>
-                    </label>
-                    <input type="checkbox" id="album-photo__item-3" class="checkbox--orange">
-                    <label for="album-photo__item-3" class="album-photo__label">
-                        <div class="album-popups__img-item">
-                            <div class="album-popups__img-wrapper">
-                                
-                            </div>
-                            <div class="album-popups__img-info">
-                                <span class="album-popups__img-name">mansnothot.jpg</span>
-                                <span class="album-popups__img-weight">1.4 мб</span>
-                            </div>
-                        </div>
-                    </label>
-                    <input type="checkbox" id="album-photo__item-4" class="checkbox--orange">
-                    <label for="album-photo__item-4" class="album-photo__label">
-                        <div class="album-popups__img-item">
-                            <div class="album-popups__img-wrapper">
-                                
-                            </div>
-                            <div class="album-popups__img-info">
-                                <span class="album-popups__img-name">mansnothot.jpg</span>
-                                <span class="album-popups__img-weight">1.4 мб</span>
-                            </div>
-                        </div>
-                    </label>
-                    <input type="checkbox" id="album-photo__item-5" class="checkbox--orange">
-                    <label for="album-photo__item-5" class="album-photo__label">
-                        <div class="album-popups__img-item">
-                            <div class="album-popups__img-wrapper">
-                                
-                            </div>
-                            <div class="album-popups__img-info">
-                                <span class="album-popups__img-name">mansnothot.jpg</span>
-                                <span class="album-popups__img-weight">1.4 мб</span>
-                            </div>
-                        </div>
-                    </label>
-                    
-                </div>
-            </div>
-            
-        </div>
-        <div class="product-add__description-wrapper">
-            <label for="new-album-name-popup" class="default-label">Название альбома <span class="required">*</span></label>
-            <input type="text" required="" id="new-album-name-popup" class="registration-field">
-            <span class="product-add__description">Покупатели ждут от вас уникальное и привлекательное название.</span> 
-            <label for="" class="default-label">Описание<span class="required">*</span></label>
-            <textarea name="" id="" cols="30" rows="4" form="product-add__forms" placeholder="Оставьте комментарий к альбому"></textarea>
-            <span class="product-add__description">Подробно опишите все детали товара, его особенности и отличия.</span>
-            <label for="product-name-popup" class="default-label">Категории <span class="required" >*</span></label>
-            <input type="text" required="" id="product-name-popup" class="registration-field">
-            <span class="product-add__description">Выберите категорию, к которой относится ваш товар.</span>
-            <label for="product-amount-popup" class="default-label">Цена <span class="required" >*</span></label>
-            <div class="product-add__amount-wrapper">
-                <input type="number" required="" id="product-amount-popup" class="registration-field registration-field--short">(&#8381;)
-                <div class="input-number">
-                    <button class="input-number__remove" data-for="id-1" data-event="sub">
-                    </button>
-                    <input id="id-1" type="number" min="0" name="count" value="1" step="1">
-                    <button class="input-number__add" data-for="id-1" data-event="add">
-                    </button>
-                </div>
-                <input type="checkbox" id="amount" class="checkbox--orange">
-                <label for="amount" class="label-checkbox--orange">Неограничено</label>
-            </div>
-            <div class="btn-album__wrapper">
-                <input type="submit" class="btn btn-orange btn-album" value="Добавить товар">
-            </div>
-        </div> 
-    </form>
-</div>
-
-<div class="registration-type-popup white-popup mfp-hide" id="registration-type-popup__open">
-    <div class="registration-type-popup__header">
-        <h3>Хочу зарегистрироваться как</h3>
-    </div>
-
-    <form action="">
-        <div class="registration-popup__type">
-            <input type="radio" name="registration-type" id="popup-buyer">
-            <label for="popup-buyer" class="registration-type__buyer">Покупатель <span title="Вы сможете продавать свои товары">[?]</span></label>
-
-            <input type="radio" name="registration-type" id="popup-master">
-            <label for="popup-master" class="registration-type__master">Мастер <span title="Вы сможете продавать свои товары">[?]</span></label>
-
-            <input type="radio" name="registration-type" id="popup-shop">
-            <label for="popup-shop" class="registration-type__shop">Магазин <span title="Вы сможете продавать свои товары">[?]</span></label>
-        </div>
-        <div class="registration-popup__information">
-            <div class="registration-popup__mail-wrapper">
-                <span>Эл.Почта</span>
-                <input type="email" >
-            </div>
-
-            <div class="registration-popup__password-wrapper">
-                <span>Пароль</span>
-                <input type="password">
-            </div>
-
-            <input type="submit" value="Зарегистрироваться" class="btn btn-submit btn-submit--short">
-        </div>
-        <div class="registration-type-popup__footer">
-            <input type="checkbox" class="checkbox" id="registration-type-popup-agreement">
-            <label class="registration-popup__agreement" for="registration-type-popup-agreement">Я согласен с <a href="">условиями оферты для покупателей</a></label>
-        </div>
-    </form>
-</div>
 <header class="main-header">
     <nav class="menu menu-static">
         <div class="menu__items-top">
@@ -498,7 +169,7 @@
 </header>
 
 <main class="main-grey master-list">
-    <div class="container">
+        <div class="container">
         <form action="" class="filter">
             <h1 class="filter__title">Мастера</h1>
             <div class="filter__advertising">
@@ -512,46 +183,733 @@
                             Раскрыть
                         </span>
                     </div>
+                    <div class="filter__main-options-wrapper">
                     <div class="filter__main-options">
-                        <div class="filter__main-categories">
-                            <span>Категория</span>
-                            <ul class="filter__categories-list">
-                                <li class="filter__category">Живопись</li>
-                                <li class="filter__category">Графика</li>
-                                <li class="filter__category">Фотография</li>
-                                <li class="filter__category">Скульптура</li>
-                                <li class="filter__category">Декор</li>
-                                <li class="filter__category">Рукоделие</li>
-                                <li class="filter__category">Роспись</li>
-                            </ul>
-                        </div>
-                        <div class="filter__options-list">
-                            <div class="filter__options-item filter__rating">
-                                <span>Рейтинг мастера</span>
+                            <div class="filter__main-categories">
+                                <span>Категория</span>
+                                <ul class="filter__categories-list">
+                                    <li class="filter__category">Живопись</li>
+                                    <li class="filter__category">Графика</li>
+                                    <li class="filter__category">Фотография</li>
+                                    <li class="filter__category">Скульптура</li>
+                                    <li class="filter__category">Декор</li>
+                                    <li class="filter__category ">Рукоделие</li>
+                                    <li class="filter__category">Роспись</li>
+                                </ul>
                             </div>
+                            <div class="filter__options-wrapper">
+                                <div class="filter__options-left">
+                                    <div class="filter__options-item filter__rating">
+                                      <span>Рейтинг мастера</span>
+                                      <div class="master__rating rating">
+                                          
+                                      </div>
+                                    </div>
+                                    <div class="filter__options-item">
+                                        <span>Коммерция</span>
+                                        <input type="checkbox" id="selling-master" class="checkbox--orange">
+                                        <label for="selling-master" class="label-checkbox--orange">Продающий мастер</label>
+                                        <input type="checkbox" id="not-selling-master" class="checkbox--orange">
+                                        <label for="not-selling-master" class="label-checkbox--orange">Непродающий мастер</label>
+
+                                    </div>
+                                </div>
+                                <div class="filter__options-middle">
+                                    <div class="filter__options-item filter__options-experience">
+                                        <span>Количество работ</span>
+                                        <input type="radio" class="radio-orange" id="not-matter" name="experience">
+                                        <label for="not-matter" class="radio-orange__label">Не важно</label>
+                                        <input type="radio" class="radio-orange" id="to-5" name="experience">
+                                        <label for="to-5" class="radio-orange__label">До 5</label>
+                                        <input type="radio" class="radio-orange" id="to-6" name="experience">
+                                        <label for="to-6" class="radio-orange__label">6-20</label>
+                                        <input type="radio" class="radio-orange" id="to-21" name="experience">
+                                        <label for="to-21" class="radio-orange__label">21-50</label>
+                                        <input type="radio" class="radio-orange" id="to-50" name="experience">
+                                        <label for="to-50" class="radio-orange__label">50+</label>
+                                    </div>
+                                </div>
+                                <div class="filter__options-right">
+                                    <div class="filter__options-item filter__options-geolocation">
+                                        <span>Геолокация</span>
+                                        <input type="search" placeholder="Введите город" class="search-field" id="filter-search">
+                                        <div class="filter__city-list">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__categories-options">
+                                <h2 class="filter__categories-title">Рукоделие</h2>
+                                <div class="filter__options-list">
+                                    <input type="checkbox" id="jewelry" class="checkbox--orange">
+                                    <label for="jewelry" class="label-checkbox--orange">Бижутерии и ювелирные изделия</label>
+                                    <input type="checkbox" id="fancywork" class="checkbox--orange">
+                                    <label for="fancywork" class="label-checkbox--orange">Вышивка, вязание, плетение</label>
+                                    <input type="checkbox" id="Decoupage" class="checkbox--orange">
+                                    <label for="Decoupage" class="label-checkbox--orange">Декупаж</label>
+                                    <input type="checkbox" id="сostume-design" class="checkbox--orange">
+                                    <label for="сostume-design" class="label-checkbox--orange">Дизайн костюма</label>
+                                    <input type="checkbox" id="puppets" class="checkbox--orange">
+                                    <label for="puppets" class="label-checkbox--orange">Изготовление кукол</label>
+                                    <input type="checkbox" id="Mosaic" class="checkbox--orange">
+                                    <label for="Mosaic" class="label-checkbox--orange">Мозаика, витраж, выжигание</label>
+                                    <input type="checkbox" id="Postigoronic" class="checkbox--orange">
+                                    <label for="Postigoronic" class="label-checkbox--orange">Постижёрное дело</label>
+                                    <input type="checkbox" id="Scrapbooking" class="checkbox--orange">
+                                    <label for="Scrapbooking" class="label-checkbox--orange">Скрапбукинг</label>
+                                    <input type="checkbox" id="patchwork" class="checkbox--orange">
+                                    <label for="patchwork" class="label-checkbox--orange">Шитьё, цветоделие, патчворк, квилтинг</label>
+                                    </div>
+
+                                <div class="close-categories">
+                                    <span>Закрыть <br> категорию</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="filter__clear-all">
+                        Очистить всё
+                        </div>
                         </div>
                     </div>
-                </div>
+                   
                 <div class="filter__result">
-                    <span class="filter__result">Найдено: <span class="filter__result-number">3</span></span>
-                    <div class="filter__sorting">
+                    <span class="filter__result-title">Найдено: <span class="filter__result-number">3</span></span>
+                    <div class="filter__sorting-wrapper">
                         <div class="filter__type">
                             Сортировать
                         </div>
-                        <div class="filter__sorting-byname">
-                            по имени
-                        </div>
-                        <div class="filter__sorting-byrating">
-                            по рейтингу мастеров
-                        </div>
-                        <div class="filter__sorting-bynewness">
-                            по новизне
-                        </div>
+                        <input type="radio" name="sorting" class="filter__sorting" id="filter__sorting-byname">
+                        <label for="filter__sorting-byname" class="filter__sorting-label filter__sorting-label--active">по имени</label>
+                            
+                        <input type="radio" name="sorting" class="filter__sorting" id="filter__sorting-byrating">
+                        <label for="filter__sorting-byrating" class="filter__sorting-label">по рейтингу мастеров</label>
+
+                        <input type="radio" name="sorting" class="filter__sorting" id="filter__sorting-bynewness">
+                        <label for="filter__sorting-bynewness" class="filter__sorting-label">по новизне</label>
                     </div>
                 </div>
             </div>
-        </form> 
-    </div>
+        </form>
+        </div>
+        <div class="search__masters-list">
+                <div class="container--paddingless">
+                   <div class="search__master-item">
+                        <div class="shop-preview__header search__master-header">
+                            <div class="shop-preview__logo">
+                                <img src="img/master-photo.png" alt="">
+                            </div>
+                            <div class="shop-preview__info">
+                                <span class="shop-preview__name">Gaponov.</span>
+                                <div class="shop-preview__rating"></div>
+                                <span class="shop-preview__rating-number">5 (11)</span>
+                                <div class="shop-preview__location shop-preview__location--name">
+                                    <span class="search__master-name">Сергей Гапонов</span>
+                                    <span class="search__master-location">Москва,Россия</span>
+                                    <span class="search__master-data">Дата регистрации: 09.12.2014</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn--subscribe">
+                            подписаться
+                        </button>
+                        <div class="container container--absolute">
+                            <div class="popular-goods__items-wrapper owl-carousel search_result-master-works">
+                                <div class="popular-goods__first-row">
+                                    <div class="popular-goods__item goods-item">
+                                        <div class="goods-item__img-wrapper">
+                                            <img src="img/popular-item.png" alt="" class="goods-item__img">
+                                        </div>
+                                        <div class="goods-item__description">
+                                            <h3>Деревянное панно Loft</h3>
+                                            <p>Краска акриловая, краска меловая, лак
+                                                на водной основе, сосна, фанера</p>
+                                        </div>
+                                        <div class="goods-item__price-wrapper">
+                                            <div class="goods-item__price">
+                                                5000 Р
+                                            </div>
+                                            <div class="goods-item__basket">
+                                                <a href=""><img src="img/like.png" alt="" class="goods-item__like"></a>
+                                                <a href=""><img src="img/fav.png" alt="" class="goods-item__heart"></a>
+                                                <a href=""><img src="img/basket-2.png" alt="" class="goods-item__basket"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popular-goods__item goods-item">
+                                        <div class="goods-item__img-wrapper">
+                                            <img src="img/popular-item.png" alt="" class="goods-item__img">
+                                        </div>
+                                        <div class="goods-item__description">
+                                            <h3>Деревянное панно Loft</h3>
+                                            <p>Краска акриловая, краска меловая, лак
+                                                на водной основе, сосна, фанера</p>
+                                        </div>
+                                        <div class="goods-item__price-wrapper">
+                                            <div class="goods-item__price">
+                                                5000 Р
+                                            </div>
+                                            <div class="goods-item__basket">
+                                                <a href=""><img src="img/like.png" alt="" class="goods-item__like"></a>
+                                                <a href=""><img src="img/fav.png" alt="" class="goods-item__heart"></a>
+                                                <a href=""><img src="img/basket-2.png" alt="" class="goods-item__basket"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popular-goods__item goods-item">
+                                        <div class="goods-item__img-wrapper">
+                                            <img src="img/popular-item.png" alt="" class="goods-item__img">
+                                        </div>
+                                        <div class="goods-item__description">
+                                            <h3>Деревянное панно Loft</h3>
+                                            <p>Краска акриловая, краска меловая, лак
+                                                на водной основе, сосна, фанера</p>
+                                        </div>
+                                        <div class="goods-item__price-wrapper">
+                                            <div class="goods-item__price">
+                                                5000 Р
+                                            </div>
+                                            <div class="goods-item__basket">
+                                                <a href=""><img src="img/like.png" alt="" class="goods-item__like"></a>
+                                                <a href=""><img src="img/fav.png" alt="" class="goods-item__heart"></a>
+                                                <a href=""><img src="img/basket-2.png" alt="" class="goods-item__basket"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popular-goods__item goods-item">
+                                        <div class="goods-item__img-wrapper">
+                                            <img src="img/popular-item.png" alt="" class="goods-item__img">
+                                        </div>
+                                        <div class="goods-item__description">
+                                            <h3>Деревянное панно Loft</h3>
+                                            <p>Краска акриловая, краска меловая, лак
+                                                на водной основе, сосна, фанера</p>
+                                        </div>
+                                        <div class="goods-item__price-wrapper">
+                                            <div class="goods-item__price">
+                                                5000 Р
+                                            </div>
+                                            <div class="goods-item__basket">
+                                                <a href=""><img src="img/like.png" alt="" class="goods-item__like"></a>
+                                                <a href=""><img src="img/fav.png" alt="" class="goods-item__heart"></a>
+                                                <a href=""><img src="img/basket-2.png" alt="" class="goods-item__basket"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           
+                            </div>
+                        </div>
+                   </div>
+                   <div class="search__master-item">
+                        <div class="shop-preview__header search__master-header">
+                            <div class="shop-preview__logo">
+                                <img src="img/master-photo.png" alt="">
+                            </div>
+                            <div class="shop-preview__info">
+                                <span class="shop-preview__name">Gaponov.</span>
+                                <div class="shop-preview__rating"></div>
+                                <span class="shop-preview__rating-number">5 (11)</span>
+                                <div class="shop-preview__location shop-preview__location--name">
+                                    <span class="search__master-name">Сергей Гапонов</span>
+                                    <span class="search__master-location">Москва,Россия</span>
+                                    <span class="search__master-data">Дата регистрации: 09.12.2014</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn--subscribe">
+                            подписаться
+                        </button>
+                        <div class="container container--absolute">
+                            <div class="popular-goods__items-wrapper owl-carousel search_result-master-works">
+                                <div class="popular-goods__first-row">
+                                    <div class="popular-goods__item goods-item">
+                                        <div class="goods-item__img-wrapper">
+                                            <img src="img/popular-item.png" alt="" class="goods-item__img">
+                                        </div>
+                                        <div class="goods-item__description">
+                                            <h3>Деревянное панно Loft</h3>
+                                            <p>Краска акриловая, краска меловая, лак
+                                                на водной основе, сосна, фанера</p>
+                                        </div>
+                                        <div class="goods-item__price-wrapper">
+                                            <div class="goods-item__price">
+                                                5000 Р
+                                            </div>
+                                            <div class="goods-item__basket">
+                                                <a href=""><img src="img/like.png" alt="" class="goods-item__like"></a>
+                                                <a href=""><img src="img/fav.png" alt="" class="goods-item__heart"></a>
+                                                <a href=""><img src="img/basket-2.png" alt="" class="goods-item__basket"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popular-goods__item goods-item">
+                                        <div class="goods-item__img-wrapper">
+                                            <img src="img/popular-item.png" alt="" class="goods-item__img">
+                                        </div>
+                                        <div class="goods-item__description">
+                                            <h3>Деревянное панно Loft</h3>
+                                            <p>Краска акриловая, краска меловая, лак
+                                                на водной основе, сосна, фанера</p>
+                                        </div>
+                                        <div class="goods-item__price-wrapper">
+                                            <div class="goods-item__price">
+                                                5000 Р
+                                            </div>
+                                            <div class="goods-item__basket">
+                                                <a href=""><img src="img/like.png" alt="" class="goods-item__like"></a>
+                                                <a href=""><img src="img/fav.png" alt="" class="goods-item__heart"></a>
+                                                <a href=""><img src="img/basket-2.png" alt="" class="goods-item__basket"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popular-goods__item goods-item">
+                                        <div class="goods-item__img-wrapper">
+                                            <img src="img/popular-item.png" alt="" class="goods-item__img">
+                                        </div>
+                                        <div class="goods-item__description">
+                                            <h3>Деревянное панно Loft</h3>
+                                            <p>Краска акриловая, краска меловая, лак
+                                                на водной основе, сосна, фанера</p>
+                                        </div>
+                                        <div class="goods-item__price-wrapper">
+                                            <div class="goods-item__price">
+                                                5000 Р
+                                            </div>
+                                            <div class="goods-item__basket">
+                                                <a href=""><img src="img/like.png" alt="" class="goods-item__like"></a>
+                                                <a href=""><img src="img/fav.png" alt="" class="goods-item__heart"></a>
+                                                <a href=""><img src="img/basket-2.png" alt="" class="goods-item__basket"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popular-goods__item goods-item">
+                                        <div class="goods-item__img-wrapper">
+                                            <img src="img/popular-item.png" alt="" class="goods-item__img">
+                                        </div>
+                                        <div class="goods-item__description">
+                                            <h3>Деревянное панно Loft</h3>
+                                            <p>Краска акриловая, краска меловая, лак
+                                                на водной основе, сосна, фанера</p>
+                                        </div>
+                                        <div class="goods-item__price-wrapper">
+                                            <div class="goods-item__price">
+                                                5000 Р
+                                            </div>
+                                            <div class="goods-item__basket">
+                                                <a href=""><img src="img/like.png" alt="" class="goods-item__like"></a>
+                                                <a href=""><img src="img/fav.png" alt="" class="goods-item__heart"></a>
+                                                <a href=""><img src="img/basket-2.png" alt="" class="goods-item__basket"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           
+                            </div>
+                        </div>
+                   </div>
+                   <div class="search__master-item">
+                        <div class="shop-preview__header search__master-header">
+                            <div class="shop-preview__logo">
+                                <img src="img/master-photo.png" alt="">
+                            </div>
+                            <div class="shop-preview__info">
+                                <span class="shop-preview__name">Gaponov.</span>
+                                <div class="shop-preview__rating"></div>
+                                <span class="shop-preview__rating-number">5 (11)</span>
+                                <div class="shop-preview__location shop-preview__location--name">
+                                    <span class="search__master-name">Сергей Гапонов</span>
+                                    <span class="search__master-location">Москва,Россия</span>
+                                    <span class="search__master-data">Дата регистрации: 09.12.2014</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn--subscribe">
+                            подписаться
+                        </button>
+                        <div class="container container--absolute">
+                            <div class="popular-goods__items-wrapper owl-carousel search_result-master-works">
+                                <div class="popular-goods__first-row">
+                                    <div class="popular-goods__item goods-item">
+                                        <div class="goods-item__img-wrapper">
+                                            <img src="img/popular-item.png" alt="" class="goods-item__img">
+                                        </div>
+                                        <div class="goods-item__description">
+                                            <h3>Деревянное панно Loft</h3>
+                                            <p>Краска акриловая, краска меловая, лак
+                                                на водной основе, сосна, фанера</p>
+                                        </div>
+                                        <div class="goods-item__price-wrapper">
+                                            <div class="goods-item__price">
+                                                5000 Р
+                                            </div>
+                                            <div class="goods-item__basket">
+                                                <a href=""><img src="img/like.png" alt="" class="goods-item__like"></a>
+                                                <a href=""><img src="img/fav.png" alt="" class="goods-item__heart"></a>
+                                                <a href=""><img src="img/basket-2.png" alt="" class="goods-item__basket"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popular-goods__item goods-item">
+                                        <div class="goods-item__img-wrapper">
+                                            <img src="img/popular-item.png" alt="" class="goods-item__img">
+                                        </div>
+                                        <div class="goods-item__description">
+                                            <h3>Деревянное панно Loft</h3>
+                                            <p>Краска акриловая, краска меловая, лак
+                                                на водной основе, сосна, фанера</p>
+                                        </div>
+                                        <div class="goods-item__price-wrapper">
+                                            <div class="goods-item__price">
+                                                5000 Р
+                                            </div>
+                                            <div class="goods-item__basket">
+                                                <a href=""><img src="img/like.png" alt="" class="goods-item__like"></a>
+                                                <a href=""><img src="img/fav.png" alt="" class="goods-item__heart"></a>
+                                                <a href=""><img src="img/basket-2.png" alt="" class="goods-item__basket"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popular-goods__item goods-item">
+                                        <div class="goods-item__img-wrapper">
+                                            <img src="img/popular-item.png" alt="" class="goods-item__img">
+                                        </div>
+                                        <div class="goods-item__description">
+                                            <h3>Деревянное панно Loft</h3>
+                                            <p>Краска акриловая, краска меловая, лак
+                                                на водной основе, сосна, фанера</p>
+                                        </div>
+                                        <div class="goods-item__price-wrapper">
+                                            <div class="goods-item__price">
+                                                5000 Р
+                                            </div>
+                                            <div class="goods-item__basket">
+                                                <a href=""><img src="img/like.png" alt="" class="goods-item__like"></a>
+                                                <a href=""><img src="img/fav.png" alt="" class="goods-item__heart"></a>
+                                                <a href=""><img src="img/basket-2.png" alt="" class="goods-item__basket"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popular-goods__item goods-item">
+                                        <div class="goods-item__img-wrapper">
+                                            <img src="img/popular-item.png" alt="" class="goods-item__img">
+                                        </div>
+                                        <div class="goods-item__description">
+                                            <h3>Деревянное панно Loft</h3>
+                                            <p>Краска акриловая, краска меловая, лак
+                                                на водной основе, сосна, фанера</p>
+                                        </div>
+                                        <div class="goods-item__price-wrapper">
+                                            <div class="goods-item__price">
+                                                5000 Р
+                                            </div>
+                                            <div class="goods-item__basket">
+                                                <a href=""><img src="img/like.png" alt="" class="goods-item__like"></a>
+                                                <a href=""><img src="img/fav.png" alt="" class="goods-item__heart"></a>
+                                                <a href=""><img src="img/basket-2.png" alt="" class="goods-item__basket"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           
+                            </div>
+                        </div>
+                   </div>
+                   <div class="search__master-item">
+                        <div class="shop-preview__header search__master-header">
+                            <div class="shop-preview__logo">
+                                <img src="img/master-photo.png" alt="">
+                            </div>
+                            <div class="shop-preview__info">
+                                <span class="shop-preview__name">Gaponov.</span>
+                                <div class="shop-preview__rating"></div>
+                                <span class="shop-preview__rating-number">5 (11)</span>
+                                <div class="shop-preview__location shop-preview__location--name">
+                                    <span class="search__master-name">Сергей Гапонов</span>
+                                    <span class="search__master-location">Москва,Россия</span>
+                                    <span class="search__master-data">Дата регистрации: 09.12.2014</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn--subscribe">
+                            подписаться
+                        </button>
+                        <div class="container container--absolute">
+                            <div class="popular-goods__items-wrapper owl-carousel search_result-master-works">
+                                <div class="popular-goods__first-row">
+                                    <div class="popular-goods__item goods-item">
+                                        <div class="goods-item__img-wrapper">
+                                            <img src="img/popular-item.png" alt="" class="goods-item__img">
+                                        </div>
+                                        <div class="goods-item__description">
+                                            <h3>Деревянное панно Loft</h3>
+                                            <p>Краска акриловая, краска меловая, лак
+                                                на водной основе, сосна, фанера</p>
+                                        </div>
+                                        <div class="goods-item__price-wrapper">
+                                            <div class="goods-item__price">
+                                                5000 Р
+                                            </div>
+                                            <div class="goods-item__basket">
+                                                <a href=""><img src="img/like.png" alt="" class="goods-item__like"></a>
+                                                <a href=""><img src="img/fav.png" alt="" class="goods-item__heart"></a>
+                                                <a href=""><img src="img/basket-2.png" alt="" class="goods-item__basket"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popular-goods__item goods-item">
+                                        <div class="goods-item__img-wrapper">
+                                            <img src="img/popular-item.png" alt="" class="goods-item__img">
+                                        </div>
+                                        <div class="goods-item__description">
+                                            <h3>Деревянное панно Loft</h3>
+                                            <p>Краска акриловая, краска меловая, лак
+                                                на водной основе, сосна, фанера</p>
+                                        </div>
+                                        <div class="goods-item__price-wrapper">
+                                            <div class="goods-item__price">
+                                                5000 Р
+                                            </div>
+                                            <div class="goods-item__basket">
+                                                <a href=""><img src="img/like.png" alt="" class="goods-item__like"></a>
+                                                <a href=""><img src="img/fav.png" alt="" class="goods-item__heart"></a>
+                                                <a href=""><img src="img/basket-2.png" alt="" class="goods-item__basket"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popular-goods__item goods-item">
+                                        <div class="goods-item__img-wrapper">
+                                            <img src="img/popular-item.png" alt="" class="goods-item__img">
+                                        </div>
+                                        <div class="goods-item__description">
+                                            <h3>Деревянное панно Loft</h3>
+                                            <p>Краска акриловая, краска меловая, лак
+                                                на водной основе, сосна, фанера</p>
+                                        </div>
+                                        <div class="goods-item__price-wrapper">
+                                            <div class="goods-item__price">
+                                                5000 Р
+                                            </div>
+                                            <div class="goods-item__basket">
+                                                <a href=""><img src="img/like.png" alt="" class="goods-item__like"></a>
+                                                <a href=""><img src="img/fav.png" alt="" class="goods-item__heart"></a>
+                                                <a href=""><img src="img/basket-2.png" alt="" class="goods-item__basket"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popular-goods__item goods-item">
+                                        <div class="goods-item__img-wrapper">
+                                            <img src="img/popular-item.png" alt="" class="goods-item__img">
+                                        </div>
+                                        <div class="goods-item__description">
+                                            <h3>Деревянное панно Loft</h3>
+                                            <p>Краска акриловая, краска меловая, лак
+                                                на водной основе, сосна, фанера</p>
+                                        </div>
+                                        <div class="goods-item__price-wrapper">
+                                            <div class="goods-item__price">
+                                                5000 Р
+                                            </div>
+                                            <div class="goods-item__basket">
+                                                <a href=""><img src="img/like.png" alt="" class="goods-item__like"></a>
+                                                <a href=""><img src="img/fav.png" alt="" class="goods-item__heart"></a>
+                                                <a href=""><img src="img/basket-2.png" alt="" class="goods-item__basket"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           
+                            </div>
+                        </div>
+                   </div>
+                   <div class="search__master-item">
+                        <div class="shop-preview__header search__master-header">
+                            <div class="shop-preview__logo">
+                                <img src="img/master-photo.png" alt="">
+                            </div>
+                            <div class="shop-preview__info">
+                                <span class="shop-preview__name">Gaponov.</span>
+                                <div class="shop-preview__rating"></div>
+                                <span class="shop-preview__rating-number">5 (11)</span>
+                                <div class="shop-preview__location shop-preview__location--name">
+                                    <span class="search__master-name">Сергей Гапонов</span>
+                                    <span class="search__master-location">Москва,Россия</span>
+                                    <span class="search__master-data">Дата регистрации: 09.12.2014</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn--subscribe">
+                            подписаться
+                        </button>
+                        <div class="container container--absolute">
+                            <div class="popular-goods__items-wrapper owl-carousel search_result-master-works">
+                                <div class="popular-goods__first-row">
+                                    <div class="popular-goods__item goods-item">
+                                        <div class="goods-item__img-wrapper">
+                                            <img src="img/popular-item.png" alt="" class="goods-item__img">
+                                        </div>
+                                        <div class="goods-item__description">
+                                            <h3>Деревянное панно Loft</h3>
+                                            <p>Краска акриловая, краска меловая, лак
+                                                на водной основе, сосна, фанера</p>
+                                        </div>
+                                        <div class="goods-item__price-wrapper">
+                                            <div class="goods-item__price">
+                                                5000 Р
+                                            </div>
+                                            <div class="goods-item__basket">
+                                                <a href=""><img src="img/like.png" alt="" class="goods-item__like"></a>
+                                                <a href=""><img src="img/fav.png" alt="" class="goods-item__heart"></a>
+                                                <a href=""><img src="img/basket-2.png" alt="" class="goods-item__basket"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popular-goods__item goods-item">
+                                        <div class="goods-item__img-wrapper">
+                                            <img src="img/popular-item.png" alt="" class="goods-item__img">
+                                        </div>
+                                        <div class="goods-item__description">
+                                            <h3>Деревянное панно Loft</h3>
+                                            <p>Краска акриловая, краска меловая, лак
+                                                на водной основе, сосна, фанера</p>
+                                        </div>
+                                        <div class="goods-item__price-wrapper">
+                                            <div class="goods-item__price">
+                                                5000 Р
+                                            </div>
+                                            <div class="goods-item__basket">
+                                                <a href=""><img src="img/like.png" alt="" class="goods-item__like"></a>
+                                                <a href=""><img src="img/fav.png" alt="" class="goods-item__heart"></a>
+                                                <a href=""><img src="img/basket-2.png" alt="" class="goods-item__basket"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popular-goods__item goods-item">
+                                        <div class="goods-item__img-wrapper">
+                                            <img src="img/popular-item.png" alt="" class="goods-item__img">
+                                        </div>
+                                        <div class="goods-item__description">
+                                            <h3>Деревянное панно Loft</h3>
+                                            <p>Краска акриловая, краска меловая, лак
+                                                на водной основе, сосна, фанера</p>
+                                        </div>
+                                        <div class="goods-item__price-wrapper">
+                                            <div class="goods-item__price">
+                                                5000 Р
+                                            </div>
+                                            <div class="goods-item__basket">
+                                                <a href=""><img src="img/like.png" alt="" class="goods-item__like"></a>
+                                                <a href=""><img src="img/fav.png" alt="" class="goods-item__heart"></a>
+                                                <a href=""><img src="img/basket-2.png" alt="" class="goods-item__basket"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popular-goods__item goods-item">
+                                        <div class="goods-item__img-wrapper">
+                                            <img src="img/popular-item.png" alt="" class="goods-item__img">
+                                        </div>
+                                        <div class="goods-item__description">
+                                            <h3>Деревянное панно Loft</h3>
+                                            <p>Краска акриловая, краска меловая, лак
+                                                на водной основе, сосна, фанера</p>
+                                        </div>
+                                        <div class="goods-item__price-wrapper">
+                                            <div class="goods-item__price">
+                                                5000 Р
+                                            </div>
+                                            <div class="goods-item__basket">
+                                                <a href=""><img src="img/like.png" alt="" class="goods-item__like"></a>
+                                                <a href=""><img src="img/fav.png" alt="" class="goods-item__heart"></a>
+                                                <a href=""><img src="img/basket-2.png" alt="" class="goods-item__basket"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                </div>
+
+                <div class="container">
+                    <div class="pagination">
+                        <ul>
+                            <li>
+                                <button class="pagination-btn pagination-btn--prev pagination-btn--first">
+                                    
+                                </button> 
+                            </li>
+                            <li>
+                                <button class="pagination-btn pagination-btn--prev">
+                                    
+                                </button> 
+                            </li>
+                            <li>
+                                <a class="pagination__page">
+                                    1
+                                </a>
+                            </li>
+                            <li>
+                                <a class="pagination__page">
+                                    2
+                                </a>
+                            </li>
+                            <li>
+                                <a class="pagination__page">
+                                    3
+                                </a>
+                            </li>
+                            <li>
+                                <a class="pagination__page pagination__page--dots">
+                                    
+                                </a>
+                            </li>
+                            <li>
+                                <a class="pagination__page">
+                                    7
+                                </a>
+                            </li>
+                            <li>
+                                <a class="pagination__page">
+                                    8
+                                </a>
+                            </li>
+                            <li>
+                                <a class="pagination__page">
+                                   9 
+                                </a>
+                            </li>
+                            <li>
+                                <button class="pagination-btn pagination-btn--next">
+                                    
+                                </button>
+                            </li>
+                            <li>
+                                <button class="pagination-btn pagination-btn--next pagination-btn--last">
+                                    
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        <div class="container">
+            <div class="promo-block">
+                <div class="promo-block__item promo-block__editor-choice">
+                    <a href="">Выбор <br> редакции</a>
+                    <a href="" class="promo-block__link"></a>
+                </div>
+                <div class="promo-block__item promo-block__new-shop">
+                    <a href="">Новые <br> магазины</a>
+                    <a href="" class="promo-block__link"></a>
+                </div>
+                <div class="promo-block__item promo-block__bestsellers">
+                    <a href="">Бестселлеры</a>
+                    <a href="" class="promo-block__link"></a>
+                </div>
+            </div>
+        </div>
 </main>
 <footer>
     <div class="feedback ">

@@ -116,9 +116,9 @@
         <div class="box has-advanced-upload drop-zone__wrapper">
                             <div class="box__input">
                                 <input type="file" name="files[]" id="file" class="box__file" data-multiple-caption="{count} files selected" multiple="">
-                                <label for="file" class="btn btn-drop">Выбрать обложку</label> <span class="box__dragndrop"> <span class="grey">или</span> Перетащите её сюда</span>.
+                                <label for="file" class="btn btn-drop">Выбрать фотографию</label> <span class="box__dragndrop"> <span class="grey">или</span> Перетащите её сюда</span>.
                                 <button type="submit" class="box__button">Upload</button>
-                                <p>Требования к загружаемым изображениям:<br>
+                                <p><span>Требования к загружаемым изображениям:</span><br>
                                 Формат JPG, максимальный размер файлы - 3 Мб.<br>
                                 Для эффективного уменьшения размера файла без визуальных потерь рекомендуем использовать следующие<br> бесплатные онлайн-инструменты:
                                <ul>
@@ -138,7 +138,11 @@
                 <div class="loader"></div>
             </div>
             <div class="album-popups__img-info">
-                <span class="album-popups__img-name">mansnothot.jpg</span>
+                <div class="album-popups__img-name"><span> mansnothot.jpg </span> 
+                    <div class="album-popups__img-delet">x
+                            <div class="full-info">удаление фотографии</div>
+                    </div>
+                </div>
                 <span class="album-popups__img-weight">1.4 мб</span>
             </div>
             
@@ -149,7 +153,11 @@
                 
             </div>
             <div class="album-popups__img-info">
-                <span class="album-popups__img-name">mansnothot.jpg</span>
+                <div class="album-popups__img-name"><span> mansnothot.jpg </span> 
+                    <div class="album-popups__img-delet">x
+                            <div class="full-info">удаление фотографии</div>
+                    </div>
+                </div>
                 <span class="album-popups__img-weight">1.4 мб</span>
             </div>
             
@@ -175,7 +183,7 @@
                                 <input type="file" name="files[]" id="file" class="box__file" data-multiple-caption="{count} files selected" multiple="">
                                 <label for="file" class="btn btn-drop">Выбрать фотографии</label> <span class="box__dragndrop"> <span class="grey">или</span> Перетащите её сюда</span>.
                                 <button type="submit" class="box__button">Upload</button>
-                                <p>Требования к загружаемым изображениям:<br>
+                                <p>><span>Требования к загружаемым изображениям:</span><br>
                                 Формат JPG, максимальный размер файлы - 3 Мб.<br>
                                 Для эффективного уменьшения размера файла без визуальных потерь рекомендуем использовать следующие<br> бесплатные онлайн-инструменты:
                                <ul>
@@ -195,7 +203,11 @@
                 <div class="loader"></div>
             </div>
             <div class="album-popups__img-info">
-                <span class="album-popups__img-name">mansnothot.jpg</span>
+                <div class="album-popups__img-name"><span> mansnothot.jpg </span> 
+                    <div class="album-popups__img-delet">x
+                            <div class="full-info">удаление фотографии</div>
+                    </div>
+                </div>
                 <span class="album-popups__img-weight">1.4 мб</span>
             </div>
             
@@ -206,7 +218,11 @@
                 
             </div>
             <div class="album-popups__img-info">
-                <span class="album-popups__img-name">mansnothot.jpg</span>
+                <div class="album-popups__img-name"><span> mansnothot.jpg </span> 
+                    <div class="album-popups__img-delet">x
+                            <div class="full-info">удаление фотографии</div>
+                    </div>
+                </div>
                 <span class="album-popups__img-weight">1.4 мб</span>
             </div>
             
@@ -215,7 +231,6 @@
         <button class="btn btn--delete"> <span>Удалить отчет о выставке</span></button>
         <div class="btn-album__wrapper">
             <input type="submit" class="btn btn-orange btn-album" value="Сохранить изменения">
-
         </div>
     </form>
 </div>
@@ -439,7 +454,7 @@
                 <div class="portfolio__item portfolio__show">
                     <div class="portfolio__item-header">
                         <h3>Выставки</h3>
-                        <button type="button" class="btn btn-portfolio" id="add_album-btn" href="#album-add-popups__open">Добавить запись</button>
+                        <button type="button" class="btn btn-portfolio" id="add_album-btn" href="#album-add-popups__open">Добавить выставку</button>
                     </div>
                     <div class="portfolio__item-list">
                         <div class="goods-item goods-item--preview">

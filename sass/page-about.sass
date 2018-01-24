@@ -1,0 +1,312 @@
+.page 
+	font-family: 'Lato',sans-serif
+.page__header
+	width: 100%
+	height: 300px
+	box-sizing: border-box
+.page__nav
+	list-style-type: none
+	display: flex
+.page__nav-item
+	display: block
+	font-size: 16px
+	text-decoration: none
+	letter-spacing: 0.64px
+	color: #fff
+	font-weight: 600
+	padding: 0px 30px
+	padding-bottom: 20px
+.page__nav-item--active
+	border-bottom: 3px solid #fecb2e
+.page__nav-wrapper
+	height: 100%
+	display: flex
+	justify-content: flex-end
+	align-items: flex-end
+.page__about
+	box-sizing: border-box
+	font-size: 16px
+	line-height: 24px
+	color: #000
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	flex-grow: 2
+	margin-top: 35px
+	min-height: 600px
+.page__business-card
+	box-sizing: border-box
+	width: 340px
+	height: 220px
+	border: 1px solid #ddd
+	background: #eeeeee
+.page__main-wrapper
+	display: flex
+	flex-wrap: wrap
+	align-items: flex-start
+.page__about-content
+	width: 570px
+	box-sizing: border-box
+	p 
+		margin-top: 0
+.page__advertising
+	box-sizing: border-box
+	width: 100%
+	height: 100px
+	background: #eeeeee
+	align-self: flex-end
+	margin-bottom: 40px
+.page__blog .portfolio__item-list
+	flex-wrap: wrap
+.page__blog
+	width: 60%
+	.goods-item--preview
+		width: 23%
+.page__blog .portfolio__item-list .goods-item--preview:nth-child(4n) 
+	margin-right: 30px
+
+
+.page__blog	.goods-item__description
+	padding-top: 10px
+.page__filter select
+	height: 40px
+	border-radius: 5px
+	border-color: #ddd
+	outline: none
+	padding-left: 10px
+	padding-right: 0px
+	font-size: 16px
+	font-family: 'Lato',sans-serif
+	line-height: 22px
+	font-weight: 600
+.page__filter label,
+.page__filter-clear
+	font-family: 'Gilroy'
+	font-size: 12px
+	line-height: 22px
+	letter-spacing: 1.2px
+	font-weight: 700
+	text-transform: uppercase
+.page__filter label
+	width: 100%
+	display: block
+.page__filter form
+	width: 100%
+	display: flex
+	align-items: center
+.page__filter
+	width: 100%
+
+.page__items
+	margin-top: 30px
+.page__filter-category
+	margin-right: 42px
+.page__filter-price
+	margin-right: 65px
+.page__filter-sorting
+	margin-right: 39px
+.page__filter-clear
+	margin-top: 25px
+	position: relative
+	padding-left: 15px
+	cursor: pointer
+	&:before
+		content: ''
+		position: absolute
+		width: 12px
+		height: 2px
+		background: #999
+		left: 0
+		top: 9px
+		transform: rotate(45deg)
+	&:after
+		content: ''
+		position: absolute
+		width: 12px
+		height: 2px
+		background: #999
+		left: 0
+		top: 9px
+		transform: rotate(-45deg)
+.page__filter-clear:hover
+	&:before
+		background: #fecb2e
+	&:after
+			background: #fecb2e
+.page__items
+	width: 70%
+.page__search-result
+	width: 100%
+	display: flex
+	flex-wrap: wrap
+	jusify-content: space-between
+	margin-top: 15px
+	.goods-item
+		width: 31%
+		margin-right: 30px
+	.goods-item:nth-child(3n)
+		margin-right: 0px
+	.goods-item__img-wrapper
+		max-height: 183px
+		position: relative
+		overflow: hidden
+
+.page__search-result .goods-item:hover .goods-item__description-wrapper
+	border: 1px solid #fecb2e
+	border-top: none
+.page__search-result .goods-item .goods-item__description-wrapper
+	border: 1px solid transparent
+	border-top: none
+.goods-item__dots
+	display: flex
+	position: absolute
+	top: 12px
+	right: 3px
+	z-index: 10
+	display: none
+.goods-item:hover .goods-item__dots
+	display: flex
+.page__search-result .goods-item:hover .goods-item__img-wrapper:before 
+	display: block
+
+.page__search-result .goods-item__img-wrapper:before 
+	display: none
+	content: '';
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	background: #333;
+	top: -103px;
+	right: -72px;
+	z-index: 10;
+	opacity: .7;
+	border-radius: 50%;
+
+.goods-item__dots .owl-dot
+	width: 7px
+	height: 7px
+	border: 1px solid #ccc 
+	border-radius: 50%
+	margin-right: 5px
+	cursor: pointer
+.goods-item__dots .owl-dot.active
+	background: #fecb2e
+
+.goods-item__basket svg
+	width: 22px
+	height: 22px
+	fill: #aaa
+	&:hover
+		fill: #000
+	&:active
+		fill: #fecb2e
+
+.goods-item__basket a 
+	text-decoration: none
+	position: relative
+	margin-right: 5px	
+	&:hover .full-info
+		display: block
+		height: 40px
+		width: 164px
+		box-sizing: border-box
+		background: #333
+		color: #ccc 
+		font-size: 14px
+		padding-top: 5px
+		top: -55px
+		left: -67px
+		text-align: center
+		border-radius: 5px
+		padding: 0px
+		padding-top: 7px
+    	
+.goods-item__basket .full-info:before
+		content: ''
+		border: 15px solid #333
+		position: absolute
+		bottom: -6px
+		left: 67px
+		border-top: 8px solid transparent
+		border-right: 8px solid transparent
+		transform: rotate(-45deg)
+.goods-item__basket-like svg
+		width: 20px
+		height: 16px
+		padding-bottom: 2px
+.page__show-more
+		font-family: 'Gilroy'
+		font-size: 12px
+		text-transform: uppercase
+		font-weight: 700
+		color: #000	
+		text-align: center
+		width: 100%
+		span
+			cursor: pointer
+			background: url(../img/refresh.png) no-repeat left
+			padding-left: 24px
+
+.page__filter-result
+	color: #999
+	font-size: 16px
+	letter-spacing: 0.64px
+	margin-top: 14px
+.user-block__advertising.user-block__advertising-items
+	margin-top: 43px	
+
+.page__reviews-list
+	display: flex
+	flex-wrap: wrap
+	width: 100%
+	justify-content: space-between
+.page__reviews
+	width: 70%
+	.reviews__rating-wrapper
+		padding-right: 12px
+	.reviews__header
+		padding-bottom: 0px
+	.reviews
+		min-width: 300px
+
+.page__delivery-wrapper
+	font-family: 'Lato',sans-serif
+	line-height: 24px
+	font-size: 16px
+	display: flex
+	width: 100%
+	align-items: flex-start
+
+	h3
+		font-family: 'Gilroy'
+		font-size: 26px
+		font-weight: 400
+		margin-top: 5px
+		margin-bottom: 24px
+	ul 
+		list-style-type: none
+
+	li:before 
+		content: ''
+		display: block 
+		position: absolute
+		width: 7px
+		height: 7px
+		border-radius: 50%
+		left: 0px
+		top: 8px
+		background: #fecb2e
+.page__delivery-wrapper li 
+	position: relative
+	padding-left: 15px
+.page__delivery-payment
+	margin-right: 130px
+.page__delivery-options
+	margin-right: 24px
+.page__delivery-price
+	padding-top: 51px
+	li:before
+		display: none
+.page__nav-wrapper--padding
+	padding-left: 375px
+	justify-content: flex-start

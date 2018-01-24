@@ -35,7 +35,7 @@
   text-transform: uppercase
   color: #999
   margin-bottom: 5px
-  font-weight: 600
+  font-weight: 700
 
 .main-registration__stage-title
   font-weight: 400
@@ -59,7 +59,12 @@
   box-sizing: border-box
   min-height: 250px
   margin: 0 auto
-
+  input 
+    font-weight: 600
+    font-family: 'Lato',sans-serif
+    line-height: 22px
+  textarea
+    line-height: 22px
 .main-registration__dragndrop
   width: 100%
   border: 1px dashed #cccccc
@@ -108,7 +113,8 @@
  padding: 13px 18px
  border: 1px solid #fecb2e
  font-weight: 700
-
+ text-transform: uppercase
+ font-size: 12px  
 
 .registration_stage-2 label
   display: block
@@ -117,7 +123,7 @@
   text-transform: uppercase
   color: #999
   margin-bottom: 5px
-  font-weight: 600
+  font-weight: 700
 
 .main-registration__name-field
   box-sizing: border-box
@@ -135,19 +141,24 @@
   text-transform: uppercase
   color: #999999
   margin-bottom: 5px
-  font-weight: 600
+  font-weight: 700
 
 .registration-field--shop-name
   margin-bottom: 30px
+  font-weight: 600
+  font-family: 'Lato', sans-serif
 
 .main-registration__link-wrapper
   display: flex
   align-items: baseline
+  span 
+    font-weight: 600
 
 .main-registration__link-wrapper input
   flex-grow: 2
   margin-left: 5px
-
+  font-weight: 600
+  font-family: 'Lato', sans-serif
 .main-registration__link-result
   word-break: break-all
 
@@ -206,6 +217,8 @@ span.main-registration__text-semibold
     color: #fff
     display: none
     padding: 10px
+    padding-left: 17px
+    padding-right: 5px
     font-size: 14px
     top: -90px
     left: -17px
@@ -259,6 +272,8 @@ span.main-registration__text-semibold
   background: url(../img/calendar.png) center right 15px no-repeat
   margin-right: 30px
   margin-bottom: 30px
+  font-weight: 600
+  font-family: 'Lato', sans-serif
 
 .registration_stage-2
   margin-bottom: 59px
@@ -285,15 +300,20 @@ span.main-registration__text-semibold
   color: #000
   outline: none
   resize: none
-  border-radius: 4px;
-  border: 1px solid #dddddd;
-  background-color: #f9f9f9;
-  overflow: hidden;
+  border-radius: 4px
+  border: 1px solid #dddddd
+  background-color: #f9f9f9
+  overflow: hidden
+  line-height: 22px
+  &:focus
+    background: #fff
+    border: 1px solid #999
 
-
-.registration_stage-2__data-wrapper textarea:focus
+.registration_stage-2__data-wrapper textarea:focus,
+.registration_stage-4__pay-wrapper textarea:focus
+  background: #fff
+  border: 1px solid #999
   color: #000
-
 .required
   color: #fecb2e !important
   font-size: 25px !important
@@ -333,9 +353,7 @@ span.main-registration__text-semibold
  background-size: 70%
 
 .registration_stage-3__pay-wrapper
-  background: #fff
   width: 100%
-  padding: 18px 45px 45px
   max-width: 740px
   box-sizing: border-box
   margin-left: 70px
@@ -344,6 +362,20 @@ span.main-registration__text-semibold
   padding-bottom: 20px
   label
     display: block
+
+.registration_stage-4-4__commercial .registration_stage-4-4__title:before
+  content: ''
+  top: 10px
+  left: 42px
+  position: absolute
+  width: 30px
+  height: 3px
+  background: #fecb2e
+.registration_stage-4-4__commercial-wrapper
+  padding: 18px 45px 45px
+  background: #fff
+  display: flex
+  flex-wrap: wrap
 
 .main-registration__stage  p
   font-size: 14px
@@ -359,7 +391,8 @@ span.main-registration__text-semibold
 .registration_stage-3__title
   padding-left: 162px
   position: relative
-
+.registration_stage-4-4__commercial .registration_stage-4-4__title
+  padding-left: 85px
 .registration_stage-3__title:before
   content: ''
   top: -7px
@@ -370,28 +403,40 @@ span.main-registration__text-semibold
   background: url(../img/3_5.png) left no-repeat
 
 .registration_stage-4__pay-wrapper
-  background: #fff
   width: 100%
   max-width: 740px
   box-sizing: border-box
   margin-left: 70px
-  display: flex
-  flex-wrap: wrap
+  p
+    margin-bottom: 40px
+.main-registration .registration_stage-4__pay-wrapper
+  background: #fff;
+  width: 100%;
+  max-width: 740px;
+  box-sizing: border-box;
+  margin-left: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 18px 45px 35px;
+.registration_stage-4-4__commercial-wrapper
   padding: 18px 45px 20px
   padding-bottom: 35px
-  p
-    margin-bottom: 53px
-
+  display: flex
+  flex-wrap: wrap
+  box-sizing: border-box
+  background: #fff
 .registration_stage-4__left
   display: flex
   flex-wrap: wrap
   width: 45%
+  padding-top: 10px
+  .label-checkbox--orange
+    margin-right: 0
 .personal__menu-item--active
   background-color: rgba(254, 203, 46, 0.1)
 .registration_stage-4__left .label-checkbox--orange
   width: 100%
-  margin-bottom: 45px
-
+  margin-bottom: 46px
 .delivery-price
   background: #f9f9f9
   border: 1px solid #dddddd
@@ -402,14 +447,17 @@ span.main-registration__text-semibold
   color: #000
   padding: 0px 10px
   margin-right: 10px
-
+  margin-bottom: 20px
+.registration_stage-4__right.registration_stage-4__right--small
+  padding-top: 0px
+.registration_stage-4__right.registration_stage-4__right--small .label-checkbox--orange
+  margin-bottom: 12px
+  margin-top: 12px
 .delivery-price:disabled
   border: none
   font-size: 0px
-
 .delivery-price:focus
   color: #000
-
 .registration_stage-4__right
   display: flex
   flex-wrap: wrap
@@ -423,23 +471,22 @@ span.main-registration__text-semibold
   margin-right: 0px
 .valuta
   display: inline-block
-
-
-
+.delivery-price:disabled + .valuta
+  display: none
+.delivery-price:disabled
+  margin-right: 20px
 .label-checkbox--grey
   color: #999999
   font-size: 14px
-
 .fade
   opacity: 0
-
 .registration_stage-4__right--small
   display: flex
-
+  padding-left: 35px
+  padding-top: 10px
 .registration_stage-4__title
   padding-left: 162px
   position: relative
-
 .registration_stage-4__title:before
   content: ''
   top: -7px
@@ -448,10 +495,8 @@ span.main-registration__text-semibold
   width: 100px
   height: 40px
   background: url(../img/4_5.png) left no-repeat
-
 .registration_stage-5
   margin-bottom: 40px
-
 .registration_stage-5__contact-information
   background: #fff
   width: 100%
@@ -465,7 +510,6 @@ span.main-registration__text-semibold
     width: 350px
     box-sizing: border-box
     margin-bottom: 30px
-
 .registration_stage-5 label
   display: block
   font-size: 12px
@@ -474,6 +518,7 @@ span.main-registration__text-semibold
   color: #999
   margin-bottom: 5px
   width: 100%
+  font-weight: 700
 
 .registration_stage-5__title
   padding-left: 162px
@@ -492,7 +537,13 @@ span.main-registration__text-semibold
   display: flex
   justify-content: center
   flex-wrap: wrap
-
+  padding-top: 50px
+  padding-left: 45px
+  justify-content: flex-start
+.main-registration__submit-wrapper .btn-underlining
+  margin-top: 25px
+.main-registration__submit-wrapper .main-registration__btn
+  margin-top: 25px
 .main-registration__submit-wrapper input[type="checkbox"]
   display: none
 
@@ -517,8 +568,7 @@ span.main-registration__text-semibold
   position: absolute
   width: 15px
   height: 15px
-  background: #fecb2e
-
+  border: 1px solid #ddd
 
 .main-registration__submit-wrapper .checkbox:checked+label:after
   content: ''
@@ -527,7 +577,8 @@ span.main-registration__text-semibold
   position: absolute
   width: 15px
   height: 15px
-  background: #fecb2e url(../img/check.png) center no-repeat
+  border: 1px solid #ddd
+  background: #fecb2e
   background-size: 70%
 
 .main-registration__btn
@@ -587,6 +638,7 @@ span.main-registration__text-semibold
     font-family: 'Gilroy'
     text-transform: uppercase
     color: #999
+    font-weight: 700
 
   p
     padding-right: 0px
@@ -595,7 +647,11 @@ span.main-registration__text-semibold
     width: 208px
     box-sizing: border-box
     flex-grow: 0
-    margin-bottom: 10px
+    margin-bottom: 25px
+    font-weight: 600
+    background-color: #f9f9f9 
+    &:focus 
+      background-color: #fff
   .main-registration__link-result
     margin-top: 0px
     margin-bottom: 30px
@@ -607,10 +663,14 @@ span.main-registration__text-semibold
   border-radius: 4px
   padding-left: 10px
   padding-right: 50px
-  background: url(../img/calendar.png) center right 15px no-repeat !important
+  background:  #f9f9f9 url(../img/calendar.png) center right 15px no-repeat !important
   margin-right: 0px
   margin-bottom: 30px
-
+  &:focus
+    background:  #fff url(../img/calendar.png) center right 15px no-repeat !important
+#date-of-birth 
+  margin-bottom: 45px
+  
 .yandex-wallet
   position: relative
 
@@ -649,9 +709,11 @@ span.main-registration__text-semibold
   margin-bottom: 5px
   width: 100%
   position: relative
+  font-weight: 600
 
 .registration_stage-4-4 .label-checkbox--orange
   margin-bottom: 28px
+  color: #000
 
 .registration_stage-4-4__title:before
   content: ''
@@ -709,9 +771,9 @@ span.main-registration__text-semibold
  
 
 .specialization-label
-  display: inline-block !important
+  display: inline-block 
   width: auto
-  font-size: 15px
+  font-size: 16px
   line-height: 15px
   font-family: 'Lato',sans-serif
   border-radius: 20px
@@ -719,7 +781,20 @@ span.main-registration__text-semibold
   background: #fecb2e
   color: #000 !important
   margin-right: 10px
-
+  font-weight: 400
+  position: relative
+  cursor: pointer
+  &:before
+    content: 'x'
+    position: absolute
+    right: 20px
+    top: 11px
+    font-size: 17px
+.registration_stage-2__specialization-wrapper .specialization-label
+  display: inline-block 
+  font-size: 16px
+  text-transform: none
+  font-weight: 600
 .specialization-popup_open
   font-size: 12px
   font-family: 'Gilroy'
@@ -775,9 +850,6 @@ span.main-registration__text-semibold
   border: 1px solid #fecb2e
   margin: 0px auto
 
-.registration_stage-4__left .label-checkbox--orange
-  margin-bottom: 50px
-
 .registration_stage-4__pay-wrapper textarea 
   border-radius: 4px
   border: 1px solid #dddddd
@@ -792,4 +864,49 @@ span.main-registration__text-semibold
 
 .portfolio .main-registration__name-field--master p 
   padding-right: 0px
-  
+
+.main-registration__submit--neprod
+  margin-left: 60px
+  margin-right: 45px
+  .main-registration__btn
+    width: 100%
+    text-align: left
+    position: relative
+    background: #fdc500 url(../img/long-arrow.png) no-repeat right 45px center
+.specialization-type-popup__header
+  padding-left: 20px
+  border-bottom: 1px solid #eee
+  width: 100%
+  h3
+    font-family: "Gilroy"
+    font-size: 26px
+    font-weight: 400
+.specialization-type-popup.white-popup
+  padding: 0px
+.specialization-type-popup-wrapper
+  padding: 20px
+  width: 100%
+
+button.mfp-close.mfp-close
+  top: 40px
+  right: 50px
+  font-size: 40px
+  font-weight: 600
+  color: #000
+.btn-specialization 
+  width: auto
+  height: auto
+  background: #fecb2e
+  border-radius: 5px
+  border: 1px solid #fecb2e
+  margin: 0 auto
+  float: right
+  padding: 25px 35px
+  font-weight: 600
+
+:-ms-input-placeholder 
+    color: #ccc !important;
+    font-weight: 400 !important;
+
+.specialization-type-popup button.mfp-close.mfp-close
+  top: 20px

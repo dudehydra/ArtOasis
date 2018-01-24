@@ -27,11 +27,12 @@
   min-width: 260px
   background: #fff
   align-self: flex-start
+  padding-bottom: 20px
 
 .personal__profile-logo img
   border-radius: 50%
   margin-right: 12px
-  width: 50px!important
+  width: 50px !important
 
 .personal__profile-info
   display: flex
@@ -51,6 +52,13 @@
 
 .personal__menu 
   list-style-type: none
+  margin-top: 15px
+  li 
+    position: relative
+  .notification-number
+    position: absolute
+    right: 80px
+    top: calc(50% - 5px)
 
 .personal__menu-item
   font-family: 'Lato', sans-serif
@@ -68,9 +76,8 @@
   margin-bottom: 10px
 
 .personal__menu-item--active
-  border-left: 1px solid #fecb2e
+  border-left: 2px solid #fecb2e
   background-color: #fffaea !important
-
 .settings
   max-width: 740px
   min-width: 740px
@@ -117,14 +124,17 @@
 .settings__form
   display: flex
   flex-wrap: wrap
-
+.personal__profile__rating-number
+  color: #999999
+  font-size: 14px
 .settings .settings__form h3
   font-size: 26px 
   font-family: 'Gilroy'
   font-weight: 400
   padding-left: 90px
   position: relative
-  margin-bottom: 25px
+  margin-bottom: 10px
+  margin-top: 20px
   &:before 
     content: ' '
     display: block
@@ -141,7 +151,7 @@
   padding-bottom: 0px
   padding-top: 40px
   padding-left: 50px
-  margin-bottom: 13px
+  margin-bottom: 30px
   background: #fff
   width: 100%
   span 
@@ -208,8 +218,8 @@
   letter-spacing: 1px
   border: none
   margin-right: 18px
-  margin-left: 33px
-
+  margin-left: 50px
+  
 .personal__portfolio a 
   background: url(../img/case.svg) no-repeat left 32px top 21px
   background-size: 29px 29px
@@ -217,9 +227,21 @@
 .personal__message
   background: url(../img/message.svg) no-repeat left 33px top 21px
   background-size: 29px 29px
+  position: relative
+.personal__message + span 
+    top: 34px;
+    right: 75px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: #fecb2e;
+    position: absolute;
+    display: block;
 .personal__notifications
-  background: url(../img/bell.svg) no-repeat left 36px top 24px
-  background-size: 22px 22px
+  background: url(../img/bell.svg) no-repeat left 36px top 20px;
+  background-size: 25px 25px;
+  padding-top: 22px
+  padding-bottom: 22px
 
 .personal__settings
   background: url(../img/settings.svg) no-repeat left 33px top 22px
@@ -229,7 +251,7 @@
   background-size: 23px 23px
 
 .personal__portfolio .personal__menu-item--active
-  background: url(../img/case-active.svg) no-repeat left 32px top 21px
+  background: url(../img/case-active.svg) no-repeat left 32px top 16px
   background-size: 29px 29px
 
 .personal__menu-item--active.personal__message
@@ -237,7 +259,7 @@
   background-size: 29px 29px
 
 .personal__menu-item--active.personal__notifications
-  background: url(../img/bell-avtive.svg) no-repeat left 34px top 21px
+  background: url(../img/bell-avtive.svg) no-repeat left 34px top 17px
   background-size: 27px 27px
 
 .personal__menu-item--active.personal__settings
@@ -252,10 +274,12 @@
 .personal__menu-item--active.personal__my-works
   background: url(../img/black-box-active.svg) no-repeat left 35px top 23px
   background-size: 25px 25px
-
+.personal__portfolio .personal__menu-item
+  padding-top: 22px
+  padding-bottom: 22px
 .personal__message--active:before
   content: ' '
-  top: 27px
+  top: 34px
   right: 75px
   height: 8px
   width: 8px
@@ -305,7 +329,8 @@
   color: #999
   font-size: 12px
   line-height: 18px
-
+  flex-grow: 3
+  text-align: right
 .message-menu_message
   font-size: 16px
   line-height: 22px
@@ -316,6 +341,7 @@
   text-overflow: ellipsis
   overflow: hidden
   box-sizing: border-box
+  position: relative
   span
     width: 83%
     text-overflow: ellipsis
@@ -327,8 +353,8 @@
   position: absolute
   right: 0px
   top: 0px
-  width: 20px
-  height: 20px
+  width: 13px
+  height: 13px
   opacity: 0.3
 
 .btn-close:hover 
@@ -381,7 +407,7 @@
   flex-basis: 990px
 
 .chat__header
-  padding: 14px 25px 10px 45px
+  padding: 26px 25px 15px 45px
   border-bottom: 1px solid #eeeeee
   display: flex
   justify-content: space-between
@@ -395,8 +421,8 @@
 .chat__back:after 
   transform: rotate(225deg)
   content: ''
-  width: 10px
-  height: 10px
+  width: 7px
+  height: 7px
   left: -15px
   top: 5px
   position: absolute
@@ -419,6 +445,7 @@
 
 .btn-close--static
   position: relative
+  margin-top: -3px
 
 .chat__main
   padding: 50px 40px 70px 40px
@@ -466,6 +493,8 @@
   outline: none
   padding: 15px 130px 10px 17px
   min-height: 50px
+  overflow: hidden
+  height: 50px
 
 .btn-answer
   position: absolute
@@ -514,7 +543,8 @@
 .notification__header
   background-color: #333333
   padding: 20px 20px
-  padding-bottom: 15px
+  padding-bottom: 18px
+  padding-top: 18px
   color: #fff
   display: flex
   font-family: 'Gilroy'
@@ -529,6 +559,11 @@
     padding: 10px 20px
     padding-top: 20px
     padding-bottom: 15px
+  span
+    font-weight: 700
+.notification__header .label-checkbox--black
+  margin-top: -2px
+
 
 .notification__options--data
   width: 14%
@@ -556,7 +591,7 @@
 
 .order-item__status
   margin-right: 20px
-  width: 18%
+  width: 24%
 .notification__author,
 .notification__data 
   position: relative
@@ -577,7 +612,7 @@
   height: 8px
   border-top: 2px solid #656565
   border-right: 2px solid #656565
-  top: 2px
+  top: -2px
   left: 53px
   transform: rotate(135deg)
 .notification__author:hover:before,
@@ -590,11 +625,12 @@
 
 .notification__item
   display: flex
-  padding: 18px 30px 10px 20px
+  padding: 18px 35px 10px 20px
   margin-bottom: 12px
   position: relative
 .notification__item:nth-child(2n)
   background: #fafafa
+  padding-bottom: 26px
 .notification__author-info,
 .notification__comment-data-wrapper
   flex-grow: 1
@@ -645,7 +681,7 @@
   height: 15px
   position: absolute
   outline: none
-  right: 30px
+  right: 20px
   &:before 
     content: ''
     position: absolute
@@ -690,7 +726,7 @@
   display: none
   position: absolute
   top: -145px
-  left: -100px
+  left: -84px
   padding-bottom: 10px
 
 .personal h3
@@ -723,6 +759,9 @@
   padding: 10px 20px
   display: flex
   border-bottom: 1px solid #eee
+  min-height: 84px
+  box-sizing: border-box
+  align-items: center
 
 .subscribers__item-wrapper img 
     border-radius: 50%
@@ -730,9 +769,9 @@
     width: 40px!important
 .subscribers__name
     font-size: 15px
-    font-weight: 700
     display: block
     line-height: 22px
+    color: #000
 .subscribers__data
     font-size: 14px
     line-height: 20px
@@ -762,6 +801,8 @@
   p 
     overflow: hidden
     max-height: 70px
+    margin-top: 0
+    margin-bottom: 10px
   &:hover 
     border-left: 1px solid #fecb2e
     border-right: 1px solid #fecb2e
@@ -784,6 +825,7 @@
   max-width: 308px
   box-sizing: border-box
   background: #fff
+  width: 33%
 .help-yandex-wrapper label
   display: block
   font-size: 12px
@@ -791,7 +833,7 @@
   text-transform: uppercase
   color: #999
   margin-bottom: 5px
-
+  font-weight: 600
 .help-yandex__account-wrapper
   padding: 30px 45px 40px 45px
 
@@ -819,10 +861,11 @@
   list-style-type: none
   display: flex
   margin-bottom: 40px
+  border-bottom: 1px solid #eeeeee
   li 
     flex-grow: 1
     text-align: center
-    
+
 
 .portfolio__nav-item
   text-decoration: none
@@ -847,7 +890,9 @@
   margin: 0px
   background: #f6f6f6
   padding-top: 0px
-  
+  font-weight: 600
+.album-popup h3
+  font-weight: 400
 .notification-wrapper h3:before
   display: none
 .portfolio__item-list
@@ -903,6 +948,7 @@
   top: 0px
   width: 50%
   height: 100%
+  max-height: 182px
   opacity: 0
   background: #fecb2e
   font-family: 'Gilroy'
@@ -939,10 +985,11 @@
 
 .album-popup .registration-type-popup__header 
   background: #ffffff
-  margin-bottom: 40px
-  padding: 20px 50px
-  padding-left: 0px
-
+  padding: 13px 50px 20px 29px
+  margin-bottom: 45px 
+.album-popup button.mfp-close.mfp-close
+  top: 28px
+  right: 38px
 .default-label 
   display: block
   font-size: 12px
@@ -951,15 +998,17 @@
   color: #999
   margin-bottom: 5px
   font-weight: 600
-
+.album-popup form
+  padding-left: 30px
+  padding-right: 33px
 .album__name-field
   margin-bottom: 50px
 
 .album-popup .box__input 
-  padding-left: 40px
+  padding-left: 30px
   padding-top: 40px
 .album-popup .btn-drop
-  margin-left: 180px
+  margin-left: 122px
 .grey 
   color: #b5b5b5
   margin: 0 5px
@@ -968,12 +1017,12 @@
   display: flex
   flex-wrap: wrap
   align-items: center
-  margin-bottom: 40px
+  margin-bottom: 60px
 .album-popups__img-wrapper
   border-radius: 50%
-  margin-right: 15px
-  width: 50px!important
-  height: 50px
+  margin-right: 31px
+  width: 60px
+  height: 60px
   background: url(../img/merfi.png) center
   background-size: cover
   margin-bottom: 10px
@@ -1002,12 +1051,6 @@
   display: block
   position: relative
   padding-right: 30px
-  &:before
-    content: 'x'
-    position: absolute
-    right: 0px
-    color: #999
-    cursor: pointer
 .album-popups__img-name:hover:before
     color: #000
 
@@ -1018,6 +1061,8 @@
   display: flex
   flex-wrap: wrap
   justify-content: space-between
+.album-popup ul 
+  margin-left: 20px 
 .blog-edit .default-label
   width: 100%
   margin-bottom: 10px
@@ -1044,7 +1089,7 @@
     margin-left: 33px
 
 .btn--white
-    font-size: 16px
+    font-size: 12px
     font-family: 'Gilroy'
     color: #000
     font-weight: 700
@@ -1053,11 +1098,12 @@
     background: #fff
     letter-spacing: 1px
     border: 1px solid #fdc500
+    text-transform: uppercase
     &:hover 
       background: #fdc500
 
 .btn-album
-  padding: 17px 15px 16px 15px
+  padding: 22px 19px 22px 20px
   margin: 0px
 
 .btn-album__wrapper
@@ -1117,26 +1163,48 @@
   font-weight: 700
   cursor: pointer
   margin-bottom: 25px
+  text-transform: uppercase 
+  font-size: 12px
+  font-family: 'Gilroy'
 .btn--delete span
   position: relative
 
 .btn--delete span:after 
   content: ''
   position: absolute
-  top: 50%
+  top: 6px
   left: -25px
-  width: 15px
+  width: 11px
   height: 2px
   background: #ff2828
   transform: rotate(-45deg)
 .btn--delete span:before 
   content: ''
   position: absolute
-  top: 50%
+  top: 6px
   left: -25px
-  width: 15px
+  width: 11px
   height: 2px
   background: #ff2828
+  transform: rotate(45deg)
+
+.album-popups__img-delet:after 
+  content: ''
+  position: absolute
+  top: 6px
+  left: 0px
+  width: 11px
+  height: 2px
+  background: #000
+  transform: rotate(-45deg)
+.album-popups__img-delet:before 
+  content: ''
+  position: absolute
+  top: 6px
+  left: 0px
+  width: 11px
+  height: 2px
+  background: #000
   transform: rotate(45deg)
 
 .album-look__img-wrapper
@@ -1171,6 +1239,7 @@
   border-radius: 7px
   margin-bottom: 15px 
   box-sizing: border-box
+  border: 1px solid rgb(169, 169, 169)
 .album-look-popup textarea:focus,
 .blog-look textarea:focus,
 .album-popup textarea:focus
@@ -1190,6 +1259,7 @@
   padding-left: 30px
   background: url(../img/pencil-edit.svg) no-repeat left
   cursor: pointer
+  display: inline-block
   &:hover
     background: url(../img/pencil-edit-avtive.svg) no-repeat left
 .album-look__comment,
@@ -1205,6 +1275,8 @@
   justify-content: space-between
   align-items: center
   border-bottom: 1px solid #eeeeee
+.album-look-popup__description
+  padding: 25px 0px
 .album-look__add-comment,
 .blog-look__add-comment
   display: flex
@@ -1213,7 +1285,7 @@
 .album-look-popup .owl-nav
   background: #fff
   position: absolute;
-  bottom: 500px;
+  top: 400px;
   right: 50px;
   width: 150px
   text-align: center
@@ -1226,6 +1298,11 @@
   height: 50px
   width: 50px
   background: url(../img/arrow-bot2.png) no-repeat center
+.album-look-popup .owl-prev,
+.album-look-popup .owl-next
+  height: 50px
+  width: 50px
+  background: url(../img/arrow-grey.png) no-repeat center
 .owl-prev
   transform: rotate(180deg)
 
@@ -1364,7 +1441,8 @@ span.main-registration__logo-info
 
 .reviews
   width: 100%
-  max-width: 291px 
+  max-width: 291px
+  height: 
   background: #fff
   font-family: 'Lato', sans-serif
   border: 1px solid transparent
@@ -1417,11 +1495,14 @@ span.main-registration__logo-info
     background-color: #eeeeee
     top: 15px
 .reviews__content
-  padding: 0px 25px 25px 20px
-  font-size: 14px
-  line-height: 22px
-  color: #333
-  font-weight: 500
+  padding: 0 25px 25px 20px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #333;
+  font-weight: 500;
+  overflow: hidden;
+  max-height: 134px;
+  box-sizing: border-box;
 .reviews__answer
   width: 100%
   border: none
@@ -1446,7 +1527,6 @@ span.main-registration__logo-info
 
 .portfolio__item-reviews-list
   display: flex
-  align-items: flex-end
   flex-wrap: wrap
 .reviews:nth-child(3n)
   margin-right: 0px
@@ -1473,6 +1553,9 @@ span.main-registration__logo-info
     padding-left: 50px
     margin-bottom: 0px
     padding-bottom: 10px
+    span
+      color: #999
+
 .reviews-popup .btn-orange
   padding: 20px 42px 20px 46px
 
@@ -1505,6 +1588,7 @@ span.main-registration__logo-info
   border-left: 1px solid transparent
   padding-bottom: 15px
   margin-bottom: 0px
+  padding-top: 25px
   &:hover
     border-left: 1px solid #fecb2e
 .order-item__number
@@ -1518,9 +1602,10 @@ span.main-registration__logo-info
   margin-right: 25px
   font-size: 14px
   line-height: 22px
-
   span 
     font-weight: 600
+.notification__item--justify.order-item:hover
+  border-left: 1px solid transparent
 .order-item_amount
   width: 11%
 
@@ -1640,8 +1725,13 @@ span.main-registration__logo-info
   margin-bottom: 60px
   &--small
     width: 100%
+.neprod-notification
+  margin-bottom: 90px
+.neprod-notification .notification__main
+  margin-bottom: 0px
 .notification__item--justify
   justify-content: space-around
+  align-items: center
 .notification__item--justify .order-item_amount
   text-align: center
 .notification__item--justify .order-item__data-wrapper
@@ -1866,29 +1956,45 @@ input::-webkit-inner-spin-button
   justify-content: space-between
   .album-popups__img-name:before
     display: none
-
+.album-popups__img-delet
+  position: absolute
+  right: 0
+  top: 4px
+  cursor: pointer
+  font-size: 0px
+  width: 15px
+  height: 15px
+  &:hover .full-info
+    display: block
+    height: 50px
+    top: -50px
+    background-size: cover
+    background: url(../img/info-black.png) bottom no-repeat
 .checkbox--orange:not(checked)+.album-photo__label:before 
-    content: '';
-    top: calc(50% - 15px);
-    left: 0;
-    position: absolute;
-    box-sizing: border-box;
-    width: 15px;
-    height: 15px;
-    background: #f9f9f9;
-    border: 1px solid #999;
-
+    content: ''
+    top: calc(50% - 15px)
+    left: 0
+    position: absolute
+    box-sizing: border-box
+    width: 15px
+    height: 15px
+    background: #f9f9f9
+    border: 1px solid #999
+.album-popup .drop-zone__wrapper
+    line-height: 20px
+.drop-zone__wrapper p span
+  font-weight: 600
 .checkbox--orange:checked+.album-photo__label:before 
-    content: '';
-    top: calc(50% - 15px);
-    left: 0;
-    position: absolute;
-    box-sizing: border-box;
-    width: 15px;
-    height: 15px;
-    background: #fecb2e;
-    border: none;
-    background-size: 70%;
+    content: ''
+    top: calc(50% - 15px)
+    left: 0
+    position: absolute
+    box-sizing: border-box
+    width: 15px
+    height: 15px
+    background: #fecb2e
+    border: none
+    background-size: 70%
 
 .album-photo__label
   position: relative
@@ -1898,7 +2004,7 @@ input::-webkit-inner-spin-button
 .notification__options-number
   margin-right: 55px
 .notification-wrapper .notification__title--small
-  font-size: 20px
+  font-size: 26px
   margin-bottom: 0px
 .notification__header--small .notification__options--amount
   width: 22%
@@ -1907,11 +2013,21 @@ input::-webkit-inner-spin-button
 .alerts 
   width: 67%
 .notification__author
-  width: 25%
-.notification__data
+  width: 24%
+.notification__datas
   width: 15%
-
-
+.notification__data
+  width: 17%
+.profile__rating-number
+  color: #999999
+.message-menu_message .notification-number
+  position: absolute
+  width: auto
+  padding: 4px 15px
+  top: 0px
+  right: 30px
+.portfolio__nav--album
+  margin-top: 0px
 @media (max-width: 1340px) 
   .notification__item-options
     right: 5px

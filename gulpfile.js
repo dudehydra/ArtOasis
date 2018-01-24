@@ -37,7 +37,11 @@ gulp.task("style", function() {
     .pipe(gulp.dest("build/css"))
     .pipe(server.reload({stream: true}));
 });
+gulp.task("copycss", function(){
+    gulp.src("css/*.css")
+      .pipe(gulp.dest("build/css"))
 
+});
 gulp.task("images", function() {
   return gulp.src("build/img/*.{png,jpg,gif}")
     .pipe(imagemin([
@@ -106,6 +110,7 @@ gulp.task("build", function(fn) {
   run(
     "clean",
     "copy",
+    "copycss",
     "style",
     "images",
     "symbols",

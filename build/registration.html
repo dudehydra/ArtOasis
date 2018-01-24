@@ -215,7 +215,7 @@
                         <div class="box has-advanced-upload drop-zone__wrapper">
                             <div class="box__input">
                                 <input type="file" name="files[]" id="file" class="box__file" data-multiple-caption="{count} files selected" multiple="">
-                                <label for="file" class="btn btn-drop">Выбрать обложку</label> <span class="box__dragndrop"> или Перетащите её сюда</span>.
+                                <label for="file" class="btn btn-drop">Выбрать обложку</label> <span class="box__dragndrop"> <span class="grey">или</span> Перетащите её сюда</span>.
                                 <button type="submit" class="box__button">Upload</button>
                             </div>
 
@@ -261,7 +261,7 @@
                                 <label for="registration_date">Дата основания магазина</label>
                                 <input type="text" id="registration_date"> <span>Для получения приятных бонусов</span><br>
                                 <label class="registration_stage-2__about-shop ">О магазине <span class="required"> *</span> </label>
-                                <textarea name="" id="" cols="30" rows="8" required form="main-registration_form"></textarea>
+                                <textarea name="" id="" cols="30" rows="8" required form="main-registration_form" placeholder="Расскажите интересные факты о создании своего бренда, опишите его особенности и преимущества. Перечислите свои флагманские вещи, расскажите кратко про производство, материалы. Напишите как минимум три предложения о себе."></textarea>
                             </div>
                         </div>
 
@@ -336,20 +336,20 @@
                                 </div>
                                 <div class="registration_stage-4__right registration_stage-4__right--small">
                                     <input type="checkbox" id="on-request_1" class="checkbox--orange" disabled>
-                                    <label for="on-request_1" class="label-checkbox--orange label-checkbox--grey">По запросу <span class="info" >[?] <div class="full-info">При выборе данного пунктапокупатель будет запрашивать у Вас расчет доставки.</div> </span></label>
+                                    <label for="on-request_1" class="label-checkbox--orange label-checkbox--grey">По запросу <span class="info" >[?] <div class="full-info">При выборе данного пункта покупатель будет запрашивать у Вас расчет доставки.</div> </span></label>
                                     <input type="checkbox" id="on-request_2" class="checkbox--orange" disabled>
-                                    <label for="on-request_2" class="label-checkbox--orange label-checkbox--grey">По запросу <span class="info" >[?] <div class="full-info">При выборе данного пунктапокупатель будет запрашивать у Вас расчет доставки.</div></span></label>
+                                    <label for="on-request_2" class="label-checkbox--orange label-checkbox--grey">По запросу <span class="info" >[?] <div class="full-info">При выборе данного пункта покупатель будет запрашивать у Вас расчет доставки.</div></span></label>
                                     <input type="checkbox" id="on-request_3" class="checkbox--orange" disabled>
-                                    <label for="on-request_3" class="label-checkbox--orange label-checkbox--grey">По запросу <span class="info" >[?] <div class="full-info">При выборе данного пунктапокупатель будет запрашивать у Вас расчет доставки.</div></span></label>
+                                    <label for="on-request_3" class="label-checkbox--orange label-checkbox--grey">По запросу <span class="info" >[?] <div class="full-info">При выборе данного пункта покупатель будет запрашивать у Вас расчет доставки.</div></span></label>
                                     <input type="checkbox" id="on-request_4" class="checkbox--orange" disabled>
-                                    <label for="on-request_4" class="label-checkbox--orange label-checkbox--grey">По запросу <span class="info" >[?] <div class="full-info">При выборе данного пунктапокупатель будет запрашивать у Вас расчет доставки.</div></span></label>
+                                    <label for="on-request_4" class="label-checkbox--orange label-checkbox--grey">По запросу <span class="info" >[?] <div class="full-info">При выборе данного пункта покупатель будет запрашивать у Вас расчет доставки.</div></span></label>
                                     <input type="checkbox" id="on-request_5" class="checkbox--orange" disabled>
-                                    <label for="on-request_5" class="label-checkbox--orange label-checkbox--grey">По запросу <span class="info" >[?] <div class="full-info">При выборе данного пунктапокупатель будет запрашивать у Вас расчет доставки.</div></span></label>
+                                    <label for="on-request_5" class="label-checkbox--orange label-checkbox--grey">По запросу <span class="info" >[?] <div class="full-info">При выборе данного пункта покупатель будет запрашивать у Вас расчет доставки.</div></span></label>
 
 
                                 </div>
                                 <label class="registration_stage-4__traid">Правила возврата и обмена</label>
-                                <textarea name="" id="" cols="30" rows="9" placeholder="Правила возврата и обмена"></textarea>
+                                <textarea name="" id="" cols="30" rows="9" placeholder="Правила возврата и обмена, другая важная информация."></textarea>
                             </div>
                         </div>
                         <div class="main-registration__stage registration_stage-5">
@@ -371,8 +371,8 @@
                             </div>
                         </div>
                     <div class="main-registration__submit-wrapper">
-                        <input type="checkbox" id="agreement" class="checkbox">
-                        <label for="agreement">Я cогласен с <a href="">Политикой обработки персональных данных.</a> </label>
+                        <input type="checkbox" id="agreement" class="checkbox" required>
+                        <label for="agreement" >Я cогласен с <a href="">Политикой обработки персональных данных.</a> </label>
                         <input type="submit" value="Перейти к добавлению товаров" class="btn main-registration__btn">
                         <input type="submit" value="Перейти на страницу, не добавляя товары" class="btn btn-underlining">
 

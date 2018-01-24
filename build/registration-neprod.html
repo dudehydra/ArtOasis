@@ -23,132 +23,134 @@
 <body>
 <div class="specialization-type-popup white-popup mfp-hide" id="specialization-popup">
     <div class="specialization-type-popup__header">
-        <h3>Добавление специализации</h3>
+            <h3>Добавление специализации</h3>
     </div>
+    <div class="specialization-type-popup-wrapper">
+        <form action="post" id="specialization-form">
+            <div class="specialization__wrapper">
+                <div class="art-wrapper">
+                    <span class="specialization__title">Живопись</span>
+                    <input type="checkbox" id="aerography-checkbox" class="checkbox--orange" data-name="Аэрография">
+                    <label for="aerography-checkbox" class="label-checkbox--orange">Аэрография</label>
+                    <input type="checkbox" id="decoration-checkbox" class="checkbox--orange" data-name="Декорации для театра и кино">
+                    <label for="decoration-checkbox" class="label-checkbox--orange">Декорации для театра и кино</label>
+                    <input type="checkbox" id="painting-checkbox" class="checkbox--orange" data-name="Живопись">
+                    <label for="painting-checkbox" class="label-checkbox--orange">Живопись</label>
+                    <input type="checkbox" id="сaricature-checkbox" class="checkbox--orange" data-name="Карикатура">
+                    <label for="сaricature-checkbox" class="label-checkbox--orange">Карикатура</label>
+                    <input type="checkbox" id="miniature-checkbox" class="checkbox--orange" data-name="Миниатюра">
+                    <label for="miniature-checkbox" class="label-checkbox--orange">Миниатюра</label>
+                    <input type="checkbox" id="monumental-checkbox" class="checkbox--orange" data-name="Монументальная">
+                    <label for="monumental-checkbox" class="label-checkbox--orange">Монументальная</label>
+                    <input type="checkbox" id="restoration-checkbox" class="checkbox--orange" data-name="Реставрация">
+                    <label for="restoration-checkbox" class="label-checkbox--orange">Реставрация</label>
+                    <input type="checkbox" id="drawing-checkbox" class="checkbox--orange" data-name="Рисунок">
+                    <label for="drawing-checkbox" class="label-checkbox--orange">Рисунок</label>
 
-    <form action="post" id="specialization-form">
-        <div class="specialization__wrapper">
-            <div class="art-wrapper">
-                <span class="specialization__title">Живопись</span>
-                <input type="checkbox" id="aerography-checkbox" class="checkbox--orange" data-name="Аэрография">
-                <label for="aerography-checkbox" class="label-checkbox--orange">Аэрография</label>
-                <input type="checkbox" id="decoration-checkbox" class="checkbox--orange" data-name="Декорации для театра и кино">
-                <label for="decoration-checkbox" class="label-checkbox--orange">Декорации для театра и кино</label>
-                <input type="checkbox" id="painting-checkbox" class="checkbox--orange" data-name="Живопись">
-                <label for="painting-checkbox" class="label-checkbox--orange">Живопись</label>
-                <input type="checkbox" id="сaricature-checkbox" class="checkbox--orange" data-name="Карикатура">
-                <label for="сaricature-checkbox" class="label-checkbox--orange">Карикатура</label>
-                <input type="checkbox" id="miniature-checkbox" class="checkbox--orange" data-name="Миниатюра">
-                <label for="miniature-checkbox" class="label-checkbox--orange">Миниатюра</label>
-                <input type="checkbox" id="monumental-checkbox" class="checkbox--orange" data-name="Монументальная">
-                <label for="monumental-checkbox" class="label-checkbox--orange">Монументальная</label>
-                <input type="checkbox" id="restoration-checkbox" class="checkbox--orange" data-name="Реставрация">
-                <label for="restoration-checkbox" class="label-checkbox--orange">Реставрация</label>
-                <input type="checkbox" id="drawing-checkbox" class="checkbox--orange" data-name="Рисунок">
-                <label for="drawing-checkbox" class="label-checkbox--orange">Рисунок</label>
+                </div>
+                <div class="art-wrapper">
+                    <span class="specialization__title">Графика</span>
+                    <input type="checkbox" id="Magazines-checkbox" class="checkbox--orange" data-name="Журналы и газеты">
+                    <label for="Magazines-checkbox" class="label-checkbox--orange">Журналы и газеты</label>
+                    <input type="checkbox" id="Books-checkbox" class="checkbox--orange" data-name="Книги,иллюстрации">
+                    <label for="Books-checkbox" class="label-checkbox--orange">Книги,иллюстрации</label>
+                    <input type="checkbox" id="Computer-checkbox" class="checkbox--orange" data-name="Компьютерная">
+                    <label for="Computer-checkbox" class="label-checkbox--orange">Компьютерная</label>
+                    <input type="checkbox" id="industrial-checkbox" class="checkbox--orange" data-name="Прикладная и промышленная">
+                    <label for="industrial-checkbox" class="label-checkbox--orange">Прикладная и промышленная</label>
+                    <input type="checkbox" id="Advertising-checkbox" class="checkbox--orange" data-name="Рекламная и полиграфическая">
+                    <label for="Advertising-checkbox" class="label-checkbox--orange">Рекламная и полиграфическая</label>
+                    <input type="checkbox" id="Production-checkbox" class="checkbox--orange" data-name="Продукция">
+                    <label for="Production-checkbox" class="label-checkbox--orange">Продукция</label>
+                    <input type="checkbox" id="Easel-checkbox" class="checkbox--orange" data-name="Станковая">
+                    <label for="Easel-checkbox" class="label-checkbox--orange">Станковая</label>
+                </div>
+                 <div class="art-wrapper">
+                    <span class="specialization__title">Фотография</span>
+                    <input type="checkbox" id="reportage-checkbox" class="checkbox--orange" data-name="Репортажное фото">
+                    <label for="reportage-checkbox" class="label-checkbox--orange">Репортажное фото</label>
+                    <input type="checkbox" id="Studio-checkbox" class="checkbox--orange" data-name="Студийное фото">
+                    <label for="Studio-checkbox" class="label-checkbox--orange">Студийное фото</label>
+                    <input type="checkbox" id="Artistic-checkbox" class="checkbox--orange" data-name="Художественное фото">
+                    <label for="Artistic-checkbox" class="label-checkbox--orange">Художественное фото</label>
+                    
+                </div>
+                <div class="art-wrapper">
+                    <span class="specialization__title">Скульптура</span>
+                    <input type="checkbox" id="Gypsum-checkbox" class="checkbox--orange" data-name="Гипсовая">
+                    <label for="Gypsum-checkbox" class="label-checkbox--orange">Гипсовая</label>
+                    <input type="checkbox" id="Wood-checkbox" class="checkbox--orange" data-name="Деревянная">
+                    <label for="Wood-checkbox" class="label-checkbox--orange">Деревянная</label>
+                    <input type="checkbox" id="Stone-checkbox" class="checkbox--orange" data-name="Каменная">
+                    <label for="Stone-checkbox" class="label-checkbox--orange">Каменная</label>
+                    <input type="checkbox" id="Metal-checkbox" class="checkbox--orange" data-name="Металлическая">
+                    <label for="Metal-checkbox" class="label-checkbox--orange">Металлическая</label>
+                    <input type="checkbox" id="Thread-checkbox" class="checkbox--orange" data-name="Резьба, инкрустация">
+                    <label for="Thread-checkbox" class="label-checkbox--orange">Резьба, инкрустация</label>
+                    <input type="checkbox" id="Embossing-checkbox" class="checkbox--orange" data-name="Чеканка">
+                    <label for="Embossing-checkbox" class="label-checkbox--orange">Чеканка</label>
+                </div>
+                 <div class="art-wrapper">
+                    <span class="specialization__title">Роспись</span>
+                    <input type="checkbox" id="Bodyart-checkbox" class="checkbox--orange" data-name="Бодиарт">
+                    <label for="Bodyart-checkbox" class="label-checkbox--orange">Бодиарт</label>
+                    <input type="checkbox" id="Makeup-checkbox" class="checkbox--orange" data-name="Грим">
+                    <label for="Makeup-checkbox" class="label-checkbox--orange">Грим</label>
+                    <input type="checkbox" id="Decor-painting-checkbox" class="checkbox--orange" data-name="Декоративная роспись">
+                    <label for="Decor-painting-checkbox" class="label-checkbox--orange">Декоративная роспись</label>
+                    <input type="checkbox" id="Tattoo-checkbox" class="checkbox--orange" data-name="Тату">
+                    <label for="Tattoo-checkbox" class="label-checkbox--orange">Тату</label>
+                    <input type="checkbox" id="wall-painting-checkbox" class="checkbox--orange" data-name="Художественная роспись стен">
+                    <label for="wall-painting-checkbox" class="label-checkbox--orange">Художественная роспись стен</label>
+                </div>
+                <div class="art-wrapper">
+                    <span class="specialization__title">Рукоделие</span>
+                    <input type="checkbox" id="Bijouterie-checkbox" class="checkbox--orange" data-name="Бижутерия и ювелирные изделия">
+                    <label for="Bijouterie-checkbox" class="label-checkbox--orange">Бижутерия и ювелирные изделия</label>
+                    <input type="checkbox" id="weaving-checkbox" class="checkbox--orange" data-name="Вышивка, вязание, плетение">
+                    <label for="weaving-checkbox" class="label-checkbox--orange">Вышивка, вязание, плетение</label>
+                    <input type="checkbox" id="Decoupage-checkbox" class="checkbox--orange" data-name="Декупаж">
+                    <label for="Decoupage-checkbox" class="label-checkbox--orange">Декупаж</label>
+                    <input type="checkbox" id="Design-checkbox" class="checkbox--orange" data-name="Дизайн костюма">
+                    <label for="Design-checkbox" class="label-checkbox--orange">Дизайн костюма</label>
+                    <input type="checkbox" id="dolls-checkbox" class="checkbox--orange" data-name="Изготовление кукол и игрушек">
+                    <label for="dolls-checkbox" class="label-checkbox--orange">Изготовление кукол и игрушек</label>
+                    <input type="checkbox" id="Mosaic-checkbox" class="checkbox--orange" data-name="Мозаика, витраж, выжигание">
+                    <label for="Mosaic-checkbox" class="label-checkbox--orange">Мозаика, витраж, выжигание</label>
+                    <input type="checkbox" id="Postigoronic-checkbox" class="checkbox--orange" data-name="Постижёрное дело">
+                    <label for="Postigoronic-checkbox" class="label-checkbox--orange">Постижёрное дело</label>
+                    <input type="checkbox" id="Scrapbooking-checkbox" class="checkbox--orange" data-name="Скрапбукинг">
+                    <label for="Scrapbooking-checkbox" class="label-checkbox--orange">Скрапбукинг</label>
+                    <input type="checkbox" id="patchwork-checkbox" class="checkbox--orange" data-name="Шитьё, цветоделие, патчворк, квилтинг">
+                    <label for="patchwork-checkbox" class="label-checkbox--orange">Шитьё, цветоделие, патчворк, квилтинг</label>
+                </div>
+                <div class="art-wrapper">
+                    <span class="specialization__title">Декор</span>
+                    <input type="checkbox" id="Accessories-checkbox" class="checkbox--orange" data-name="Аксессуары">
+                    <label for="Accessories-checkbox" class="label-checkbox--orange">Аксессуары</label>
+                    <input type="checkbox" id="childish-checkbox" class="checkbox--orange" data-name="Детское">
+                    <label for="childish-checkbox" class="label-checkbox--orange">Детское</label>
+                    <input type="checkbox" id="Cooking-checkbox" class="checkbox--orange" data-name="Кухонные принадлежности">
+                    <label for="Cooking-checkbox" class="label-checkbox--orange">Кухонные принадлежности</label>
+                    <input type="checkbox" id="Furniture-checkbox" class="checkbox--orange" data-name="Мебель">
+                    <label for="Furniture-checkbox" class="label-checkbox--orange">Мебель</label>
+                    <input type="checkbox" id="Lighting-checkbox" class="checkbox--orange" data-name="Освещение">
+                    <label for="Lighting-checkbox" class="label-checkbox--orange">Освещение</label>
+                    <input type="checkbox" id="Dishes-checkbox" class="checkbox--orange" data-name="Посуда">
+                    <label for="Dishes-checkbox" class="label-checkbox--orange">Посуда</label>
+                    <input type="checkbox" id="Other-checkbox" class="checkbox--orange" data-name="Прочее">
+                    <label for="Other-checkbox" class="label-checkbox--orange">Прочее</label>
+                    <input type="checkbox" id="Garden-checkbox" class="checkbox--orange" data-name="Сад">
+                    <label for="Garden-checkbox" class="label-checkbox--orange">Сад</label>
+                    <input type="checkbox" id="Walls-checkbox" class="checkbox--orange" data-name="Стены">
+                    <label for="Walls-checkbox" class="label-checkbox--orange">Стены</label>
+                </div>
+            </div>
 
-            </div>
-            <div class="art-wrapper">
-            	<span class="specialization__title">Графика</span>
-            	<input type="checkbox" id="Magazines-checkbox" class="checkbox--orange" data-name="Журналы и газеты">
-                <label for="Magazines-checkbox" class="label-checkbox--orange">Журналы и газеты</label>
-                <input type="checkbox" id="Books-checkbox" class="checkbox--orange" data-name="Книги,иллюстрации">
-                <label for="Books-checkbox" class="label-checkbox--orange">Книги,иллюстрации</label>
-                <input type="checkbox" id="Computer-checkbox" class="checkbox--orange" data-name="Компьютерная">
-                <label for="Computer-checkbox" class="label-checkbox--orange">Компьютерная</label>
-                <input type="checkbox" id="industrial-checkbox" class="checkbox--orange" data-name="Прикладная и промышленная">
-                <label for="industrial-checkbox" class="label-checkbox--orange">Прикладная и промышленная</label>
-                <input type="checkbox" id="Advertising-checkbox" class="checkbox--orange" data-name="Рекламная и полиграфическая">
-                <label for="Advertising-checkbox" class="label-checkbox--orange">Рекламная и полиграфическая</label>
-                <input type="checkbox" id="Production-checkbox" class="checkbox--orange" data-name="Продукция">
-                <label for="Production-checkbox" class="label-checkbox--orange">Продукция</label>
-                <input type="checkbox" id="Easel-checkbox" class="checkbox--orange" data-name="Станковая">
-                <label for="Easel-checkbox" class="label-checkbox--orange">Станковая</label>
-            </div>
-             <div class="art-wrapper">
-            	<span class="specialization__title">Фотография</span>
-            	<input type="checkbox" id="reportage-checkbox" class="checkbox--orange" data-name="Репортажное фото">
-                <label for="reportage-checkbox" class="label-checkbox--orange">Репортажное фото</label>
-                <input type="checkbox" id="Studio-checkbox" class="checkbox--orange" data-name="Студийное фото">
-                <label for="Studio-checkbox" class="label-checkbox--orange">Студийное фото</label>
-                <input type="checkbox" id="Artistic-checkbox" class="checkbox--orange" data-name="Художественное фото">
-                <label for="Artistic-checkbox" class="label-checkbox--orange">Художественное фото</label>
-                
-            </div>
-            <div class="art-wrapper">
-            	<span class="specialization__title">Скульптура</span>
-            	<input type="checkbox" id="Gypsum-checkbox" class="checkbox--orange" data-name="Гипсовая">
-                <label for="Gypsum-checkbox" class="label-checkbox--orange">Гипсовая</label>
-                <input type="checkbox" id="Wood-checkbox" class="checkbox--orange" data-name="Деревянная">
-                <label for="Wood-checkbox" class="label-checkbox--orange">Деревянная</label>
-                <input type="checkbox" id="Stone-checkbox" class="checkbox--orange" data-name="Каменная">
-                <label for="Stone-checkbox" class="label-checkbox--orange">Каменная</label>
-                <input type="checkbox" id="Metal-checkbox" class="checkbox--orange" data-name="Металлическая">
-                <label for="Metal-checkbox" class="label-checkbox--orange">Металлическая</label>
-                <input type="checkbox" id="Thread-checkbox" class="checkbox--orange" data-name="Резьба, инкрустация">
-                <label for="Thread-checkbox" class="label-checkbox--orange">Резьба, инкрустация</label>
-                <input type="checkbox" id="Embossing-checkbox" class="checkbox--orange" data-name="Чеканка">
-                <label for="Embossing-checkbox" class="label-checkbox--orange">Чеканка</label>
-            </div>
-             <div class="art-wrapper">
-            	<span class="specialization__title">Роспись</span>
-            	<input type="checkbox" id="Bodyart-checkbox" class="checkbox--orange" data-name="Бодиарт">
-                <label for="Bodyart-checkbox" class="label-checkbox--orange">Бодиарт</label>
-                <input type="checkbox" id="Makeup-checkbox" class="checkbox--orange" data-name="Грим">
-                <label for="Makeup-checkbox" class="label-checkbox--orange">Грим</label>
-                <input type="checkbox" id="Decor-painting-checkbox" class="checkbox--orange" data-name="Декоративная роспись">
-                <label for="Decor-painting-checkbox" class="label-checkbox--orange">Декоративная роспись</label>
-                <input type="checkbox" id="Tattoo-checkbox" class="checkbox--orange" data-name="Тату">
-                <label for="Tattoo-checkbox" class="label-checkbox--orange">Тату</label>
-                <input type="checkbox" id="wall-painting-checkbox" class="checkbox--orange" data-name="Художественная роспись стен">
-                <label for="wall-painting-checkbox" class="label-checkbox--orange">Художественная роспись стен</label>
-            </div>
-            <div class="art-wrapper">
-            	<span class="specialization__title">Рукоделие</span>
-            	<input type="checkbox" id="Bijouterie-checkbox" class="checkbox--orange" data-name="Бижутерия и ювелирные изделия">
-                <label for="Bijouterie-checkbox" class="label-checkbox--orange">Бижутерия и ювелирные изделия</label>
-                <input type="checkbox" id="weaving-checkbox" class="checkbox--orange" data-name="Вышивка, вязание, плетение">
-                <label for="weaving-checkbox" class="label-checkbox--orange">Вышивка, вязание, плетение</label>
-                <input type="checkbox" id="Decoupage-checkbox" class="checkbox--orange" data-name="Декупаж">
-                <label for="Decoupage-checkbox" class="label-checkbox--orange">Декупаж</label>
-                <input type="checkbox" id="Design-checkbox" class="checkbox--orange" data-name="Дизайн костюма">
-                <label for="Design-checkbox" class="label-checkbox--orange">Дизайн костюма</label>
-                <input type="checkbox" id="dolls-checkbox" class="checkbox--orange" data-name="Изготовление кукол и игрушек">
-                <label for="dolls-checkbox" class="label-checkbox--orange">Изготовление кукол и игрушек</label>
-                <input type="checkbox" id="Mosaic-checkbox" class="checkbox--orange" data-name="Мозаика, витраж, выжигание">
-                <label for="Mosaic-checkbox" class="label-checkbox--orange">Мозаика, витраж, выжигание</label>
-                <input type="checkbox" id="Postigoronic-checkbox" class="checkbox--orange" data-name="Постижёрное дело">
-                <label for="Postigoronic-checkbox" class="label-checkbox--orange">Постижёрное дело</label>
-                <input type="checkbox" id="Scrapbooking-checkbox" class="checkbox--orange" data-name="Скрапбукинг">
-                <label for="Scrapbooking-checkbox" class="label-checkbox--orange">Скрапбукинг</label>
-                <input type="checkbox" id="patchwork-checkbox" class="checkbox--orange" data-name="Шитьё, цветоделие, патчворк, квилтинг">
-                <label for="patchwork-checkbox" class="label-checkbox--orange">Шитьё, цветоделие, патчворк, квилтинг</label>
-            </div>
-            <div class="art-wrapper">
-                <span class="specialization__title">Декор</span>
-                <input type="checkbox" id="Accessories-checkbox" class="checkbox--orange" data-name="Аксессуары">
-                <label for="Accessories-checkbox" class="label-checkbox--orange">Аксессуары</label>
-                <input type="checkbox" id="childish-checkbox" class="checkbox--orange" data-name="Детское">
-                <label for="childish-checkbox" class="label-checkbox--orange">Детское</label>
-                <input type="checkbox" id="Cooking-checkbox" class="checkbox--orange" data-name="Кухонные принадлежности">
-                <label for="Cooking-checkbox" class="label-checkbox--orange">Кухонные принадлежности</label>
-                <input type="checkbox" id="Furniture-checkbox" class="checkbox--orange" data-name="Мебель">
-                <label for="Furniture-checkbox" class="label-checkbox--orange">Мебель</label>
-                <input type="checkbox" id="Lighting-checkbox" class="checkbox--orange" data-name="Освещение">
-                <label for="Lighting-checkbox" class="label-checkbox--orange">Освещение</label>
-                <input type="checkbox" id="Dishes-checkbox" class="checkbox--orange" data-name="Посуда">
-                <label for="Dishes-checkbox" class="label-checkbox--orange">Посуда</label>
-                <input type="checkbox" id="Other-checkbox" class="checkbox--orange" data-name="Прочее">
-                <label for="Other-checkbox" class="label-checkbox--orange">Прочее</label>
-                <input type="checkbox" id="Garden-checkbox" class="checkbox--orange" data-name="Сад">
-                <label for="Garden-checkbox" class="label-checkbox--orange">Сад</label>
-                <input type="checkbox" id="Walls-checkbox" class="checkbox--orange" data-name="Стены">
-                <label for="Walls-checkbox" class="label-checkbox--orange">Стены</label>
-            </div>
-        </div>
-
-    </form>
-    <input type="button" class="btn btn-specialization " value="Добавить выбранное" id="add_specialization">
+        </form>
+        <input type="button" class="btn btn-specialization " value="Добавить выбранное" id="add_specialization">
+    </div>
+    
 
 </div>
 
@@ -183,7 +185,7 @@
         </div>
         <div class="registration-type-popup__footer">
             <input type="checkbox" class="checkbox" id="registration-type-popup-agreement">
-            <label class="registration-popup__agreement" for="registration-type-popup-agreement">Я согласен с <a href="">условиями оферты для покупателей</a></label>
+            <label class="registration-popup__agreement" for="registration-type-popup-agreement" >Я согласен с <a href="">условиями оферты для покупателей</a></label>
         </div>
     </form>
 </div>
@@ -346,7 +348,7 @@
                     <div class="box has-advanced-upload drop-zone__wrapper">
                         <div class="box__input">
                             <input type="file" name="files[]" id="file" class="box__file" data-multiple-caption="{count} files selected" multiple="">
-                            <label for="file" class="btn btn-drop">Выбрать обложку</label> <span class="box__dragndrop"> или Перетащите её сюда</span>.
+                            <label for="file" class="btn btn-drop">Выбрать обложку</label> <span class="box__dragndrop"> <span class="grey">или</span> Перетащите её сюда</span>.
                             <button type="submit" class="box__button">Upload</button>
                         </div>
 
@@ -374,7 +376,7 @@
                             <label for="registration-logo" class="registration-logo-label"><span>Загрузить логотип</span></label>
                             <span class="main-registration__logo-size">Размер 180х180px.</span><br>
                             <input type="file" id="registration-logo">
-                            <span class="">ВИЗИТКА<span class="info">[?] <div class="full-info">blablalbalbalbalbalba</div> </span></span>
+                            <span class="main-registration__text-semibold">ВИЗИТКА<span class="info">[?] <div class="full-info">blablalbalbalbalbalba</div> </span></span>
                             <label for="main-registration__logo-loading" class="btn">
                                 Загрузить
                             </label>
@@ -417,11 +419,12 @@
                     <div class="registration_stage-2__data-wrapper">
                         <label class="registration_stage-2__about-shop ">О себе <span class="required"> *</span> </label>
                         <textarea class="registration_stage-2__textarea" name="description" form="registration-master" id="" cols="30" rows="8" required placeholder="Расскажите интересные факты о создании своего бренда, опишите его особенности и преимущества. Перечислите свои флагманские вещи, расскажите кратко про производство, материалы. Напишите как минимум три предложения о себе."></textarea>
+                        <label class="registration_stage-2__about-shop ">Специализация <span class="required"> *</span> </label>
                         <div class="registration_stage-2__specialization-wrapper">
 
                         </div>
                         <span>от 1-ой до 3-ех</span>
-                        <a href="#specialization-popup" class="btn specialization-popup_open" >Добавить специализация</a>
+                        <a href="#specialization-popup" class="btn specialization-popup_open" >Выбрать специализацию</a>
                     </div>
                 </div>
 
@@ -460,93 +463,104 @@
 
                     <div class="registration_stage-3__pay-wrapper registration_stage-4-4__commercial">
                         <h3 class="registration_stage-4-4__title">Оплата</h3>
-                        <p>
-                            Выберите, какими способами покупатель сможет оплатить заказ. Если у вас есть счета «Яндекс.Деньги» или PayPal — отметьте эти варианты. Так покупатель сможет выбрать удобный ему метод оплаты.
-                        </p>
-                        <div class="registration_stage-3__left">
-                            <input type="checkbox" id="cash" class="checkbox--orange">
-                            <label for="cash" class="label-checkbox--orange">Наличными при получении</label>
+                        <div class="registration_stage-4-4__commercial-wrapper">
+                            
+                            <p>
+                                Выберите, какими способами покупатель сможет оплатить заказ. Если у вас есть счета «Яндекс.Деньги» или PayPal — отметьте эти варианты. Так покупатель сможет выбрать удобный ему метод оплаты.
+                            </p>
+                            <div class="registration_stage-3__left">
+                                <input type="checkbox" id="cash" class="checkbox--orange">
+                                <label for="cash" class="label-checkbox--orange">Наличными при получении</label>
 
-                            <input type="checkbox" id="collect" class="checkbox--orange">
-                            <label for="collect" class="label-checkbox--orange">Наложенным платежом</label>
+                                <input type="checkbox" id="collect" class="checkbox--orange">
+                                <label for="collect" class="label-checkbox--orange">Наложенным платежом</label>
 
-                            <input type="checkbox" id="yandex-money" class="checkbox--orange">
-                            <label for="yandex-money" class="label-checkbox--orange">Яндекс Деньги</label>
+                                <input type="checkbox" id="yandex-money" class="checkbox--orange">
+                                <label for="yandex-money" class="label-checkbox--orange">Яндекс Деньги</label>
+                            </div>
+
+                            <div class="registration_stage-3__right">
+                                <input type="checkbox" id="transfer" class="checkbox--orange">
+                                <label for="transfer" class="label-checkbox--orange">Банковский перевод</label>
+
+                                <input type="checkbox" id="card" class="checkbox--orange">
+                                <label for="card" class="label-checkbox--orange">Банковской картой</label>
+
+                                <input type="checkbox" id="Paypal" class="checkbox--orange">
+                                <label for="Paypal" class="label-checkbox--orange">Paypal</label>
+                            </div>
                         </div>
-
-                        <div class="registration_stage-3__right">
-                            <input type="checkbox" id="transfer" class="checkbox--orange">
-                            <label for="transfer" class="label-checkbox--orange">Банковский перевод</label>
-
-                            <input type="checkbox" id="card" class="checkbox--orange">
-                            <label for="card" class="label-checkbox--orange">Банковской картой</label>
-
-                            <input type="checkbox" id="Paypal" class="checkbox--orange">
-                            <label for="Paypal" class="label-checkbox--orange">Paypal</label>
-                        </div>
-
                     </div>
+
                     <div class="registration_stage-4__pay-wrapper registration_stage-4-4__commercial">
-                        <p>Отметьте возможные варианты доставки ваших товаров. Оставляйте поле
-                            со стоимостью пустым, если стоимость будет рассчитан по запросу.</p>
-                        <div class="registration_stage-4__left">
-                            <input type="checkbox" id="our-delivery" class="checkbox--orange">
-                            <label for="our-delivery" class="label-checkbox--orange">Получение в вашем пункте выдачи</label>
+                        <h3 class="registration_stage-4-4__title">Доставка</h3>
+                        <div class="registration_stage-4-4__commercial-wrapper">
+                            <p>Отметьте возможные варианты доставки ваших товаров. Оставляйте поле
+                                со стоимостью пустым, если стоимость будет рассчитан по запросу.</p>
+                            <div class="registration_stage-4__left">
+                                <input type="checkbox" id="our-delivery" class="checkbox--orange">
+                                <label for="our-delivery" class="label-checkbox--orange">Получение в вашем пункте выдачи</label>
 
-                            <input type="checkbox" id="courier-moscow" class="checkbox--orange">
-                            <label for="courier-moscow" class="label-checkbox--orange">Курьером по г. Москва</label>
+                                <input type="checkbox" id="courier-moscow" class="checkbox--orange">
+                                <label for="courier-moscow" class="label-checkbox--orange">Курьером по г. Москва</label>
 
-                            <input type="checkbox" id="courier-russia" class="checkbox--orange">
-                            <label for="courier-russia" class="label-checkbox--orange">Курьером по России</label>
+                                <input type="checkbox" id="courier-russia" class="checkbox--orange">
+                                <label for="courier-russia" class="label-checkbox--orange">Курьером по России</label>
 
-                            <input type="checkbox" id="courier-world" class="checkbox--orange">
-                            <label for="courier-world" class="label-checkbox--orange">Курьером по миру</label>
+                                <input type="checkbox" id="courier-world" class="checkbox--orange">
+                                <label for="courier-world" class="label-checkbox--orange">Курьером по миру</label>
 
-                            <input type="checkbox" id="mail-russia" class="checkbox--orange">
-                            <label for="mail-russia" class="label-checkbox--orange">Почта России</label>
+                                <input type="checkbox" id="mail-russia" class="checkbox--orange">
+                                <label for="mail-russia" class="label-checkbox--orange">Почта России</label>
+                            </div>
+
+                            <div class="registration_stage-4__right">
+                                <input type="number" class="delivery-price" placeholder="Цена" disabled=""><span class="valuta">₽</span>
+
+                                <input type="number" class="delivery-price" placeholder="Цена" disabled=""><span class="valuta">₽</span>
+
+
+                                <input type="number" class="delivery-price" placeholder="Цена" disabled=""><span class="valuta">₽</span>
+
+
+                                <input type="number" class="delivery-price" placeholder="Цена" disabled=""><span class="valuta">₽</span>
+
+
+                                <input type="number" class="delivery-price" placeholder="Цена" disabled=""><span class="valuta">₽</span>
+
+                            </div>
+                            <div class="registration_stage-4__right registration_stage-4__right--small">
+                                <input type="checkbox" id="on-request_1" class="checkbox--orange" disabled="">
+                                <label for="on-request_1" class="label-checkbox--orange label-checkbox--grey fade">По запросу <span class="info">[?] <div class="full-info">При выборе данного пункта покупатель будет запрашивать у Вас расчет доставки.</div> </span></label>
+                                <input type="checkbox" id="on-request_2" class="checkbox--orange" disabled="">
+                                <label for="on-request_2" class="label-checkbox--orange label-checkbox--grey fade">По запросу <span class="info">[?] <div class="full-info">При выборе данного пункта покупатель будет запрашивать у Вас расчет доставки.</div></span></label>
+                                <input type="checkbox" id="on-request_3" class="checkbox--orange" disabled="">
+                                <label for="on-request_3" class="label-checkbox--orange label-checkbox--grey fade">По запросу <span class="info">[?] <div class="full-info">При выборе данного пункта покупатель будет запрашивать у Вас расчет доставки.</div></span></label>
+                                <input type="checkbox" id="on-request_4" class="checkbox--orange" disabled="">
+                                <label for="on-request_4" class="label-checkbox--orange label-checkbox--grey fade">По запросу <span class="info">[?] <div class="full-info">При выборе данного пункта покупатель будет запрашивать у Вас расчет доставки.</div></span></label>
+                                <input type="checkbox" id="on-request_5" class="checkbox--orange" disabled="">
+                                <label for="on-request_5" class="label-checkbox--orange label-checkbox--grey fade">По запросу <span class="info">[?] <div class="full-info">При выборе данного пункта покупатель будет запрашивать у Вас расчет доставки.</div></span></label>
+
+
+                            </div>
+                            <label class="registration_stage-4__traid">Правила возврата и обмена</label>
+                            <textarea name="" id="" cols="30" rows="9" placeholder="Правила возврата и обмена,другая важная информация"></textarea>
                         </div>
-
-                        <div class="registration_stage-4__right">
-                            <input type="number" class="delivery-price" placeholder="Цена" disabled=""><span class="valuta">₽</span>
-
-                            <input type="number" class="delivery-price" placeholder="Цена" disabled=""><span class="valuta">₽</span>
-
-
-                            <input type="number" class="delivery-price" placeholder="Цена" disabled=""><span class="valuta">₽</span>
-
-
-                            <input type="number" class="delivery-price" placeholder="Цена" disabled=""><span class="valuta">₽</span>
-
-
-                            <input type="number" class="delivery-price" placeholder="Цена" disabled=""><span class="valuta">₽</span>
-
+                        <div class="main-registration__submit-wrapper">
+                            <input type="checkbox" id="agreement" class="checkbox" checked>
+                            <label for="agreement">Я cогласен с <a href="">Политикой обработки персональных данных.</a> </label>
+                            <input type="submit" value="Перейти к добавлению товаров" class="btn main-registration__btn">
+                            <input type="submit" value="Перейти на страницу, не добавляя товары" class="btn btn-underlining">
                         </div>
-                        <div class="registration_stage-4__right registration_stage-4__right--small">
-                            <input type="checkbox" id="on-request_1" class="checkbox--orange" disabled="">
-                            <label for="on-request_1" class="label-checkbox--orange label-checkbox--grey fade">По запросу <span class="info">[?] <div class="full-info">При выборе данного пунктапокупатель будет запрашивать у Вас расчет доставки.</div> </span></label>
-                            <input type="checkbox" id="on-request_2" class="checkbox--orange" disabled="">
-                            <label for="on-request_2" class="label-checkbox--orange label-checkbox--grey fade">По запросу <span class="info">[?] <div class="full-info">При выборе данного пунктапокупатель будет запрашивать у Вас расчет доставки.</div></span></label>
-                            <input type="checkbox" id="on-request_3" class="checkbox--orange" disabled="">
-                            <label for="on-request_3" class="label-checkbox--orange label-checkbox--grey fade">По запросу <span class="info">[?] <div class="full-info">При выборе данного пунктапокупатель будет запрашивать у Вас расчет доставки.</div></span></label>
-                            <input type="checkbox" id="on-request_4" class="checkbox--orange" disabled="">
-                            <label for="on-request_4" class="label-checkbox--orange label-checkbox--grey fade">По запросу <span class="info">[?] <div class="full-info">При выборе данного пунктапокупатель будет запрашивать у Вас расчет доставки.</div></span></label>
-                            <input type="checkbox" id="on-request_5" class="checkbox--orange" disabled="">
-                            <label for="on-request_5" class="label-checkbox--orange label-checkbox--grey fade">По запросу <span class="info">[?] <div class="full-info">При выборе данного пунктапокупатель будет запрашивать у Вас расчет доставки.</div></span></label>
-
-
-                        </div>
-                        <label class="registration_stage-4__traid">Правила возврата и обмена</label>
-                        <textarea name="" id="" cols="30" rows="9"></textarea>
                     </div>
-
+                    <div class="main-registration__submit-wrapper main-registration__submit--neprod">
+                         <input type="checkbox" id="agreement" class="checkbox" checked>
+                         <label for="agreement">Я cогласен с <a href="">Политикой обработки персональных данных.</a> </label>
+                         <button type="submit"  class="btn main-registration__btn">Завершить создание и перейти на свою страницу</button>
+                         
+                    </div>
                 </div>
-                <div class="main-registration__submit-wrapper">
-                    <input type="checkbox" id="agreement" class="checkbox">
-                    <label for="agreement">Я cогласен с <a href="">Политикой обработки персональных данных.</a> </label>
-                    <input type="submit" value="Перейти к добавлению товаров" class="btn main-registration__btn">
-                    <input type="submit" value="Перейти на страницу, не добавляя товары" class="btn btn-underlining">
-
-                </div>
+                
             </form>
         </div>
 

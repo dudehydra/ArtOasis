@@ -1,6 +1,33 @@
+function textAreaAdjust(o) {
+        o.style.height = "1px";
+        o.style.height = (25+o.scrollHeight)+"px";
+    }
+
 // SLIDERS
 
 $(document).ready(function(){
+    
+    $(function(){
+    var nav = $('.user-block__main div'),
+      animateTime = 500,
+      navLink = $('.user-block__read-all');
+    navLink.click(function(){
+        if(nav.height() === 85){
+          autoHeightAnimate(nav, animateTime);
+        } else {
+      nav.stop().animate({ height: '85px' }, animateTime);
+    }
+     });
+    })
+
+    /* Function to animate height: auto */
+    function autoHeightAnimate(element, time){
+        var curHeight = element.height(), // Get Default Height
+            autoHeight = element.css('height', 'auto').height(); // Get Auto Height
+              element.height(curHeight); // Reset to Default Height
+              element.stop().animate({ height: autoHeight }, time); // Animate to Auto Height
+    };
+
     $('.header-slider').owlCarousel({
         items: 1,
         loop: false,
@@ -9,15 +36,31 @@ $(document).ready(function(){
         nav: false
 
     });
+
     $('.album-look__slider').owlCarousel({
         items: 1,
         loop: false,
         touchDrag: false,
         nav: true,
         navText: ['','']
-
     });
 
+    var goods_item_list = $('.goods-item');
+    $('document').ready(function(){
+        goods_item_list.each(function(){
+            var goods_slider = $(this).find('.goods-item--slider');
+            var goods_slider_nav = $(this).find('.goods-item__dots');
+            $(goods_slider).owlCarousel({
+            items: 1,
+            loop: false,
+            touchDrag: false,
+            dots: true,
+            dotsContainer: goods_slider_nav
+            });
+
+        });
+    });
+    
     $('.best-shops__slider').owlCarousel({
         items: 3,
         loop: false,
@@ -27,6 +70,15 @@ $(document).ready(function(){
         navText: ['',''],
         loop: true,
 
+    });
+    $('.new-shops__slider').owlCarousel({
+        items: 3,
+        loop: false,
+        touchDrag: false,
+        mouseDrag: false,
+        touchDrag: false,
+        pullDrag: false,
+        freeDrag: false
     });
 
     $('.popular-goods__items-wrapper').owlCarousel({
@@ -39,6 +91,17 @@ $(document).ready(function(){
         loop: true,
 
     });
+    $('.search_result-master-works').owlCarousel({
+        items: 1,
+        loop: false,
+        touchDrag: false,
+        navContainer: '.popular-goods__pagination',
+        navClass: ['prev-btn', 'next-btn'],
+        navText: ['',''],
+        loop: true,
+
+    });
+
     $('.new-product__slider').owlCarousel({
         items: 1,
         loop: false,
@@ -47,7 +110,6 @@ $(document).ready(function(){
         navClass: ['prev-btn', 'next-btn'],
         navText: ['',''],
         loop: true,
-
     });
 
     $('.sale__items-slider').owlCarousel({
@@ -86,6 +148,13 @@ $(document).ready(function(){
         starOn  : 'star-on.png',
         starHalf : 'star-half.png',
     });
+     $('.rating').raty({
+        score    : 5,
+        path:  'img',
+        starOff : 'star-off.png',
+        starOn  : 'star-on.png',
+        starHalf : 'star-half.png',
+    });
      $('.personal__profile-rating').raty({
         score    : 5,
         path:  'img',
@@ -114,7 +183,7 @@ $(document).ready(function(){
     $('.goods-item__img-edit').magnificPopup({
         type: 'inline'
     });
-
+    
     ( function( factory ) {
         if ( typeof define === "function" && define.amd ) {
 
@@ -166,6 +235,102 @@ $(document).ready(function(){
         });
     } );
 
+    // autocomplete ini
+    $(function() {
+    
+    var flowers = [ { label: "Казань", id: "Kazan" },
+                    { label: "Москва", id: "Mosc" },
+                    { label: "Бобруйск", id: "Bobruysk" }];
+            
+    function split( val ) {
+      return val.split( /,\s*/ );
+    }
+    function extractLast( term ) {
+      return split( term ).pop();
+    }
+ 
+    $( "#filter-search" )
+      // don't navigate away from the field on tab when selecting an item
+      .on( "keydown", function( event ) {
+        if ( event.keyCode === $.ui.keyCode.TAB &&
+            $( this ).autocomplete( "instance" ).menu.active ) {
+          event.preventDefault();
+        }
+      })
+      .autocomplete({
+        minLength: 0,
+        source: function( request, response ) {
+          // delegate back to autocomplete, but extract the last term
+          response( $.ui.autocomplete.filter(
+            flowers, extractLast( request.term ) ) );
+        },
+        select:  function( event, ui ) {
+
+          var terms = split( this.value );
+          // remove the current input
+          terms.pop();
+          // add the selected item
+          terms.push( ui.item.value );
+          // add placeholder to get the comma-and-space at the end
+          terms.push( "" );
+          this.value = terms.join( ", " );
+          var messageDiv = $("<div class='filter__options-city'></div>");
+          messageDiv.text(ui.item.label);
+          messageDiv.attr('data-id', ui.item.id);
+        $('.filter__city-list').append(messageDiv);
+          return false; 
+        },
+        change: function() {
+            $('.filter__options-city').click(function(){
+                $(this).remove();
+            });
+        }
+      });
+    
+    });
+    // autocomplete end
+
+    // Filter reset btn
+    $('.filter__clear-all').click(function(){
+        $(".filter input[type=checkbox]").prop('checked', false);
+        $(".filter input[type=radio]").prop('checked', false)
+        $('.filter__options-city').remove();
+    });
+
+    // Filter open toggle
+    $('.filter__main-options').hide(0);
+    $('.filter__clear-all').hide(0);
+    $('.filter__categories-options').hide(0);
+    $('.filter__main-header').click(function(){
+        $('.filter__main-options').toggle(300);
+        $('.filter__clear-all').toggle(0);
+    });
+
+    // Filter categories toggle
+    $('.filter__category').click(function(){
+        $('.filter__options-wrapper').hide();
+        $('.filter__categories-options').show(300);
+    });
+    $('.close-categories').click(function(){
+        $('.filter__categories-options').hide();
+        $('.filter__options-wrapper').show(300);
+    });
+    // Filter categories active-style toggle
+    $('.filter__category').click(function(){
+        $('.filter__category').removeClass('filter__category--active');
+        $(this).toggleClass('filter__category--active');
+    });
+
+    // Показать номер на странице мастера
+     function getNumber() {
+        var fullNumber = $('.user-block__phone').data("phone");
+        var cutNumber = fullNumber.substr(0,4) + '********';
+        $('.user-block__phone span').html(cutNumber);
+        $('.user-block__phone').click(function(){
+            $('.user-block__phone span').html(fullNumber);
+        });
+     };
+    getNumber();
 });
 
 // SLIDERS END
@@ -173,8 +338,6 @@ $(document).ready(function(){
 
 // START drag and drop
 (function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
-
-
 
 'use strict';
 
@@ -371,8 +534,15 @@ $(document).ready(function(){
             $('.registration_stage-4-4__commercial').show(300)
         }
         else (
-            $('.registration_stage-4-4__commercial').hide(300)
+             $('.registration_stage-4-4__commercial').hide(300)
         );
+        if ($('#commercialYes').prop("checked")) {
+            
+            $('.main-registration__submit--neprod').hide(300)
+        }
+        else (
+             $('.main-registration__submit--neprod').show(300)
+        )
     })
 
     $('#shop-link').change(function () {
