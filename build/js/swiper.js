@@ -7,7 +7,7 @@ var galleryTop = new Swiper('.gallery-top', {
     });
     var galleryThumbs = new Swiper('.gallery-thumbs', {
       centeredSlides: true,
-      spaceBetween: 15,
+      spaceBetween: 10,
       slidesPerView: 'auto',
       touchRatio: 0.2,
       slideToClickedSlide: true,

@@ -23,132 +23,134 @@
 <body>
     <div class="specialization-type-popup white-popup mfp-hide" id="specialization-popup">
     <div class="specialization-type-popup__header">
-        <h3>Добавление специализации</h3>
+            <h3>Добавление специализации</h3>
     </div>
+    <div class="specialization-type-popup-wrapper">
+        <form action="post" id="specialization-form">
+            <div class="specialization__wrapper">
+                <div class="art-wrapper">
+                    <span class="specialization__title">Живопись</span>
+                    <input type="checkbox" id="aerography-checkbox" class="checkbox--orange" data-name="Аэрография">
+                    <label for="aerography-checkbox" class="label-checkbox--orange">Аэрография</label>
+                    <input type="checkbox" id="decoration-checkbox" class="checkbox--orange" data-name="Декорации для театра и кино">
+                    <label for="decoration-checkbox" class="label-checkbox--orange">Декорации для театра и кино</label>
+                    <input type="checkbox" id="painting-checkbox" class="checkbox--orange" data-name="Живопись">
+                    <label for="painting-checkbox" class="label-checkbox--orange">Живопись</label>
+                    <input type="checkbox" id="сaricature-checkbox" class="checkbox--orange" data-name="Карикатура">
+                    <label for="сaricature-checkbox" class="label-checkbox--orange">Карикатура</label>
+                    <input type="checkbox" id="miniature-checkbox" class="checkbox--orange" data-name="Миниатюра">
+                    <label for="miniature-checkbox" class="label-checkbox--orange">Миниатюра</label>
+                    <input type="checkbox" id="monumental-checkbox" class="checkbox--orange" data-name="Монументальная">
+                    <label for="monumental-checkbox" class="label-checkbox--orange">Монументальная</label>
+                    <input type="checkbox" id="restoration-checkbox" class="checkbox--orange" data-name="Реставрация">
+                    <label for="restoration-checkbox" class="label-checkbox--orange">Реставрация</label>
+                    <input type="checkbox" id="drawing-checkbox" class="checkbox--orange" data-name="Рисунок">
+                    <label for="drawing-checkbox" class="label-checkbox--orange">Рисунок</label>
 
-    <form action="post" id="specialization-form">
-        <div class="specialization__wrapper">
-            <div class="art-wrapper">
-                <span class="specialization__title">Живопись</span>
-                <input type="checkbox" id="aerography-checkbox" class="checkbox--orange" data-name="Аэрография">
-                <label for="aerography-checkbox" class="label-checkbox--orange">Аэрография</label>
-                <input type="checkbox" id="decoration-checkbox" class="checkbox--orange" data-name="Декорации для театра и кино">
-                <label for="decoration-checkbox" class="label-checkbox--orange">Декорации для театра и кино</label>
-                <input type="checkbox" id="painting-checkbox" class="checkbox--orange" data-name="Живопись">
-                <label for="painting-checkbox" class="label-checkbox--orange">Живопись</label>
-                <input type="checkbox" id="сaricature-checkbox" class="checkbox--orange" data-name="Карикатура">
-                <label for="сaricature-checkbox" class="label-checkbox--orange">Карикатура</label>
-                <input type="checkbox" id="miniature-checkbox" class="checkbox--orange" data-name="Миниатюра">
-                <label for="miniature-checkbox" class="label-checkbox--orange">Миниатюра</label>
-                <input type="checkbox" id="monumental-checkbox" class="checkbox--orange" data-name="Монументальная">
-                <label for="monumental-checkbox" class="label-checkbox--orange">Монументальная</label>
-                <input type="checkbox" id="restoration-checkbox" class="checkbox--orange" data-name="Реставрация">
-                <label for="restoration-checkbox" class="label-checkbox--orange">Реставрация</label>
-                <input type="checkbox" id="drawing-checkbox" class="checkbox--orange" data-name="Рисунок">
-                <label for="drawing-checkbox" class="label-checkbox--orange">Рисунок</label>
+                </div>
+                <div class="art-wrapper">
+                    <span class="specialization__title">Графика</span>
+                    <input type="checkbox" id="Magazines-checkbox" class="checkbox--orange" data-name="Журналы и газеты">
+                    <label for="Magazines-checkbox" class="label-checkbox--orange">Журналы и газеты</label>
+                    <input type="checkbox" id="Books-checkbox" class="checkbox--orange" data-name="Книги,иллюстрации">
+                    <label for="Books-checkbox" class="label-checkbox--orange">Книги,иллюстрации</label>
+                    <input type="checkbox" id="Computer-checkbox" class="checkbox--orange" data-name="Компьютерная">
+                    <label for="Computer-checkbox" class="label-checkbox--orange">Компьютерная</label>
+                    <input type="checkbox" id="industrial-checkbox" class="checkbox--orange" data-name="Прикладная и промышленная">
+                    <label for="industrial-checkbox" class="label-checkbox--orange">Прикладная и промышленная</label>
+                    <input type="checkbox" id="Advertising-checkbox" class="checkbox--orange" data-name="Рекламная и полиграфическая">
+                    <label for="Advertising-checkbox" class="label-checkbox--orange">Рекламная и полиграфическая</label>
+                    <input type="checkbox" id="Production-checkbox" class="checkbox--orange" data-name="Продукция">
+                    <label for="Production-checkbox" class="label-checkbox--orange">Продукция</label>
+                    <input type="checkbox" id="Easel-checkbox" class="checkbox--orange" data-name="Станковая">
+                    <label for="Easel-checkbox" class="label-checkbox--orange">Станковая</label>
+                </div>
+                 <div class="art-wrapper">
+                    <span class="specialization__title">Фотография</span>
+                    <input type="checkbox" id="reportage-checkbox" class="checkbox--orange" data-name="Репортажное фото">
+                    <label for="reportage-checkbox" class="label-checkbox--orange">Репортажное фото</label>
+                    <input type="checkbox" id="Studio-checkbox" class="checkbox--orange" data-name="Студийное фото">
+                    <label for="Studio-checkbox" class="label-checkbox--orange">Студийное фото</label>
+                    <input type="checkbox" id="Artistic-checkbox" class="checkbox--orange" data-name="Художественное фото">
+                    <label for="Artistic-checkbox" class="label-checkbox--orange">Художественное фото</label>
+                    
+                </div>
+                <div class="art-wrapper">
+                    <span class="specialization__title">Скульптура</span>
+                    <input type="checkbox" id="Gypsum-checkbox" class="checkbox--orange" data-name="Гипсовая">
+                    <label for="Gypsum-checkbox" class="label-checkbox--orange">Гипсовая</label>
+                    <input type="checkbox" id="Wood-checkbox" class="checkbox--orange" data-name="Деревянная">
+                    <label for="Wood-checkbox" class="label-checkbox--orange">Деревянная</label>
+                    <input type="checkbox" id="Stone-checkbox" class="checkbox--orange" data-name="Каменная">
+                    <label for="Stone-checkbox" class="label-checkbox--orange">Каменная</label>
+                    <input type="checkbox" id="Metal-checkbox" class="checkbox--orange" data-name="Металлическая">
+                    <label for="Metal-checkbox" class="label-checkbox--orange">Металлическая</label>
+                    <input type="checkbox" id="Thread-checkbox" class="checkbox--orange" data-name="Резьба, инкрустация">
+                    <label for="Thread-checkbox" class="label-checkbox--orange">Резьба, инкрустация</label>
+                    <input type="checkbox" id="Embossing-checkbox" class="checkbox--orange" data-name="Чеканка">
+                    <label for="Embossing-checkbox" class="label-checkbox--orange">Чеканка</label>
+                </div>
+                 <div class="art-wrapper">
+                    <span class="specialization__title">Роспись</span>
+                    <input type="checkbox" id="Bodyart-checkbox" class="checkbox--orange" data-name="Бодиарт">
+                    <label for="Bodyart-checkbox" class="label-checkbox--orange">Бодиарт</label>
+                    <input type="checkbox" id="Makeup-checkbox" class="checkbox--orange" data-name="Грим">
+                    <label for="Makeup-checkbox" class="label-checkbox--orange">Грим</label>
+                    <input type="checkbox" id="Decor-painting-checkbox" class="checkbox--orange" data-name="Декоративная роспись">
+                    <label for="Decor-painting-checkbox" class="label-checkbox--orange">Декоративная роспись</label>
+                    <input type="checkbox" id="Tattoo-checkbox" class="checkbox--orange" data-name="Тату">
+                    <label for="Tattoo-checkbox" class="label-checkbox--orange">Тату</label>
+                    <input type="checkbox" id="wall-painting-checkbox" class="checkbox--orange" data-name="Художественная роспись стен">
+                    <label for="wall-painting-checkbox" class="label-checkbox--orange">Художественная роспись стен</label>
+                </div>
+                <div class="art-wrapper">
+                    <span class="specialization__title">Рукоделие</span>
+                    <input type="checkbox" id="Bijouterie-checkbox" class="checkbox--orange" data-name="Бижутерия и ювелирные изделия">
+                    <label for="Bijouterie-checkbox" class="label-checkbox--orange">Бижутерия и ювелирные изделия</label>
+                    <input type="checkbox" id="weaving-checkbox" class="checkbox--orange" data-name="Вышивка, вязание, плетение">
+                    <label for="weaving-checkbox" class="label-checkbox--orange">Вышивка, вязание, плетение</label>
+                    <input type="checkbox" id="Decoupage-checkbox" class="checkbox--orange" data-name="Декупаж">
+                    <label for="Decoupage-checkbox" class="label-checkbox--orange">Декупаж</label>
+                    <input type="checkbox" id="Design-checkbox" class="checkbox--orange" data-name="Дизайн костюма">
+                    <label for="Design-checkbox" class="label-checkbox--orange">Дизайн костюма</label>
+                    <input type="checkbox" id="dolls-checkbox" class="checkbox--orange" data-name="Изготовление кукол и игрушек">
+                    <label for="dolls-checkbox" class="label-checkbox--orange">Изготовление кукол и игрушек</label>
+                    <input type="checkbox" id="Mosaic-checkbox" class="checkbox--orange" data-name="Мозаика, витраж, выжигание">
+                    <label for="Mosaic-checkbox" class="label-checkbox--orange">Мозаика, витраж, выжигание</label>
+                    <input type="checkbox" id="Postigoronic-checkbox" class="checkbox--orange" data-name="Постижёрное дело">
+                    <label for="Postigoronic-checkbox" class="label-checkbox--orange">Постижёрное дело</label>
+                    <input type="checkbox" id="Scrapbooking-checkbox" class="checkbox--orange" data-name="Скрапбукинг">
+                    <label for="Scrapbooking-checkbox" class="label-checkbox--orange">Скрапбукинг</label>
+                    <input type="checkbox" id="patchwork-checkbox" class="checkbox--orange" data-name="Шитьё, цветоделие, патчворк, квилтинг">
+                    <label for="patchwork-checkbox" class="label-checkbox--orange">Шитьё, цветоделие, патчворк, квилтинг</label>
+                </div>
+                <div class="art-wrapper">
+                    <span class="specialization__title">Декор</span>
+                    <input type="checkbox" id="Accessories-checkbox" class="checkbox--orange" data-name="Аксессуары">
+                    <label for="Accessories-checkbox" class="label-checkbox--orange">Аксессуары</label>
+                    <input type="checkbox" id="childish-checkbox" class="checkbox--orange" data-name="Детское">
+                    <label for="childish-checkbox" class="label-checkbox--orange">Детское</label>
+                    <input type="checkbox" id="Cooking-checkbox" class="checkbox--orange" data-name="Кухонные принадлежности">
+                    <label for="Cooking-checkbox" class="label-checkbox--orange">Кухонные принадлежности</label>
+                    <input type="checkbox" id="Furniture-checkbox" class="checkbox--orange" data-name="Мебель">
+                    <label for="Furniture-checkbox" class="label-checkbox--orange">Мебель</label>
+                    <input type="checkbox" id="Lighting-checkbox" class="checkbox--orange" data-name="Освещение">
+                    <label for="Lighting-checkbox" class="label-checkbox--orange">Освещение</label>
+                    <input type="checkbox" id="Dishes-checkbox" class="checkbox--orange" data-name="Посуда">
+                    <label for="Dishes-checkbox" class="label-checkbox--orange">Посуда</label>
+                    <input type="checkbox" id="Other-checkbox" class="checkbox--orange" data-name="Прочее">
+                    <label for="Other-checkbox" class="label-checkbox--orange">Прочее</label>
+                    <input type="checkbox" id="Garden-checkbox" class="checkbox--orange" data-name="Сад">
+                    <label for="Garden-checkbox" class="label-checkbox--orange">Сад</label>
+                    <input type="checkbox" id="Walls-checkbox" class="checkbox--orange" data-name="Стены">
+                    <label for="Walls-checkbox" class="label-checkbox--orange">Стены</label>
+                </div>
+            </div>
 
-            </div>
-            <div class="art-wrapper">
-                <span class="specialization__title">Графика</span>
-                <input type="checkbox" id="Magazines-checkbox" class="checkbox--orange" data-name="Журналы и газеты">
-                <label for="Magazines-checkbox" class="label-checkbox--orange">Журналы и газеты</label>
-                <input type="checkbox" id="Books-checkbox" class="checkbox--orange" data-name="Книги,иллюстрации">
-                <label for="Books-checkbox" class="label-checkbox--orange">Книги,иллюстрации</label>
-                <input type="checkbox" id="Computer-checkbox" class="checkbox--orange" data-name="Компьютерная">
-                <label for="Computer-checkbox" class="label-checkbox--orange">Компьютерная</label>
-                <input type="checkbox" id="industrial-checkbox" class="checkbox--orange" data-name="Прикладная и промышленная">
-                <label for="industrial-checkbox" class="label-checkbox--orange">Прикладная и промышленная</label>
-                <input type="checkbox" id="Advertising-checkbox" class="checkbox--orange" data-name="Рекламная и полиграфическая">
-                <label for="Advertising-checkbox" class="label-checkbox--orange">Рекламная и полиграфическая</label>
-                <input type="checkbox" id="Production-checkbox" class="checkbox--orange" data-name="Продукция">
-                <label for="Production-checkbox" class="label-checkbox--orange">Продукция</label>
-                <input type="checkbox" id="Easel-checkbox" class="checkbox--orange" data-name="Станковая">
-                <label for="Easel-checkbox" class="label-checkbox--orange">Станковая</label>
-            </div>
-             <div class="art-wrapper">
-                <span class="specialization__title">Фотография</span>
-                <input type="checkbox" id="reportage-checkbox" class="checkbox--orange" data-name="Репортажное фото">
-                <label for="reportage-checkbox" class="label-checkbox--orange">Репортажное фото</label>
-                <input type="checkbox" id="Studio-checkbox" class="checkbox--orange" data-name="Студийное фото">
-                <label for="Studio-checkbox" class="label-checkbox--orange">Студийное фото</label>
-                <input type="checkbox" id="Artistic-checkbox" class="checkbox--orange" data-name="Художественное фото">
-                <label for="Artistic-checkbox" class="label-checkbox--orange">Художественное фото</label>
-                
-            </div>
-            <div class="art-wrapper">
-                <span class="specialization__title">Скульптура</span>
-                <input type="checkbox" id="Gypsum-checkbox" class="checkbox--orange" data-name="Гипсовая">
-                <label for="Gypsum-checkbox" class="label-checkbox--orange">Гипсовая</label>
-                <input type="checkbox" id="Wood-checkbox" class="checkbox--orange" data-name="Деревянная">
-                <label for="Wood-checkbox" class="label-checkbox--orange">Деревянная</label>
-                <input type="checkbox" id="Stone-checkbox" class="checkbox--orange" data-name="Каменная">
-                <label for="Stone-checkbox" class="label-checkbox--orange">Каменная</label>
-                <input type="checkbox" id="Metal-checkbox" class="checkbox--orange" data-name="Металлическая">
-                <label for="Metal-checkbox" class="label-checkbox--orange">Металлическая</label>
-                <input type="checkbox" id="Thread-checkbox" class="checkbox--orange" data-name="Резьба, инкрустация">
-                <label for="Thread-checkbox" class="label-checkbox--orange">Резьба, инкрустация</label>
-                <input type="checkbox" id="Embossing-checkbox" class="checkbox--orange" data-name="Чеканка">
-                <label for="Embossing-checkbox" class="label-checkbox--orange">Чеканка</label>
-            </div>
-             <div class="art-wrapper">
-                <span class="specialization__title">Роспись</span>
-                <input type="checkbox" id="Bodyart-checkbox" class="checkbox--orange" data-name="Бодиарт">
-                <label for="Bodyart-checkbox" class="label-checkbox--orange">Бодиарт</label>
-                <input type="checkbox" id="Makeup-checkbox" class="checkbox--orange" data-name="Грим">
-                <label for="Makeup-checkbox" class="label-checkbox--orange">Грим</label>
-                <input type="checkbox" id="Decor-painting-checkbox" class="checkbox--orange" data-name="Декоративная роспись">
-                <label for="Decor-painting-checkbox" class="label-checkbox--orange">Декоративная роспись</label>
-                <input type="checkbox" id="Tattoo-checkbox" class="checkbox--orange" data-name="Тату">
-                <label for="Tattoo-checkbox" class="label-checkbox--orange">Тату</label>
-                <input type="checkbox" id="wall-painting-checkbox" class="checkbox--orange" data-name="Художественная роспись стен">
-                <label for="wall-painting-checkbox" class="label-checkbox--orange">Художественная роспись стен</label>
-            </div>
-            <div class="art-wrapper">
-                <span class="specialization__title">Рукоделие</span>
-                <input type="checkbox" id="Bijouterie-checkbox" class="checkbox--orange" data-name="Бижутерия и ювелирные изделия">
-                <label for="Bijouterie-checkbox" class="label-checkbox--orange">Бижутерия и ювелирные изделия</label>
-                <input type="checkbox" id="weaving-checkbox" class="checkbox--orange" data-name="Вышивка, вязание, плетение">
-                <label for="weaving-checkbox" class="label-checkbox--orange">Вышивка, вязание, плетение</label>
-                <input type="checkbox" id="Decoupage-checkbox" class="checkbox--orange" data-name="Декупаж">
-                <label for="Decoupage-checkbox" class="label-checkbox--orange">Декупаж</label>
-                <input type="checkbox" id="Design-checkbox" class="checkbox--orange" data-name="Дизайн костюма">
-                <label for="Design-checkbox" class="label-checkbox--orange">Дизайн костюма</label>
-                <input type="checkbox" id="dolls-checkbox" class="checkbox--orange" data-name="Изготовление кукол и игрушек">
-                <label for="dolls-checkbox" class="label-checkbox--orange">Изготовление кукол и игрушек</label>
-                <input type="checkbox" id="Mosaic-checkbox" class="checkbox--orange" data-name="Мозаика, витраж, выжигание">
-                <label for="Mosaic-checkbox" class="label-checkbox--orange">Мозаика, витраж, выжигание</label>
-                <input type="checkbox" id="Postigoronic-checkbox" class="checkbox--orange" data-name="Постижёрное дело">
-                <label for="Postigoronic-checkbox" class="label-checkbox--orange">Постижёрное дело</label>
-                <input type="checkbox" id="Scrapbooking-checkbox" class="checkbox--orange" data-name="Скрапбукинг">
-                <label for="Scrapbooking-checkbox" class="label-checkbox--orange">Скрапбукинг</label>
-                <input type="checkbox" id="patchwork-checkbox" class="checkbox--orange" data-name="Шитьё, цветоделие, патчворк, квилтинг">
-                <label for="patchwork-checkbox" class="label-checkbox--orange">Шитьё, цветоделие, патчворк, квилтинг</label>
-            </div>
-            <div class="art-wrapper">
-                <span class="specialization__title">Декор</span>
-                <input type="checkbox" id="Accessories-checkbox" class="checkbox--orange" data-name="Аксессуары">
-                <label for="Accessories-checkbox" class="label-checkbox--orange">Аксессуары</label>
-                <input type="checkbox" id="childish-checkbox" class="checkbox--orange" data-name="Детское">
-                <label for="childish-checkbox" class="label-checkbox--orange">Детское</label>
-                <input type="checkbox" id="Cooking-checkbox" class="checkbox--orange" data-name="Кухонные принадлежности">
-                <label for="Cooking-checkbox" class="label-checkbox--orange">Кухонные принадлежности</label>
-                <input type="checkbox" id="Furniture-checkbox" class="checkbox--orange" data-name="Мебель">
-                <label for="Furniture-checkbox" class="label-checkbox--orange">Мебель</label>
-                <input type="checkbox" id="Lighting-checkbox" class="checkbox--orange" data-name="Освещение">
-                <label for="Lighting-checkbox" class="label-checkbox--orange">Освещение</label>
-                <input type="checkbox" id="Dishes-checkbox" class="checkbox--orange" data-name="Посуда">
-                <label for="Dishes-checkbox" class="label-checkbox--orange">Посуда</label>
-                <input type="checkbox" id="Other-checkbox" class="checkbox--orange" data-name="Прочее">
-                <label for="Other-checkbox" class="label-checkbox--orange">Прочее</label>
-                <input type="checkbox" id="Garden-checkbox" class="checkbox--orange" data-name="Сад">
-                <label for="Garden-checkbox" class="label-checkbox--orange">Сад</label>
-                <input type="checkbox" id="Walls-checkbox" class="checkbox--orange" data-name="Стены">
-                <label for="Walls-checkbox" class="label-checkbox--orange">Стены</label>
-            </div>
-        </div>
-
-    </form>
-    <input type="button" class="btn btn-specialization " value="Добавить выбранное" id="add_specialization">
+        </form>
+        <input type="button" class="btn btn-specialization " value="Добавить выбранное" id="add_specialization">
+    </div>
+    
 
 </div>
 
@@ -360,7 +362,7 @@
             	<li><a href="LK-neprod-settings.html" class="personal__menu-item personal__settings">Настройки</a></li>
             </ul>
     	</div>
-        <div class="portfolio-wrapper">
+        <div class="portfolio-wrapper portfolio-wrapper--portfolio">
             <div class="portfolio">
                 <nav class="portfolio__nav">
                     <ul class="portfolio__nav-list">
@@ -417,7 +419,7 @@
                             <a href="" >Где будет размещаться?</a>
                         </div>
 
-                        <div class="registration_stage-1__more-info">
+                        <div class="registration_stage-1__more-info mypage_stage-1">
                             <label for="nickname" >Имя для отображения на сайте <span class="required">*</span></label>
                             <input type="text" required id="nickname" class="registration-field " required>
                             
@@ -429,7 +431,7 @@
                                 <option value="">ТоженеСкульптор</option>
                             </select>
                             <label for="date-of-birth">Дата рождения</label>
-                            <input type="text" id="date-of-birth" class="date-select registration-field--short"> <span>Для получения приятных бонусов</span>
+                            <input type="text" id="date-of-birth" class="date-select registration-field--short registration_date-field"> <span>Для получения приятных бонусов</span>
                             <label for="yandex-purse" class="yandex-wallet">Яндекс.Кошелек </label>
                             <input type="number" required="" id="yandex-purse" class="registration-field  registration-field--short">
                             <p>Добавляется по желанию, потребуется для приема средств от ценителей
@@ -471,8 +473,7 @@
 
                         <label for="e-mail">Электронная почта <span class="required">*</span></label>
                         <input type="email" required="" id="e-mail" class="registration-field">
-                        <p>Эти данные будут видны в письмах покупателям с информацией о заказах.
-                            Так покупатель сможет связаться с вами самостоятельно.</p>
+                        
                     </div>
                 </div>
 
@@ -487,7 +488,7 @@
                         <label for="commercialNo" class="radio-label">нет</label>
                     </div>
                         <h3 class="main-registration__stage-payment registration_stage-4-4__commercial">Оплата</h3>
-                    <div class="registration_stage-3__pay-wrapper registration_stage-4-4__commercial">
+                    <div class="registration_stage-3__pay-wrapper registration_stage-4-4__commercial mypage_stage-4">
                         
                         <p>
                             Выберите, какими способами покупатель сможет оплатить заказ. Если у вас есть счета «Яндекс.Деньги» или PayPal — отметьте эти варианты. Так покупатель сможет выбрать удобный ему метод оплаты.
@@ -516,7 +517,7 @@
 
                     </div>
                     <h3 class="main-registration__stage-payment registration_stage-4-4__commercial">Доставка</h3>
-                    <div class="registration_stage-4__pay-wrapper registration_stage-4-4__commercial">
+                    <div class="registration_stage-4__pay-wrapper registration_stage-4-4__commercial mypage_stage-4">
                         <p>Отметьте возможные варианты доставки ваших товаров. Оставляйте поле
                             со стоимостью пустым, если стоимость будет рассчитан по запросу.</p>
                         <div class="registration_stage-4__left">

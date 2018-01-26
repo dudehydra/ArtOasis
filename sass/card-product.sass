@@ -15,7 +15,7 @@
   width: 647px
 
 .gallery-thumbs 
-  height: 61px
+  height: 70px
   padding: 15px 0
 
 .gallery-thumbs .swiper-slide 
@@ -39,11 +39,10 @@
 	position: relative
 	height: auto
 	visibility: visible
-.card-product
-	box-sizing: border-box
 .card__main-wrapper
 	display: flex
-    align-items: flex-start
+	align-items: flex-start
+	margin-bottom: 80px
 .gallery-thumbs .swiper-wrapper
     margin-left:calc(-40% - 35px)
 .card-product__title
@@ -54,6 +53,8 @@
 	flex-grow: 3
 	display: flex
 	justify-content: space-between
+	box-sizing: border-box
+	align-items: flex-start
 .gallery-thumbs .swiper-slide-active
 	border: 1px solid #fecb2e
 .gallery-thumbs .swiper-slide
@@ -71,6 +72,7 @@
 	padding-left: 15px
 	padding-right: 15px
 	margin-right: 8px
+	cursor: pointer
 .tab-accord__button--active
 	border-bottom: 3px solid #fecb2e
 .tab-accord__container
@@ -88,8 +90,9 @@
 .product-sidebar
 	width: 308px
 	box-sizing: border-box
-	padding: 25px 25px 30px 25px
+	padding: 18px 26px 30px
 	background-color: #fff
+	margin-top: 100px
 .product-sidebar__price-title
 	font-size: 12px
 	text-transform: uppercase
@@ -98,10 +101,11 @@
 	line-height: 22px
 	font-family: 'Gilroy'
 .product-sidebar__price
-	font-family: 'Roboto Condensed'
+	font-family: 'Roboto-bold'
 	font-size: 36px
 	font-weight: 700
 	display: block
+	letter-spacing: 3.6px
 .product-sidebar__available
 	font-family: 'Lato', sans-serif
 	color: #63b02f
@@ -118,18 +122,23 @@
 	text-align: center
 	display: flex
 	align-items: center
-	justify-content: center
+	justify-content: space-between
 	border: none
 	outline: none
+	padding-left: 32px
 .add-basket
 	background-color: #fecb2e
 	margin-bottom: 15px
 .fast-buy
 	background-color: #e5e5e5
+	padding: 0
+	justify-content: center
 .product-sidebar__like
-	background-color: transparent 
 	border: 1px solid #e7e7e7
-	margin-bottom: 10px
+	margin-bottom: 13px
+	background: transparent url(../img/like.png) no-repeat top 12px left 28px
+	font-size: 14px
+	padding-left: 65px
 .btn-question
 	background-color: transparent 
 	border: 1px solid #fecb2e
@@ -143,15 +152,119 @@
 	font-size: 12px
 	letter-spacing: 1.2px
 	text-transform: uppercase
+	margin-right: 13px
+.product-sidebar__payment-title
+	margin-bottom: 20px
 .product-sidebar__payment
 	width: 260px
 	border: 1px solid #e7e7e7
 	padding: 20px
 	padding-bottom: 0
 	box-sizing: border-box
+	padding-top: 17px
 .product-sidebar__payment 
 	ul 
 		list-style-type: none
 	li 
-		margin-bottom: 35px
-	
+		font-size: 14px
+		font-family: "Roboto"
+		line-height: 44px
+		font-weight: 400
+		padding-left: 32px
+		background-size: 25px
+		background-position-y: 10px
+
+.add-basket	
+	background: #fecb2e url(../img/basket-grey.svg) no-repeat right 15px top 13px
+	background-size: 25px 25px
+	&:hover span
+		border: none
+.add-basket	span
+	display: inline-block
+	height: 100%
+	width: 55px
+	border-left: 1px solid #e9b61a
+.product-sidebar__price-wrapper
+	margin-bottom: 17px
+.product-sidebar__purchase
+	margin-bottom: 30px
+.card-product__left-block
+	margin-right: 30px
+.product-sidebar__like-number
+	display: inline-block
+	border-left: 1px solid #dbdbdb
+	height: 100%
+	width: 100px
+	font-family: 'Lato', sans-serif
+	font-weight: 700
+	display: flex
+	align-items: center
+	background: url('../img/like.svg') no-repeat top 10px left 20px
+	background-size: 25px
+	font-size: 14px
+	box-sizing: border-box
+	padding-left: 45px
+
+.product-sidebar .user-block__social
+	justify-content: flex-start
+	width: auto
+	align-items: flex-end
+	margin-bottom: 30px
+	svg
+		margin: 0px
+		margin-right: 14px
+
+.product-sidebar__cash
+	background: url(../img/money.svg) no-repeat
+.product-sidebar__collect
+	background: url(../img/paymant.svg) no-repeat
+.product-sidebar__yandex
+	background: url(../img/yandex.svg) no-repeat
+	background-size: 20px
+    background-position-y: 5px
+.product-sidebar__transfer
+	background: url(../img/phone.svg) no-repeat
+.product-sidebar__card
+	background: url(../img/bank.svg) no-repeat
+	background-size: 29px
+    background-position-y: 10px
+    background-position-x: -5px
+.product-sidebar__qiwi
+	background: url(../img/qiwi.svg) no-repeat
+.items-slider .goods-item
+	width: 308px
+	margin: 0px
+
+.items-slider__nav div
+	width: 42px
+	height: 42px
+	border-radius: 50%
+	position: absolute
+	top: 220px
+	cursor: pointer
+	&:before
+		content: ''
+		width: 16px
+		height: 16px
+		box-sizing: border-box
+		border-top: 3px solid #ffc512
+		border-right: 3px solid #ffc512
+		display: block
+		transform: rotate(45deg)
+		position: absolute
+		top: 13px
+		left: 10px
+.items-slider__nav div:hover
+	background: #fff
+.items-slider__wrapper
+	position: relative
+	padding-left: 47px
+	.card-product__title
+		margin-bottom: 40px
+.product-main
+	padding-bottom: 73px
+.items-slider__next
+	right: -42px
+.items-slider__prev
+	transform: rotate(180deg)
+	left: -16px

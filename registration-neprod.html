@@ -367,33 +367,31 @@
                             <label for="master-name">имя <span class="required">*</span></label>
                             <input type="text" id="master-name" class="registration-field ">
                             <label for="master-patronymic">отчество <span class="required">*</span></label>
-                            <input type="text" id="master-patronymic" class="registration-field ">
-
-                            <p class="main-registration__link-result"></p>
+                            <input type="text" id="master-patronymic" class="registration-field registration-field--patronymic">
+                            <p>ФИО нужны исключительно для внутреннего пользования (по тробованию законодательства РФ) и НЕ БУДУТ ОТОБРАЖАТЬСЯ
+                            в публичной части сайта.</p>
                         </div>
 
                         <div class="main-registration__logo-field">
                             <label for="registration-logo" class="registration-logo-label"><span>Загрузить логотип</span></label>
                             <span class="main-registration__logo-size">Размер 180х180px.</span><br>
                             <input type="file" id="registration-logo">
-                            <span class="main-registration__text-semibold">ВИЗИТКА<span class="info">[?] <div class="full-info">blablalbalbalbalbalba</div> </span></span>
+                            <span class="main-registration__text-semibold main-registration__logo-card">ВИЗИТКА<span class="info">[?] <div class="full-info">blablalbalbalbalbalba</div> </span></span>
                             <label for="main-registration__logo-loading" class="btn">
                                 Загрузить
                             </label>
                             <input type="file" id="main-registration__logo-loading">
-                            <span>Для идентификации
-                                бренда магазина.
-                                Размер 500х300px.</span>
+                            <span class="main-registration__logo-resolution">Для идентификации<br>бренда магазина.<br>Размер 500х300px.</span>
                         </div>
 
-                        <div class="registration_stage-1__more-info">
+                        <div class="registration_stage-1__more-info registration_stage-1__more-info--master">
                             <label for="nickname" >Имя для отображения на сайте <span class="required">*</span></label>
-                            <input type="text" required id="nickname" class="registration-field " required>
+                            <input type="text" required id="nickname" class="registration-field registration-field--nickname" required>
 
                             <label for="shop-link">Ссылка на магазин</label>
 
                             <div class="main-registration__link-wrapper">
-                                <span>artoasis.ru/g/</span><input type="text" id="shop-link" class="registration-field registration-field--short">
+                                <span>artoasis.ru/g/</span><input type="text" id="shop-link" class="registration-field registration-field--short shop-link__field">
                             </div>
                             <p class="main-registration__link-result"></p>
 
@@ -404,21 +402,21 @@
                                 <option value="">ТоженеСкульптор</option>
                             </select>
                             <label for="date-of-birth">Дата рождения</label>
-                            <input type="text" id="date-of-birth" class="date-select registration-field--short"> <span>Для получения приятных бонусов</span>
+                            <input type="text" id="date-of-birth" class="date-select registration-field--short registration_date-field"> <span>Для получения приятных бонусов</span>
                             <label for="yandex-purse" class="yandex-wallet">Яндекс.Кошелек </label>
                             <input type="number" required="" id="yandex-purse" class="registration-field  registration-field--short">
-                            <p>Добавляется по желанию, потребуется для приема средств от ценителей
+                            <p class="registration_stage-1--description">Добавляется по желанию, потребуется для приема средств от ценителей
                                 Вашего творчетва. Можете указать позднее после регистрации</p>
 
                         </div>
                     </div>
                 </div>
 
-                <div class="main-registration__stage registration_stage-2">
+                <div class="main-registration__stage registration_stage-2 registration_stage-2--master">
                     <h3 class="registration_stage-2__title main-registration__stage-title--2-4">Подробная информация</h3>
                     <div class="registration_stage-2__data-wrapper">
                         <label class="registration_stage-2__about-shop ">О себе <span class="required"> *</span> </label>
-                        <textarea class="registration_stage-2__textarea" name="description" form="registration-master" id="" cols="30" rows="8" required placeholder="Расскажите интересные факты о создании своего бренда, опишите его особенности и преимущества. Перечислите свои флагманские вещи, расскажите кратко про производство, материалы. Напишите как минимум три предложения о себе."></textarea>
+                        <textarea class="registration_stage-2__textarea" name="description" form="registration-master" id="" cols="30" rows="6" required placeholder="Расскажите интересные факты о создании своего бренда, опишите его особенности и преимущества. Перечислите свои флагманские вещи, расскажите кратко про производство, материалы. Напишите как минимум три предложения о себе."></textarea>
                         <label class="registration_stage-2__about-shop ">Специализация <span class="required"> *</span> </label>
                         <div class="registration_stage-2__specialization-wrapper">
 
@@ -431,11 +429,9 @@
                 <div class="main-registration__stage registration_stage-3">
                 </div>
 
-                <div class="main-registration__stage registration_stage-5">
+                <div class="main-registration__stage registration_stage-5 registration_stage-5--master">
                     <h3 class="registration_stage-5__title main-registration__stage-title--3-4">Контактная информация</h3>
                     <div class="registration_stage-5__contact-information">
-                        <p>Эти данные будут видны в письмах покупателям с информацией о заказах.
-                            Так покупатель сможет связаться с вами самостоятельно.</p>
                         <label for="region">регион</label>
                         <input type="text" required="" id="region" class="registration-field">
 
@@ -443,27 +439,27 @@
                         <input type="text" required="" id="locality" class="registration-field">
 
                         <label for="phone">телефон <span class="required">*</span></label>
-                        <input type="number" required="" id="phone" class="registration-field">
+                        <input type="number" required="" id="phone" class="registration-field registration-field__phone">
 
                         <label for="e-mail">Электронная почта <span class="required">*</span></label>
                         <input type="email" required="" id="e-mail" class="registration-field">
                     </div>
                 </div>
 
-                <div class="main-registration__stage registration_stage-4-4">
+                <div class="main-registration__stage registration_stage-4-4 registration_stage-4-4--master">
                     <h3 class="registration_stage-4-4__title">Коммерческая деятельность</h3>
-                    <div class="radio-wrapper">
-                        <label for="" class="">будете ли продавать<span class="required">*</span> </label>
+                    <div class="radio-wrapper radio-wrapper--commercial">
+                        <label for="" class="radio-wrapper__commercial-option">будете ли продавать<span class="required">*</span> </label>
 
                         <input type="radio" name="commercial" id="commercialYes">
-                        <label for="commercialYes" class="radio-label">да</label>
+                        <label for="commercialYes" class="radio-label">Да</label>
                         <input type="radio" name="commercial" id="commercialNo">
                         <label for="commercialNo" class="radio-label">нет</label>
                     </div>
 
                     <div class="registration_stage-3__pay-wrapper registration_stage-4-4__commercial">
-                        <h3 class="registration_stage-4-4__title">Оплата</h3>
-                        <div class="registration_stage-4-4__commercial-wrapper">
+                        <h3 class="registration_stage-4-4__title registration_stage-4-4__title--commercial ">Оплата</h3>
+                        <div class="registration_stage-4-4__commercial-wrapper registration_stage-4__paymant-commercial">
                             
                             <p>
                                 Выберите, какими способами покупатель сможет оплатить заказ. Если у вас есть счета «Яндекс.Деньги» или PayPal — отметьте эти варианты. Так покупатель сможет выбрать удобный ему метод оплаты.

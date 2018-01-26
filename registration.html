@@ -234,7 +234,7 @@
                                 <label for="shop-link">Ссылка на магазин</label>
 
                                 <div class="main-registration__link-wrapper">
-                                    <span>artoasis.ru/shop/</span><input type="text" id="shop-link" class="registration-field registration-field--short">
+                                    <span>artoasis.ru/shop/</span><input type="text" id="shop-link" class="registration-field registration-field--short shop-link__field">
                                 </div>
                                 <p class="main-registration__link-result"></p>
                             </div>
@@ -259,15 +259,15 @@
                             <h3 class="registration_stage-2__title">Магазин</h3>
                             <div class="registration_stage-2__data-wrapper">
                                 <label for="registration_date">Дата основания магазина</label>
-                                <input type="text" id="registration_date"> <span>Для получения приятных бонусов</span><br>
+                                <input type="text" id="registration_date" class="registration_date-field"> <span>Для получения приятных бонусов</span><br>
                                 <label class="registration_stage-2__about-shop ">О магазине <span class="required"> *</span> </label>
-                                <textarea name="" id="" cols="30" rows="8" required form="main-registration_form" placeholder="Расскажите интересные факты о создании своего бренда, опишите его особенности и преимущества. Перечислите свои флагманские вещи, расскажите кратко про производство, материалы. Напишите как минимум три предложения о себе."></textarea>
+                                <textarea name="" id="" cols="30" rows="6" required form="main-registration_form" placeholder="Расскажите интересные факты о создании своего бренда, опишите его особенности и преимущества. Перечислите свои флагманские вещи, расскажите кратко про производство, материалы. Напишите как минимум три предложения о себе."></textarea>
                             </div>
                         </div>
 
                         <div class="main-registration__stage registration_stage-3">
                             <h3 class="registration_stage-3__title">Оплата</h3>
-                            <div class="registration_stage-3__pay-wrapper">
+                            <div class="registration_stage-3__pay-wrapper registration_stage-3__pay-wrapper--shop">
                                 <p>
                                     Выберите, какими способами покупатель сможет оплатить заказ. Если у вас есть счета «Яндекс.Деньги» или PayPal — отметьте эти варианты. Так покупатель сможет выбрать удобный ему метод оплаты.
                                 </p>
@@ -297,7 +297,7 @@
 
                         </div>
 
-                        <div class="main-registration__stage main-registration__stage-4">
+                        <div class="main-registration__stage main-registration__stage-4 main-registration__stage-4--shop">
                             <h3 class="registration_stage-4__title">Доставка</h3>
                             <div class="registration_stage-4__pay-wrapper">
                                 <p>Отметьте возможные варианты доставки ваших товаров. Оставляйте поле
@@ -349,7 +349,7 @@
 
                                 </div>
                                 <label class="registration_stage-4__traid">Правила возврата и обмена</label>
-                                <textarea name="" id="" cols="30" rows="9" placeholder="Правила возврата и обмена, другая важная информация."></textarea>
+                                <textarea name="" id="" cols="30" rows="6" placeholder="Правила возврата и обмена, другая важная информация."></textarea>
                             </div>
                         </div>
                         <div class="main-registration__stage registration_stage-5">
@@ -370,7 +370,7 @@
                                 <input type="email" required="" id="e-mail" class="registration-field">
                             </div>
                         </div>
-                    <div class="main-registration__submit-wrapper">
+                    <div class="main-registration__submit-wrapper main-registration__submit-wrapper--shop">
                         <input type="checkbox" id="agreement" class="checkbox" required>
                         <label for="agreement" >Я cогласен с <a href="">Политикой обработки персональных данных.</a> </label>
                         <input type="submit" value="Перейти к добавлению товаров" class="btn main-registration__btn">

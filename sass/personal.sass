@@ -47,7 +47,7 @@
 .personal__profile-header
   display: flex
   flex-wrap: nowrap
-  padding: 19px 0 17px 22px
+  padding: 13px 0 12px 19px
   border-bottom: 1px solid #eeeeee
 
 .personal__menu 
@@ -74,10 +74,12 @@
   box-sizing: border-box
   position: relative
   margin-bottom: 10px
-
+.personal__menu-item
+  border-left: 3px solid transparent 
 .personal__menu-item--active
-  border-left: 2px solid #fecb2e
+  border-left: 3px solid #fecb2e
   background-color: #fffaea !important
+
 .settings
   max-width: 740px
   min-width: 740px
@@ -221,11 +223,11 @@
   margin-left: 50px
   
 .personal__portfolio a 
-  background: url(../img/case.svg) no-repeat left 32px top 21px
+  background: url(../img/case.svg) no-repeat left 30px top 16px
   background-size: 29px 29px
 
 .personal__message
-  background: url(../img/message.svg) no-repeat left 33px top 21px
+  background: url(../img/message.svg) no-repeat left 31px top 23px
   background-size: 29px 29px
   position: relative
 .personal__message + span 
@@ -238,41 +240,41 @@
     position: absolute;
     display: block;
 .personal__notifications
-  background: url(../img/bell.svg) no-repeat left 36px top 20px;
-  background-size: 25px 25px;
+  background: url(../img/bell.svg) no-repeat left 32px top 17px
+  background-size: 25px 25px
   padding-top: 22px
   padding-bottom: 22px
 
 .personal__settings
-  background: url(../img/settings.svg) no-repeat left 33px top 22px
+  background: url(../img/settings.svg) no-repeat left 32px top 22px
   background-size: 27px 27px
 .personal__orders
-  background: url(../img/check-list.svg) no-repeat left 35px top 24px
+  background: url(../img/check-list.svg) no-repeat left 33px top 24px
   background-size: 23px 23px
 
 .personal__portfolio .personal__menu-item--active
-  background: url(../img/case-active.svg) no-repeat left 32px top 16px
+  background: url(../img/case-active.svg) no-repeat left 30px top 16px
   background-size: 29px 29px
 
 .personal__menu-item--active.personal__message
-  background: url(../img/message-active.svg) no-repeat left 33px top 21px
+  background: url(../img/message-active.svg) no-repeat left 29px top 23px
   background-size: 29px 29px
 
 .personal__menu-item--active.personal__notifications
-  background: url(../img/bell-avtive.svg) no-repeat left 34px top 17px
+  background: url(../img/bell-avtive.svg) no-repeat left 31px top 17px
   background-size: 27px 27px
 
 .personal__menu-item--active.personal__settings
-  background: url(../img/settings-active.svg) no-repeat left 33px top 21px
+  background: url(../img/settings-active.svg) no-repeat left 31px top 23px
   background-size: 27px 27px
 .personal__menu-item--active.personal__orders
-  background: url(../img/check-list-active.svg) no-repeat left 34px top 23px
+  background: url(../img/check-list-active.svg) no-repeat left 33px top 23px
   background-size: 23px 23px
 .personal__my-works
-  background: url(../img/black-box.svg) no-repeat left 35px top 23px;
+  background: url(../img/black-box.svg) no-repeat left 32px top 25px;
   background-size: 25px 25px;
 .personal__menu-item--active.personal__my-works
-  background: url(../img/black-box-active.svg) no-repeat left 35px top 23px
+  background: url(../img/black-box-active.svg) no-repeat left 32px top 25px
   background-size: 25px 25px
 .personal__portfolio .personal__menu-item
   padding-top: 22px
@@ -407,10 +409,11 @@
   flex-basis: 990px
 
 .chat__header
-  padding: 26px 25px 15px 45px
+  padding: 20px 25px 20px 45px
   border-bottom: 1px solid #eeeeee
   display: flex
   justify-content: space-between
+  align-items: center
 
 .chat__back
   color: #000
@@ -424,7 +427,7 @@
   width: 7px
   height: 7px
   left: -15px
-  top: 5px
+  top: 7px
   position: absolute
   border-top: 2px solid #999
   border-right: 2px solid #999
@@ -552,6 +555,7 @@
   letter-spacing: 0.73px
   text-transform: uppercase
   font-size: 12px
+  align-items: center
   &--small
     width: 100%
     box-sizing: border-box
@@ -562,9 +566,7 @@
   span
     font-weight: 700
 .notification__header .label-checkbox--black
-  margin-top: -2px
-
-
+  height: 15px
 .notification__options--data
   width: 14%
 .notification__options--number
@@ -580,7 +582,7 @@
   margin-left: 20px
 .checkbox--orange:not(checked)+.label-checkbox--black:before
   content: ''
-  top: 0
+  top: 1
   left: 0
   position: absolute
   box-sizing: border-box
@@ -590,8 +592,11 @@
   border: 1px solid #666
 
 .order-item__status
-  margin-right: 20px
-  width: 24%
+  display: flex
+  justify-content: center
+  width: 22%
+  margin-left: 18px
+
 .notification__author,
 .notification__data 
   position: relative
@@ -630,7 +635,7 @@
   position: relative
 .notification__item:nth-child(2n)
   background: #fafafa
-  padding-bottom: 26px
+  padding-bottom: 20px
 .notification__author-info,
 .notification__comment-data-wrapper
   flex-grow: 1
@@ -651,7 +656,8 @@
   border-radius: 50%
   margin-right: 12px
   width: 40px!important
-
+.notificatio__list-wrapper.alerts--commercial
+  margin-bottom: 0
 .notification__author-nick
   font-size: 16px
   font-weight: 700
@@ -1007,8 +1013,12 @@
 .album-popup .box__input 
   padding-left: 30px
   padding-top: 40px
+  padding-bottom: 20px
 .album-popup .btn-drop
   margin-left: 122px
+  margin-bottom: 10px
+  font-family: 'Gilroy'
+  font-weight: 700
 .grey 
   color: #b5b5b5
   margin: 0 5px
@@ -1239,11 +1249,12 @@
   border-radius: 7px
   margin-bottom: 15px 
   box-sizing: border-box
-  border: 1px solid rgb(169, 169, 169)
+  border: 1px solid #ddd
 .album-look-popup textarea:focus,
 .blog-look textarea:focus,
 .album-popup textarea:focus
   color: #000
+  border-color: #999
 .essage-menu__message-item--full:hover
   border: none
   border-bottom: 1px solid #eee
@@ -1257,9 +1268,11 @@
 .blog-look__edit 
   font-weight: 700 
   padding-left: 30px
-  background: url(../img/pencil-edit.svg) no-repeat left
+  background: url(../img/pencil-edit-grey.svg) no-repeat left
   cursor: pointer
   display: inline-block
+  -ms-background-position-x: -65px
+
   &:hover
     background: url(../img/pencil-edit-avtive.svg) no-repeat left
 .album-look__comment,
@@ -1384,11 +1397,12 @@
   font-size: 35px
   padding-top: 5px
   margin-bottom: 38px
-.portfolio .main-registration__stage h3
+.portfolio .main-registration__stage h3.registration_stage-4-4__commercial
   margin-bottom: 20px
+  padding-left: 163px
 .portfolio .drop-zone__wrapper
   min-height: 198px
-
+  margin-left: 35px
 .portfolio .registration_stage-1__wrapper
   margin-left: 53px
 
@@ -1403,6 +1417,9 @@ span.main-registration__logo-info
   font-family: 'Lato', sans-serif
   font-weight: 400
   text-transform: initial
+  line-height: 18px
+  font-size: 16px
+  margin: 0
 .main-registration__logo-field a 
   font-family: 'Lato', sans-serif
   font-weight: 700
@@ -1411,11 +1428,20 @@ span.main-registration__logo-info
   font-size: 14px
   text-decoration: none
   border-bottom: 2px solid #fdd24e
+.portfolio .main-registration__logo-field
+  margin-left: 117px
 
 .portfolio .registration-field--short
   margin-bottom: 30px
+.portfolio #date-of-birth
+  margin-bottom: 30px
 #yandex-purse 
   margin-bottom: 0px
+.portfolio .registration-logo-label
+  padding-top: 89px
+  background: url(../img/load-logo.svg) no-repeat top 33px center
+  background-size: 32%
+  margin-bottom: 42px
 .portfolio .registration_stage-1__more-info
   padding-top: 40px
   padding-bottom: 23px
@@ -1424,6 +1450,8 @@ span.main-registration__logo-info
     margin-top: 4px
 .portfolio .registration_stage-2__data-wrapper textarea
   margin-bottom: 27px
+  height: 130px
+  overflow: -webkit-paged-y
 .portfolio .registration_stage-2__specialization-wrapper
   min-height: 75px  
 .main-registration__stage-payment
@@ -1586,13 +1614,13 @@ span.main-registration__logo-info
   align-items: end
   position: relative
   border-left: 1px solid transparent
-  padding-bottom: 15px
+  padding-bottom: 20px
   margin-bottom: 0px
-  padding-top: 25px
+  padding-top: 20px
   &:hover
     border-left: 1px solid #fecb2e
 .order-item__number
-  font-weight: 700
+  font-weight: 400
 .order-item__order-number
   flex-grow: 0
 .order-item__products
@@ -1760,7 +1788,7 @@ span.main-registration__logo-info
   justify-content: space-between
   align-items: flex-start
 .notificatio__bottom h3
-  font-weight: 300
+  font-weight: 400
 .notificatio__list-wrapper
   margin-bottom: 120px
   width: 65%
@@ -1798,10 +1826,11 @@ span.main-registration__logo-info
   font-size: 14px
   width: 280px
   margin-right: 20px
+
 .my-works__header
   display: flex
   justify-content: space-between
-  margin-bottom: 30px
+  margin-bottom: 32px
 .product-add__description
   font-size: 14px
   font-weight: 400
@@ -1913,6 +1942,11 @@ input::-webkit-inner-spin-button
   justify-content: space-between
 .my-works
   margin-left: 0
+  margin-left: 82px
+  padding-top: 32px
+.my-works__header h3
+  margin-bottom: 0px
+  padding-bottom: 0
 .album-photo__album-name
   font-size: 16px
   width: 100%
@@ -2028,6 +2062,60 @@ input::-webkit-inner-spin-button
   right: 30px
 .portfolio__nav--album
   margin-top: 0px
+.album-popups__img-delet:hover .full-info
+  background: #333333
+  border-radius: 5px
+  width: 165px
+  padding-left: 10px
+  line-height: 15px
+  height: auto
+  padding: 12px 5px 12px 10px
+.album-popups__img-delet:hover .full-info:before
+  content: ''
+  border: 10px solid transparent
+  border-top: 10px solid #333
+  bottom: -17px
+  left: 13px
+  position: absolute
+.notification__title.notification__title--commercial
+  font-weight: 400
+.last-reviews--comments
+  margin-right: 0
+  margin-right: 0
+  flex-basis: 309px
+  max-width: 309px
+.neprod-notification h3
+  font-weight: 400
+  font-family: 'Gilroy'
+.portfolio-wrapper--portfolio
+  margin-top: 0px
+.main-registration__name-field--master
+  padding-bottom: 0
+  p 
+    margin-bottom: 35px
+.portfolio .mypage_stage-1
+  margin-top: 25px
+  margin-left: 15px
+.portfolio .registration_stage-5__contact-information
+  margin-bottom: 70px
+.portfolio-wrapper .portfolio .mypage_stage-4
+  background: #fff
+  padding: 35px 45px 45px
+  display: flex
+  flex-wrap: wrap
+.portfolio .main-registration__stage h3
+  margin-bottom: 20px
+.notification__header-works
+  padding: 17px 20px
+.notification__options--filter
+  position: relative
+  background: url('../img/arrow-filter.png') no-repeat right
+.notification__options--name.notification__options--filter
+  background-position-x: 75px
+  background-position-y: 3px
+.notification__options--amount.notification__options--filter
+  background-position-x: 60px;
+
 @media (max-width: 1340px) 
   .notification__item-options
     right: 5px

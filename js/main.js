@@ -4,9 +4,19 @@ function textAreaAdjust(o) {
     }
 
 // SLIDERS
-
+// Показать номер на странице мастера
+function getNumber() {
+   var fullNumber = $('.user-block__phone').data("phone");
+   if (fullNumber !== undefined) {
+    var cutNumber = fullNumber.substr(0,4) + '********';
+   $('.user-block__phone span').html(cutNumber);
+   $('.user-block__phone').click(function(){
+       $('.user-block__phone span').html(fullNumber);
+   });
+   }
+};
+getNumber()
 $(document).ready(function(){
-    
     $(function(){
     var nav = $('.user-block__main div'),
       animateTime = 500,
@@ -18,8 +28,10 @@ $(document).ready(function(){
       nav.stop().animate({ height: '85px' }, animateTime);
     }
      });
-    })
+    });
 
+    
+    
     /* Function to animate height: auto */
     function autoHeightAnimate(element, time){
         var curHeight = element.height(), // Get Default Height
@@ -27,7 +39,6 @@ $(document).ready(function(){
               element.height(curHeight); // Reset to Default Height
               element.stop().animate({ height: autoHeight }, time); // Animate to Auto Height
     };
-
     $('.header-slider').owlCarousel({
         items: 1,
         loop: false,
@@ -36,7 +47,6 @@ $(document).ready(function(){
         nav: false
 
     });
-
     $('.album-look__slider').owlCarousel({
         items: 1,
         loop: false,
@@ -44,7 +54,6 @@ $(document).ready(function(){
         nav: true,
         navText: ['','']
     });
-
     var goods_item_list = $('.goods-item');
     $('document').ready(function(){
         goods_item_list.each(function(){
@@ -60,16 +69,25 @@ $(document).ready(function(){
 
         });
     });
-    
     $('.best-shops__slider').owlCarousel({
         items: 3,
         loop: false,
         touchDrag: false,
         navContainer: '.best-shops__pagination',
         navClass: ['prev-btn', 'next-btn'],
-        navText: ['',''],
+        navText: ['123','333'],
         loop: true,
-
+    });
+    $('.items-slider').owlCarousel({
+        items: 4,
+        loop: false,
+        touchDrag: false,
+        navContainer: '.items-slider__nav',
+        navClass: ['items-slider__prev', 'items-slider__next'],
+        navText: ['',''],
+        loop: false,
+        margin: 35,
+        mouseDrag: false
     });
     $('.new-shops__slider').owlCarousel({
         items: 3,
@@ -80,7 +98,6 @@ $(document).ready(function(){
         pullDrag: false,
         freeDrag: false
     });
-
     $('.popular-goods__items-wrapper').owlCarousel({
         items: 1,
         loop: false,
@@ -89,7 +106,6 @@ $(document).ready(function(){
         navClass: ['prev-btn', 'next-btn'],
         navText: ['',''],
         loop: true,
-
     });
     $('.search_result-master-works').owlCarousel({
         items: 1,
@@ -99,9 +115,7 @@ $(document).ready(function(){
         navClass: ['prev-btn', 'next-btn'],
         navText: ['',''],
         loop: true,
-
     });
-
     $('.new-product__slider').owlCarousel({
         items: 1,
         loop: false,
@@ -321,16 +335,7 @@ $(document).ready(function(){
         $(this).toggleClass('filter__category--active');
     });
 
-    // Показать номер на странице мастера
-     function getNumber() {
-        var fullNumber = $('.user-block__phone').data("phone");
-        var cutNumber = fullNumber.substr(0,4) + '********';
-        $('.user-block__phone span').html(cutNumber);
-        $('.user-block__phone').click(function(){
-            $('.user-block__phone span').html(fullNumber);
-        });
-     };
-    getNumber();
+    
 });
 
 // SLIDERS END
@@ -585,12 +590,12 @@ $(document).ready(function(){
             }
         });
         $('.specialization__wrapper .checkbox--orange').change(function () {
-            specializationNumber = $(':checkbox:checked').length;
+            specializationNumber = $('.specialization__wrapper :checkbox:checked').length;
             console.log(specializationNumber);
         })
 
         $('#add_specialization').click(function () {
-            // debugger;
+            
             if ( (specializationNumber <= 3)) {
                 if ($(checked).prop("checked")) {
                     $('.registration_stage-2__specialization-wrapper').append(newLabel);
@@ -598,7 +603,8 @@ $(document).ready(function(){
                 }
             }
             else if ((specializationNumber >= 3) ) {
-                // alert('выберите не больше 3х');
+                // Тут нужен вызов поп-апа
+
             }
             else {
                 $(removeLabel).remove();

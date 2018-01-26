@@ -124,10 +124,11 @@
   color: #999
   margin-bottom: 5px
   font-weight: 700
+  letter-spacing: 1.3px
 
 .main-registration__name-field
   box-sizing: border-box
-  width: 398px
+  width: 378px
   min-height: 370px
   padding: 43px 45px 10px 44px
   background: #fff
@@ -142,6 +143,7 @@
   color: #999999
   margin-bottom: 5px
   font-weight: 700
+  letter-spacing: 1.3px
 
 .registration-field--shop-name
   margin-bottom: 30px
@@ -212,9 +214,11 @@ span.main-registration__text-semibold
   display: inline-block
   margin-top: 30px
   position: relative
+  text-transform: initial
+  font-weight: 600
 
 .full-info
-    color: #fff
+    color: #cccccc
     display: none
     padding: 10px
     padding-left: 17px
@@ -327,8 +331,9 @@ span.main-registration__text-semibold
   position: relative
   padding-left: 26px
   margin-bottom: 28px
-
-
+  
+.main-registration__stages-wrapper .label-checkbox--orange
+  font-weight: 600
 .checkbox--orange:not(checked)+.label-checkbox--orange:before
   content: ''
   top: 0
@@ -360,6 +365,8 @@ span.main-registration__text-semibold
   display: flex
   flex-wrap: wrap
   padding-bottom: 20px
+  background: #fff
+  padding: 35px 45px 45px
   label
     display: block
 
@@ -519,6 +526,7 @@ span.main-registration__text-semibold
   margin-bottom: 5px
   width: 100%
   font-weight: 700
+  letter-spacing: 1.3px
 
 .registration_stage-5__title
   padding-left: 162px
@@ -608,8 +616,8 @@ span.main-registration__text-semibold
     background: none
 
 .main-registration__name-field--master .registration-field
-  margin-bottom: 25px
-
+  margin-bottom: 28px
+  
 
 .registration_stage-1__wrapper--wrap
   flex-wrap: wrap
@@ -639,6 +647,7 @@ span.main-registration__text-semibold
     text-transform: uppercase
     color: #999
     font-weight: 700
+    letter-spacing: 1.3px
 
   p
     padding-right: 0px
@@ -704,7 +713,6 @@ span.main-registration__text-semibold
   display: block
   font-size: 12px
   font-family: 'Gilroy'
-  text-transform: uppercase
   color: #999
   margin-bottom: 5px
   width: 100%
@@ -777,7 +785,7 @@ span.main-registration__text-semibold
   line-height: 15px
   font-family: 'Lato',sans-serif
   border-radius: 20px
-  padding: 14px 39px 11px 15px
+  padding: 11px 39px 12px 15px
   background: #fecb2e
   color: #000 !important
   margin-right: 10px
@@ -858,16 +866,20 @@ span.main-registration__text-semibold
 .portfolio .main-registration__submit-wrapper
   justify-content: left
   padding-top: 10px
-.portfolio .main-registration__btn
+.portfolio-wrapper .portfolio .main-registration__btn
   margin-left: 119px
   padding: 22px 81px 22px 81px
 
 .portfolio .main-registration__name-field--master p 
   padding-right: 0px
 
+.main-registration__name-field--master
+  padding-right: 30px
 .main-registration__submit--neprod
   margin-left: 60px
   margin-right: 45px
+  padding-top: 20px
+  padding-left: 57px
   .main-registration__btn
     width: 100%
     text-align: left
@@ -910,3 +922,114 @@ button.mfp-close.mfp-close
 
 .specialization-type-popup button.mfp-close.mfp-close
   top: 20px
+.radio-wrapper--commercial
+  padding: 7px 45px 20px
+.radio-wrapper .radio-wrapper__commercial-option
+  font-weight: 700
+  letter-spacing: 1.3px
+  font-size: 12px
+  text-transform: uppercase
+  margin-bottom: 12px
+.radio-wrapper--commercial label
+  font-size: 16px
+  font-weight: 400
+  text-transform: initial
+.radio-wrapper--commercial .radio-label
+  margin-right: 40px
+  margin-left: 5px
+.main-registration__stage.registration_stage-4-4 .registration_stage-4-4__commercial
+  background: transparent 
+  padding: 0
+  margin-top: 10px
+  margin-bottom: 0
+.registration_stage-4-4 .label-checkbox--orange
+  text-transform: initial
+  font-size: 16px
+  font-weight: 600
+
+.registration_stage-4-4__commercial .label-checkbox--grey
+  font-size: 14px
+  color: #999
+.registration_stage-4-4__title--commercial
+  margin-bottom: 26px
+.registration_stage-4__paymant-commercial p
+  margin-bottom: 45px
+.main-registration__submit-wrapper .main-registration__btn
+  text-transform: initial
+  font-size: 16px
+  letter-spacing: 0px
+  padding: 24px 23px 24px 37px
+.main-registration__submit-wrapper--shop
+  padding-left: 115px
+  padding-top: 0px
+  label
+    margin-bottom: 25px
+.registration_stage-3__pay-wrapper--shop
+  padding-top: 13px
+  padding-bottom: 20px
+  .registration_stage-3__left
+    margin-right: 52px
+  p 
+    margin-bottom: 45px
+  .registration_stage-4__traid
+    margin-top: 12px
+    margin-left: 8px
+    letter-spacing: 1.2px
+.main-registration__stage-4--shop
+  margin-bottom: 63px
+  .registration_stage-4__traid
+    margin-top: 12px
+    margin-left: 8px
+    letter-spacing: 1.2px
+.registration-field--patronymic
+  margin-bottom: 15px
+.main-registration .main-registration__name-field--master p 
+  padding-right: 0
+  margin-bottom: 20px
+  margin-top: 0
+.registration_date-field,
+.shop-link__field
+  background-color: #f9f9f9 !important
+  border: 1px solid #ddd !important
+  outline: none
+  &:focus
+    background-color: #fff !important
+    border: 1px solid #999 !important
+.main-registration .main-registration__logo-card
+  margin-top: 30px
+main .main-registration__logo-resolution
+  margin: 0px
+.registration_stage-1__more-info--master
+  padding: 40px 165px 40px 54px
+  .registration-field--nickname
+    width: 415px
+  .shop-link__field
+    margin-bottom: 5px
+  .registration_stage-1--description
+    margin-bottom: 0
+.registration_stage-2--master
+  margin-bottom: 55px
+  .registration_stage-2__textarea
+    margin-bottom: 25px
+  .registration_stage-2__data-wrapper
+    padding-right: 63px
+  .registration_stage-2__specialization-wrapper
+    min-height: 80px
+  .specialization-popup_open
+    margin-top: 10px
+.registration_stage-5--master
+  h3
+    margin-bottom: 30px
+  .registration_stage-5__contact-information
+    padding-top: 35px
+  .registration-field__phone
+    width: 200px
+.registration_stage-4-4--master
+  .registration_stage-4-4__title
+    margin-top: 60px
+  .radio-wrapper--commercial .radio-label
+    margin-left: 0px
+  .main-registration__btn
+    margin-top: 38px
+    width: 650px
+    

@@ -64,11 +64,11 @@
   text-decoration: none
   font-family: 'Lato', sans-serif
 
-.menu__item .menu__registration
-  background: url(../img/user.png) no-repeat left
+.menu__item-registration
+  background: url(../img/user.png) no-repeat left 3px top 0px
 
 .menu__item .menu__basket
-  background: url(../img/basket-2.png) no-repeat left
+  background: url(../img/basket-2.png) no-repeat left top -1px
   background-size: 25%
 
 .menu__item .menu__registration,
@@ -194,12 +194,13 @@
   display: block
 
 .menu__item-registration:hover
-  background: url(../img/user-active.png) no-repeat left
+  background: url(../img/user-active.png) no-repeat left 3px top
 
 .menu__basket:hover
   background: url(../img/empty-shopping-basket.png) no-repeat left
   background-size: 20px
-
+.menu__basket
+  display: inline-block
 .registration-popup form
   width: 330px
   box-sizing: border-box
@@ -540,6 +541,7 @@
 .menu-static .menu__items-top .container
   display: flex
   justify-content: flex-end
+  padding-top: 11px
 
 .menu__search-wrapper .menu__search--grey
   background: #f3f3f3 url(../img/search-active.png) right 15px top 15px no-repeat;
