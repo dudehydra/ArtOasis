@@ -18,7 +18,7 @@
     <!-- End Magnific popup -->
 
     <link rel="stylesheet" href="css/jquery-ui.min.css">
-
+    <link rel="stylesheet" href="css/jquery.selectBoxIt.css">
 </head>
 <body>
 <div class="specialization-type-popup white-popup mfp-hide" id="specialization-popup">
@@ -396,10 +396,10 @@
                             <p class="main-registration__link-result"></p>
 
                             <label for="nickname" >Как вас именовать</label>
-                            <select name="" id="" class="registration-field registration-field--short">
-                                <option value="">Скульптор</option>
-                                <option value="">НЕСкульптор</option>
-                                <option value="">ТоженеСкульптор</option>
+                            <select name="" id="product-name-popup" class="registration-field registration-field--short">
+                                <option value="Скульптор">Скульптор</option>
+                                <option value="НЕСкульптор">НЕСкульптор</option>
+                                <option value="ТоженеСкульптор">ТоженеСкульптор</option>
                             </select>
                             <label for="date-of-birth">Дата рождения</label>
                             <input type="text" id="date-of-birth" class="date-select registration-field--short registration_date-field"> <span>Для получения приятных бонусов</span>
@@ -439,7 +439,7 @@
                         <input type="text" required="" id="locality" class="registration-field">
 
                         <label for="phone">телефон <span class="required">*</span></label>
-                        <input type="number" required="" id="phone" class="registration-field registration-field__phone">
+                        <input  required="" id="phone" class="registration-field registration-field__phone">
 
                         <label for="e-mail">Электронная почта <span class="required">*</span></label>
                         <input type="email" required="" id="e-mail" class="registration-field">
@@ -662,6 +662,8 @@
 <script src="js/jquery.raty.js"></script>
 <script src="js/magnificPopup.js"></script>
 <script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.selectBoxIt.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 
 </body>
 </html>

@@ -1,3 +1,35 @@
+
+$('.album-look__slider').on('initialized.owl.carousel changed.owl.carousel', function(e) {
+    if (!e.namespace)  {
+      return;
+    }
+    var carousel = e.relatedTarget;
+    $('.slider-counter').text(carousel.relative(carousel.current()) + 1 + '/' + carousel.items().length);
+  }).owlCarousel({
+    items: 1,
+        loop: false,
+        touchDrag: false,
+        nav: true,
+        navText: ['','']
+  });
+
+
+// Удаление товара по нажатию на крестик
+var albumItemPopup = document.querySelectorAll('.album-popups__img-item');
+var deleteButton = document.querySelector('div.album-popups__img-delet')
+
+function deleteAlbumItem() {
+      var test1 = $(event.target);
+     if (test1.hasClass('album-popups__img-delet') ) {
+        this.classList.add('deleted');
+        console.log(this);
+     }
+}
+for (var i = 0; i < albumItemPopup.length; i++)  {
+    albumItemPopup[i].addEventListener('click', deleteAlbumItem, false);
+}
+// end удаления
+
 function textAreaAdjust(o) {
         o.style.height = "1px";
         o.style.height = (25+o.scrollHeight)+"px";
@@ -29,8 +61,6 @@ $(document).ready(function(){
     }
      });
     });
-
-    
     
     /* Function to animate height: auto */
     function autoHeightAnimate(element, time){
@@ -47,13 +77,7 @@ $(document).ready(function(){
         nav: false
 
     });
-    $('.album-look__slider').owlCarousel({
-        items: 1,
-        loop: false,
-        touchDrag: false,
-        nav: true,
-        navText: ['','']
-    });
+    
     var goods_item_list = $('.goods-item');
     $('document').ready(function(){
         goods_item_list.each(function(){

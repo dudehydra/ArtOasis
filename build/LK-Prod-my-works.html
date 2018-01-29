@@ -18,6 +18,7 @@
     <!-- End Magnific popup -->
 
     <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery.selectBoxIt.css">
 
 </head>
 <body>
@@ -62,6 +63,9 @@
                 <div class="album-popups__img-info">
                     <span class="album-popups__img-name">mansnothot.jpg</span>
                     <span class="album-popups__img-weight">1.4 мб</span>
+                    <div class="album-popups__img-delet">x
+                            <div class="full-info">удаление фотографии</div>
+                    </div>
                 </div>
             </div>
             <div class="album-popups__img-item">
@@ -71,6 +75,9 @@
                 <div class="album-popups__img-info">
                     <span class="album-popups__img-name">mansnothot.jpg</span>
                     <span class="album-popups__img-weight">1.4 мб</span>
+                    <div class="album-popups__img-delet">x
+                            <div class="full-info">удаление фотографии</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -287,23 +294,28 @@
             
         </div>
         <div class="product-add__description-wrapper">
-            <label for="new-album-name-popup" class="default-label">Название альбома <span class="required">*</span></label>
+            <label for="new-album-name-popup" class="default-label">Название<span class="required">*</span></label>
             <input type="text" required="" id="new-album-name-popup" class="registration-field">
             <span class="product-add__description">Покупатели ждут от вас уникальное и привлекательное название.</span> 
             <label for="" class="default-label">Описание<span class="required">*</span></label>
             <textarea name="" id="" cols="30" rows="4" form="product-add__forms" placeholder="Оставьте комментарий к альбому"></textarea>
             <span class="product-add__description">Подробно опишите все детали товара, его особенности и отличия.</span>
-            <label for="product-name-popup" class="default-label">Категории <span class="required" >*</span></label>
-            <input type="text" required="" id="product-name-popup" class="registration-field">
+            <label for="product-name-popup" class="default-label">Категория <span class="required" >*</span></label>
+            <select id="product-name-popup" class="registration-field" >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
             <span class="product-add__description">Выберите категорию, к которой относится ваш товар.</span>
             <label for="product-amount-popup" class="default-label">Цена <span class="required" >*</span></label>
             <div class="product-add__amount-wrapper">
-                <input type="number" required="" id="product-amount-popup" class="registration-field registration-field--short">(&#8381;)
+                <input type="number" required="" id="product-amount-popup" class="registration-field registration-field--short"> &#8381;
                 <div class="input-number">
-                    <button class="input-number__remove" data-for="id-1" data-event="sub">
+                    
+                    <button class="input-number__add" data-for="id-1" data-event="add">
                     </button>
                     <input id="id-1" type="number" min="0" name="count" value="1" step="1">
-                    <button class="input-number__add" data-for="id-1" data-event="add">
+                    <button class="input-number__remove" data-for="id-1" data-event="sub">
                     </button>
                 </div>
                 <input type="checkbox" id="amount" class="checkbox--orange">
@@ -890,6 +902,8 @@
 <script src="js/jquery.raty.js"></script>
 <script src="js/magnificPopup.js"></script>
 <script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.selectBoxIt.min.js"></script>
+
 
 </body>
 </html>
