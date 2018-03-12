@@ -7,6 +7,7 @@
 .page__nav
 	list-style-type: none
 	display: flex
+	width: calc(100% - 343px)
 .page__nav-item
 	display: block
 	font-size: 16px
@@ -14,10 +15,13 @@
 	letter-spacing: 0.64px
 	color: #fff
 	font-weight: 600
-	padding: 0px 30px
 	padding-bottom: 20px
+	text-align: center
+.page__nav li 
+	flex-grow: 1
 .page__nav-item--active
 	border-bottom: 3px solid #fecb2e
+	color: #fecb2e
 .page__nav-wrapper
 	height: 100%
 	display: flex
@@ -33,7 +37,6 @@
 	justify-content: space-between
 	flex-grow: 2
 	margin-top: 35px
-	min-height: 600px
 .page__business-card
 	box-sizing: border-box
 	width: 340px
@@ -71,21 +74,22 @@
 .page__filter select
 	height: 40px
 	border-radius: 5px
-	border-color: #ddd
 	outline: none
 	padding-left: 10px
 	padding-right: 0px
 	font-size: 16px
 	font-family: 'Lato',sans-serif
 	line-height: 22px
-	font-weight: 600
+	background: transparent 
+	border: 1px solid #ddd
+	padding-right: 25px
 .page__filter label,
 .page__filter-clear
 	font-family: 'Gilroy'
 	font-size: 12px
 	line-height: 22px
 	letter-spacing: 1.2px
-	font-weight: 700
+	font-weight: 800
 	text-transform: uppercase
 .page__filter label
 	width: 100%
@@ -102,11 +106,14 @@
 .page__filter-category
 	margin-right: 42px
 .page__filter-price
-	margin-right: 65px
+	margin-right: 43px
+.page__filter-sorting 
+	select
+		padding-right: 0px
 .page__filter-sorting
 	margin-right: 39px
 .page__filter-clear
-	margin-top: 25px
+	margin-top: 27px
 	position: relative
 	padding-left: 15px
 	cursor: pointer
@@ -308,5 +315,28 @@
 	li:before
 		display: none
 .page__nav-wrapper--padding
-	padding-left: 375px
-	justify-content: flex-start
+	height: 100%
+	display: flex
+	justify-content: flex-end
+	align-items: flex-end
+.page__search-result .goods-item__basket--yellow svg
+	fill: #fecb2e;
+.user-block_advertising 
+	box-sizing: border-box
+	width: 308px
+	height: 380px
+	background: #eee
+	margin-top: 43px	
+.portfolio__item-reviews-item
+	margin-right: 0px	
+.page__delivery-special
+	color: #999
+	width: 100%
+	text-align: center
+	padding-left: 110px
+
+.page__delivery-wrapper--wrap
+	flex-wrap: wrap
+	margin-bottom: 187px
+.page__delivery--static
+	width: calc(100% - 343px)

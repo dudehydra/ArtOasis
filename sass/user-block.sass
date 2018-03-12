@@ -40,7 +40,7 @@
 	font-size: 12px
 	text-transform: uppercase
 	color: #000
-	font-weight: 700
+	font-weight: 800
 	letter-spacing: 0.72px
 	cursor: pointer
 	margin-top: 10px
@@ -54,13 +54,15 @@
 	box-sizing: border-box
 	width: 260px
 	height: 45px
-	padding-top: 15px
 	text-align: center
 	border: 1px solid #fecb2e
-	font-weight: 700
+	font-weight: 800
 	border-radius: 5px
 	margin-bottom: 10px
 	cursor: pointer
+	display: flex
+	justify-content: center
+	align-items: center
 .user-block__mail
 	box-sizing: border-box
 	width: 55px
@@ -73,7 +75,7 @@
 	cursor: pointer
 .user-block__donate
 	box-sizing: border-box
-	width: 200px
+	width: 196px
 	height: 45px
 	border-radius: 5px
 	font-family: "Gilroy"
@@ -81,12 +83,14 @@
 	color: #000
 	text-transform: uppercase
 	letter-spacing: 0.72px
-	font-weight: 700
+	font-weight: 800
 	text-align: center
-	padding-top: 15px
-	background: #fecb2e url(../img/mny.png) no-repeat 15px
-	padding-left: 30px
+	background: #fecb2e url(../img/mny.png) no-repeat 15px 7px
 	cursor: pointer
+	padding-left: 30px
+	display: flex
+	justify-content: center
+	align-items: center
 .user-block__photo-wrapper
 	width: 140px
 	height: 140px
@@ -101,6 +105,7 @@
 	margin-bottom: 22px
 .user-block__location
 	padding-left: 25px
+	background: url(../img/pointer.png) no-repeat left 4px top 3px
 .user-block__footer
 	padding:  0px 20px
 	padding-bottom: 25px
@@ -108,8 +113,10 @@
 	flex-wrap: wrap
 .user-block__wrapper
 	margin-top: -242px
+	margin-bottom: 20px
 .user-block__social
 	display: flex
+	flex-wrap: wrap
 	align-items: center
 	justify-content: center
 	margin-top: 20px
@@ -119,6 +126,8 @@
 		height: 20px
 		fill: #bbbbbb
 		margin-right: 20px
+		&:hover
+			fill: #fecb2e
 .user-block__social div:nth-child(1) svg
 	margin-right: 23px	
 .user-block__social div:nth-child(2) svg
@@ -150,3 +159,7 @@
 	margin-top: 48px
 	padding-left: 15px
 	margin-right: 0px
+.user-block__wrapper .user-block__social-share 
+	margin-top: 10px
+	span 
+		margin-right: 0	

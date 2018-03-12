@@ -4,7 +4,7 @@
 	justify-content: space-between
 	align-items: center
 	font-family: 'Lato', sans-serif
-	margin-top: 30px
+	padding-top: 50px
 .filter__main-wrapper
 	width: 100%
 	box-sizing: border-box
@@ -40,25 +40,42 @@
 		right: 5px
 		border: 5px solid transparent
 		border-top: 5px solid #333333
+
+.filter__main-close:before
+	content: ''
+	position: absolute
+	top: 3px
+	right: 5px
+	border: 5px solid transparent
+	border-top: 5px solid #333333
+	-webkit-transform: rotate(180deg)
+		-moz-transform: rotate(180deg)
+		-ms-transform: rotate(180deg)
+		-o-transform: rotate(180deg)
+		transform: rotate(180deg)
+			
 .filter__main-options
 	padding: 60px 55px 80px 66px
 	display: flex
 	padding-bottom: 0
+	position: relative
+	padding-top: 0px
 	span 
 		font-size: 14px
-		font-weight: 700
+		font-weight: 800
 		text-transform: uppercase
-		letter-spacing: 1.8px
 		margin-bottom: 25px
 		display: block
 		font-family: Gilroy
 .filter__main-options-wrapper
-	position: absolute
-	background: #fff
-	z-index: 2
-	width: 100%
-	top: 58px
-	box-shadow: 0px 15px 35px 0px rgba(0,0,0,0.16)
+	position: absolute;
+	background: #fff;
+	z-index: 2;
+	width: 100%;
+	top: 58px;
+	box-shadow: 0 15px 35px 0 rgba(0,0,0,.16);
+	border: 1px solid #fdc500;
+	box-sizing: border-box;
 .filter__categories-list
 	list-style-type: none
 	margin-left: 5px
@@ -67,7 +84,7 @@
 	position: relative
 	line-height: 18px
 	cursor: pointer
-	width: 175px
+	width: 192px
 	&:before 
 		content: ''
 		position: absolute
@@ -90,26 +107,33 @@
 	display: flex
 	justify-content: space-between
 	width: 100%
+.filter__options-right
+	padding-top: 60px
+	width: 228px
+	margin-left: 10px
 .filter__main-categories
 	min-width: 265px
 	border-right: 1px solid #eeeeee
-	padding-bottom: 80px
+	padding-bottom: 65px
+	padding-top: 60px
 .filter__options-left
 	display: flex
 	flex-wrap: wrap
 	max-width: 335px
 	box-sizing: border-box
-	padding-left: 90px
+	padding-left: 55px
 	border-right: 1px solid #eeeeee
+	padding-top: 60px
 .master__rating img
 	width: 20px
 	margin-right: 5px
 .filter__options-middle
-	max-width: 335px
+	padding-top: 60px
+	max-width: 300px
 	width: 100%
 	border-right: 1px solid #eee
 .filter__options-experience
-	padding-left: 35px
+	padding-left: 50px
 .radio-orange
 	display: none
 .radio-orange__label
@@ -184,44 +208,92 @@
 .filter__clear-all
 	width: 100%
 	font-family: "Gilroy"
-	font-weight: 700
+	font-weight: 800
 	padding: 20px 0px
 	border-top: 1px solid #eee
 	text-align: center
 	border-bottom: 1px solid #eee
 	cursor: pointer
+	font-size: 13px	
+	text-transform: uppercase
+	box-sizing: border-box
+.filter__clear-all span	
+	position: relative
+	padding-left: 8px
+	&:after 
+		content: ''
+		width: 12px
+		height: 1px
+		background: #999999
+		position: absolute
+		left: -10px
+		top: 7px
+		transform: rotate(45deg)
+	&:before 
+		content: ''
+		width: 12px
+		height: 1px
+		background: #999999
+		position: absolute
+		left: -10px
+		top: 7px
+		transform: rotate(-45deg)
+	
 .filter__categories-title
 	font-weight: 300
-	margin-top: 0px
+	margin-top: 0
 	width: 100%
+	font-size: 28px
+	line-height: 18px
+	margin-bottom: 0px
 .filter__categories-options
-	padding: 0px 55px 0 66px
+	padding: 60px 55px 0 80px
 	width: 100%
 	display: flex
 	padding-right: 0px
 	flex-wrap: wrap
 	justify-content: space-between
 .filter__options-list
-	display: flex
-	flex-direction: column
-	flex-wrap: wrap
-	max-height: 300px
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding-bottom: 60px;
+	max-height: 284px;
+	box-sizing: border-box;
 	label 
-		margin-right: 100px
+		margin-right: 110px
+.filter__options-list label 
+	margin-bottom: 15px
+	max-width: 240px
+.filter__options-list label:nth-child(12)
+	margin-bottom: 0px	
 .close-categories
-	width: 200px
-	background: #f9f9f9
-	cursor: pointer
-	margin-right: -55px
-	color: #999999
-	text-align: center
-	padding-top: 100px
+	width: 200px;
+	background: #f9f9f9;
+	cursor: pointer;
+	color: #999;
+	text-align: center;
+	box-sizing: border-box;
+	height: 100%;
+	padding-top: 180px;
+	position: absolute;
+	right: 0;
+	top: 0;
 .filter__sorting:not(checked)+.filter__sorting-label
 	font-size: 16px
 	line-height: 22px
 	display: inline-block
 	padding: 6px 30px 5px 12px
 	margin-right: 22px
+.close-categories span 
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+	display: block;
+	font-family: Gilroy;
+	line-height: 19px;
+	letter-spacing: 0
 .filter__sorting:checked+.filter__sorting-label
 	font-size: 16px
 	line-height: 22px
@@ -237,14 +309,14 @@
 		height: 20px
 		background: url('../img/sorting.png') no-repeat center
 		right: 10px
-		top: 9px
+		top: 8px
 
 .filter__sorting
 	display: none
 .filter__result-title
 	font-size: 16px
 	color: #000
-	font-weight: 600
+	font-weight: 400
 	margin-right: 147px
 	display: block
 .filter__type
@@ -259,4 +331,10 @@
 .filter__sorting-wrapper
 	display: flex
 	align-items: center
+.filter__options-left .filter__rating
+	margin-bottom: -63px
+.filter__options-left .label-checkbox--orange 
+	margin-bottom: 18px
+.search__goods-list .goods-item__img-wrapper 
+	max-height: 183px
 

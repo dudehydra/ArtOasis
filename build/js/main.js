@@ -101,6 +101,7 @@ $(document).ready(function(){
         navClass: ['prev-btn', 'next-btn'],
         navText: ['123','333'],
         loop: true,
+        margin: 30
     });
     $('.items-slider').owlCarousel({
         items: 4,
@@ -120,7 +121,8 @@ $(document).ready(function(){
         mouseDrag: false,
         touchDrag: false,
         pullDrag: false,
-        freeDrag: false
+        freeDrag: false,
+        margin: 35
     });
     $('.popular-goods__items-wrapper').owlCarousel({
         items: 1,
@@ -169,6 +171,7 @@ $(document).ready(function(){
         navClass: ['prev-btn', 'next-btn'],
         navText: ['',''],
         loop: true,
+        margin: 30
 
     });
 
@@ -342,17 +345,34 @@ $(document).ready(function(){
     $('.filter__main-header').click(function(){
         $('.filter__main-options').toggle(300);
         $('.filter__clear-all').toggle(0);
+        $('.filter__main-open').toggleClass('filter__main-close');
+        $('.filter__main-open').text($('.filter__main-open').text() == 'Закрыть' ? 'Раскрыть' : 'Закрыть');
+    
     });
 
-    // Filter categories toggle
-    $('.filter__category').click(function(){
-        $('.filter__options-wrapper').hide();
-        $('.filter__categories-options').show(300);
-    });
+
+    var filterCategoryList = $('.filter__category');
+    var filterCategoryOtions = $('.filter__categories-options');
+    function filteOptions () {
+        
+        for(var i = 0; i < filterCategoryList.length; i++){
+            filterStart(i)
+        }
+    };
+    function filterStart (i) {
+        $(filterCategoryList[i]).click(function(){
+            $('.filter__options-wrapper').hide();
+            $(filterCategoryOtions).hide();
+            $(filterCategoryOtions[i]).show(300);
+        });
+    }
+    filteOptions()
     $('.close-categories').click(function(){
         $('.filter__categories-options').hide();
         $('.filter__options-wrapper').show(300);
     });
+    // Filter categories toggle
+    
     // Filter categories active-style toggle
     $('.filter__category').click(function(){
         $('.filter__category').removeClass('filter__category--active');
@@ -574,11 +594,125 @@ $(document).ready(function(){
         )
     })
 
-    $('#shop-link').change(function () {
-        var inputValue = $('#shop-link').val();
-        var SITELINK = 'Сейчас: artoasis.ru/shop/';
+    document.getElementById("copyButton").addEventListener("click", function() {
+        copyToClipboard(document.getElementById("copyTarget"));
+    });
+
+    function copyToClipboard(elem) {
+        // create hidden text element, if it doesn't already exist
+        var targetId = "_hiddenCopyText_";
+        var isInput = elem.tagName === "INPUT" || elem.tagName === "TEXTAREA";
+        var origSelectionStart, origSelectionEnd;
+        if (isInput) {
+            // can just use the original source element for the selection and copy
+            target = elem;
+            origSelectionStart = elem.selectionStart;
+            origSelectionEnd = elem.selectionEnd;
+        } else {
+            // must use a temporary form element for the selection and copy
+            target = document.getElementById(targetId);
+            if (!target) {
+                var target = document.createElement("textarea");
+                target.style.position = "absolute";
+                target.style.left = "-9999px";
+                target.style.top = "0";
+                target.id = targetId;
+                document.body.appendChild(target);
+            }
+            target.textContent = elem.textContent;
+        }
+        // select the content
+        var currentFocus = document.activeElement;
+        target.focus();
+        target.setSelectionRange(0, target.value.length);
+
+        // copy the selection
+        var succeed;
+        try {
+            succeed = document.execCommand("copy");
+        } catch(e) {
+            succeed = false;
+        }
+        // restore original focus
+        if (currentFocus && typeof currentFocus.focus === "function") {
+            currentFocus.focus();
+        }
+
+        if (isInput) {
+            // restore prior selection
+            elem.setSelectionRange(origSelectionStart, origSelectionEnd);
+        } else {
+            // clear temporary content
+            target.textContent = "";
+        }
+        return succeed;
+    }
+    document.getElementById("copyButton-short").addEventListener("click", function() {
+        copyToClipboard(document.getElementById("copyTarget-short"));
+    });
+
+    function copyToClipboard(elem) {
+        // create hidden text element, if it doesn't already exist
+        var targetId = "_hiddenCopyText_";
+        var isInput = elem.tagName === "INPUT" || elem.tagName === "TEXTAREA";
+        var origSelectionStart, origSelectionEnd;
+        if (isInput) {
+            // can just use the original source element for the selection and copy
+            target = elem;
+            origSelectionStart = elem.selectionStart;
+            origSelectionEnd = elem.selectionEnd;
+        } else {
+            // must use a temporary form element for the selection and copy
+            target = document.getElementById(targetId);
+            if (!target) {
+                var target = document.createElement("textarea");
+                target.style.position = "absolute";
+                target.style.left = "-9999px";
+                target.style.top = "0";
+                target.id = targetId;
+                document.body.appendChild(target);
+            }
+            target.textContent = elem.textContent;
+        }
+        // select the content
+        var currentFocus = document.activeElement;
+        target.focus();
+        target.setSelectionRange(0, target.value.length);
+
+        // copy the selection
+        var succeed;
+        try {
+            succeed = document.execCommand("copy");
+        } catch(e) {
+            succeed = false;
+        }
+        // restore original focus
+        if (currentFocus && typeof currentFocus.focus === "function") {
+            currentFocus.focus();
+        }
+
+        if (isInput) {
+            // restore prior selection
+            elem.setSelectionRange(origSelectionStart, origSelectionEnd);
+        } else {
+            // clear temporary content
+            target.textContent = "";
+        }
+        return succeed;
+    }
+
+    $('#shop-name').change(function () {
+        var inputValue = $('#shop-name').val();
+        var SITELINK = 'market.artoasis.ru/';
         var link = SITELINK + inputValue;
-        $('.main-registration__link-result').text(link);
+        $('#copyTarget').html(link);
+    });
+
+    $('#shop-name').change(function () {
+        var inputValue = $('#shop-name').val();
+        var SITELINK = 'ao.nf/';
+        var link = SITELINK + inputValue;
+        $('#copyTarget-short').html(link);
     })
 
     var prices = $('.delivery-price')

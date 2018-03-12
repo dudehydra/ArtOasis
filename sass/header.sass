@@ -27,10 +27,11 @@
 .menu__logo img
   width: 162px
   height: 30px
+  padding-top: 7px
 
 .menu__logo
   margin-right: 60px
-
+  font-size: 0px  
 .next-btn:hover,
 .prev-btn:hover
   border-color:
@@ -68,7 +69,7 @@
   background: url(../img/user.png) no-repeat left 3px top 0px
 
 .menu__item .menu__basket
-  background: url(../img/basket-2.png) no-repeat left top -1px
+  background: url(../img/basket-gre.png) no-repeat left top -1px
   background-size: 25%
 
 .menu__item .menu__registration,
@@ -182,10 +183,12 @@
 .registration-popup
   position: absolute
   top: 15px
-  left: -58px
+  left: -158px
   border-radius: 5px
   display: none
+  padding: 100px
   padding-top: 25px
+  z-index: 100
 
 .menu__item-registration
   position: relative
@@ -339,8 +342,6 @@
   color: #999
   margin-right: 5px
 
-
-
 .menu__shops-list
   position: absolute
   list-style-type: none
@@ -351,6 +352,7 @@
   left: 0px
   display: none
   padding-top: 25px
+  z-index: 15
 .menu__shops-list--main-page
   top: 70px
 .menu__shops-list__wrapper
@@ -465,6 +467,11 @@
   justify-content: space-between
   align-items: flex-end
   margin-bottom: 20px
+.registration-popup__information .btn
+  background: #fff 
+  border: 2px solid #fecb2e
+  &:hover
+    background: #fecb2e 
 
 .registration-popup__information input[type="email"],
 .registration-popup__information input[type="password"]
@@ -475,6 +482,9 @@
   border: 1px solid #dddddd
   background: #f9f9f9
   padding: 0px 15px
+  outline: none
+  &:focus
+    background: #fff
 
 .registration-popup__information span
   font-size: 12px
@@ -491,7 +501,7 @@
 
 .registration-popup__agreement
   font-size: 14px
-  font-weight: 400
+  font-weight: 600
   color: #999999
   display: inline-block
   position: relative
@@ -542,9 +552,8 @@
 .menu-static .menu__items-top .container
   display: flex
   justify-content: flex-end
-  padding-top: 11px
-
-
+  padding-top: 9px
+  padding-bottom: 2px
 .menu__search-wrapper .menu__search--grey
   background: #f3f3f3 url(../img/search-active.png) right 15px top 15px no-repeat;
   border: none
